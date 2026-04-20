@@ -1,0 +1,82 @@
+/**
+ * SPDX-FileCopyrightText: (c) 2000 Liferay, Inc. https://liferay.com
+ * SPDX-License-Identifier: LGPL-2.1-or-later OR LicenseRef-Liferay-DXP-EULA-2.0.0-2023-06
+ */
+
+package com.liferay.headless.delivery.dynamic.data.mapping;
+
+import com.liferay.dynamic.data.mapping.model.DDMFormField;
+import com.liferay.dynamic.data.mapping.model.DDMStructure;
+import com.liferay.dynamic.data.mapping.service.DDMStructureService;
+import com.liferay.portal.kernel.exception.PortalException;
+import com.liferay.portal.kernel.log.Log;
+import com.liferay.portal.kernel.log.LogFactoryUtil;
+
+import java.util.List;
+
+/**
+ * @author Luis Miguel Barcos
+ */
+public class DDMFormFieldUtil {
+
+	public static DDMFormField getDDMFormField(
+		DDMStructureService ddmStructureService, DDMStructure ddmStructure,
+		String name) {
+
+		DDMFormField ddmFormField = _getDDMFormField(
+			ddmStructure.getDDMFormFields(true), name);
+
+		if (ddmFormField != null) {
+			return ddmFormField;
+		}
+
+		if (ddmStructure.getParentStructureId() == -1) {
+			return null;
+		}
+
+		try {
+			DDMStructure parentDDMStructure = ddmStructureService.getStructure(
+				ddmStructure.getParentStructureId());
+
+			ddmFormField = _getDDMFormField(
+				parentDDMStructure.getDDMFormFields(true), name);
+
+			if (ddmFormField != null) {
+				return ddmFormField;
+			}
+		}
+		catch (PortalException portalException) {
+			if (_log.isWarnEnabled()) {
+				_log.warn(portalException);
+			}
+		}
+
+		return null;
+	}
+
+	private static DDMFormField _getDDMFormField(
+		List<DDMFormField> ddmFormFields, String name) {
+
+		for (DDMFormField ddmFormField : ddmFormFields) {
+			if (name.equals(ddmFormField.getName())) {
+				return ddmFormField;
+			}
+			else if (name.equals(ddmFormField.getFieldReference())) {
+				return ddmFormField;
+			}
+
+			DDMFormField nestedDDMFormField = _getDDMFormField(
+				ddmFormField.getNestedDDMFormFields(), name);
+
+			if (nestedDDMFormField != null) {
+				return nestedDDMFormField;
+			}
+		}
+
+		return null;
+	}
+
+	private static final Log _log = LogFactoryUtil.getLog(
+		DDMFormFieldUtil.class);
+
+}

@@ -1,0 +1,122 @@
+definition {
+
+	@summary = "Default summary"
+	macro _curlMessageBoardAttachment(messageBoardMessageErc = null, messageBoardAttachmentErc = null, attachmentPath = null, messageBoardMessageId = null, messageBoardAttachmentId = null, messageBoardThreadId = null) {
+		var portalURL = JSONCompany.getPortalURL();
+		var userPassword = PropsUtil.get("default.admin.password");
+
+		if (isSet(messageBoardThreadId)) {
+			var api = "message-board-threads/${messageBoardThreadId}/message-board-attachments";
+		}
+		else if (isSet(messageBoardMessageId)) {
+			var api = "message-board-messages/${messageBoardMessageId}/message-board-attachments";
+		}
+		else if (isSet(messageBoardAttachmentId)) {
+			var api = "message-board-attachments/${messageBoardAttachmentId}";
+		}
+		else {
+			var siteId = JSONGroupAPI._getGroupIdByNameNoSelenium(
+				groupName = "Guest",
+				site = "true");
+
+			var api = "sites/${siteId}/message-board-messages/by-external-reference-code/${messageBoardMessageErc}/message-board-attachments/by-external-reference-code/${messageBoardAttachmentErc}";
+		}
+
+		var command = '''
+				-u test@liferay.com:${userPassword}
+			''';
+
+		if (isSet(attachmentPath)) {
+			var body = '''
+				-H Content-Type: multipart/form-data \
+				-F file=@${attachmentPath}
+			''';
+
+			var command = StringUtil.add(${command}, " \ ${body}", "");
+		}
+
+		var curl = StringUtil.add("${portalURL}/o/headless-delivery/v1.0/${api}", " \ ${command}", "");
+
+		return ${curl};
+	}
+
+	@summary = "Default summary"
+	macro assertCorrectErcInResponse(response = null) {
+		Variables.assertDefined(parameterList = ${response});
+
+		var messageBoardAttachmentErc = JSONUtil.getWithJSONPath(${response}, "$.externalReferenceCode");
+		var messageBoardAttachmentId = JSONUtil.getWithJSONPath(${response}, "$.id");
+
+		var responseFromGet = MessageBoardAttachmentAPI.getMessageBoardAttachment(messageBoardAttachmentId = ${messageBoardAttachmentId});
+
+		var expectedErc = JSONUtil.getWithJSONPath(${responseFromGet}, "$.externalReferenceCode");
+
+		TestUtils.assertEquals(
+			actual = ${messageBoardAttachmentErc},
+			expected = ${expectedErc});
+	}
+
+	@summary = "Default summary"
+	macro createMessageBoardMessageMessageBoardAttachment(attachmentPath = null, messageBoardMessageId = null) {
+		Variables.assertDefined(parameterList = "${messageBoardMessageId},${attachmentPath}");
+
+		var curl = MessageBoardAttachmentAPI._curlMessageBoardAttachment(
+			attachmentPath = ${attachmentPath},
+			messageBoardMessageId = ${messageBoardMessageId});
+
+		var response = JSONCurlUtil.post(${curl});
+
+		return ${response};
+	}
+
+	@summary = "Default summary"
+	macro createMessageBoardThreadMessageBoardAttachment(attachmentPath = null, messageBoardThreadId = null) {
+		Variables.assertDefined(parameterList = "${messageBoardThreadId},${attachmentPath}");
+
+		var curl = MessageBoardAttachmentAPI._curlMessageBoardAttachment(
+			attachmentPath = ${attachmentPath},
+			messageBoardThreadId = ${messageBoardThreadId});
+
+		var response = JSONCurlUtil.post(${curl});
+
+		return ${response};
+	}
+
+	@summary = "Default summary"
+	macro deleteMessageBoardAttachmentByMbMessageErcAndMbAttachmentErc(messageBoardMessageErc = null, messageBoardAttachmentErc = null) {
+		Variables.assertDefined(parameterList = "${messageBoardMessageErc},${messageBoardAttachmentErc}");
+
+		var curl = MessageBoardAttachmentAPI._curlMessageBoardAttachment(
+			messageBoardAttachmentErc = ${messageBoardAttachmentErc},
+			messageBoardMessageErc = ${messageBoardMessageErc});
+
+		var response = JSONCurlUtil.delete(${curl});
+
+		return ${response};
+	}
+
+	@summary = "Default summary"
+	macro getMessageBoardAttachment(messageBoardAttachmentId = null) {
+		Variables.assertDefined(parameterList = ${messageBoardAttachmentId});
+
+		var curl = MessageBoardAttachmentAPI._curlMessageBoardAttachment(messageBoardAttachmentId = ${messageBoardAttachmentId});
+
+		var response = JSONCurlUtil.get(${curl});
+
+		return ${response};
+	}
+
+	@summary = "Default summary"
+	macro getMessageBoardAttachmentByMbMessageErcAndMbAttachmentErc(messageBoardMessageErc = null, messageBoardAttachmentErc = null) {
+		Variables.assertDefined(parameterList = "${messageBoardMessageErc},${messageBoardAttachmentErc}");
+
+		var curl = MessageBoardAttachmentAPI._curlMessageBoardAttachment(
+			messageBoardAttachmentErc = ${messageBoardAttachmentErc},
+			messageBoardMessageErc = ${messageBoardMessageErc});
+
+		var response = JSONCurlUtil.get(${curl});
+
+		return ${response};
+	}
+
+}

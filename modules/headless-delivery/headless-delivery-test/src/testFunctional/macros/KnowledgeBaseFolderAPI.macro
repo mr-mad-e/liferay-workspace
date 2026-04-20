@@ -1,0 +1,86 @@
+definition {
+
+	@summary = "Default summary"
+	macro _curlKnowledgeBaseFolder(parentKnowledgeBaseFolderId = null, name = null, knowledgeBaseFolderId = null) {
+		var portalURL = JSONCompany.getPortalURL();
+		var userPassword = PropsUtil.get("default.admin.password");
+
+		if (isSet(parentKnowledgeBaseFolderId)) {
+			var api = "knowledge-base-folders/${parentKnowledgeBaseFolderId}/knowledge-base-folders";
+		}
+		else if (isSet(knowledgeBaseFolderId)) {
+			var api = "knowledge-base-folders/${knowledgeBaseFolderId}";
+		}
+		else {
+			var siteId = JSONGroupAPI._getGroupIdByNameNoSelenium(
+				groupName = "Guest",
+				site = "true");
+
+			var api = "sites/${siteId}/knowledge-base-folders";
+		}
+
+		if (!(isSet(externalReferenceCode))) {
+			var externalReferenceCode = "";
+		}
+
+		var curl = '''
+			${portalURL}/o/headless-delivery/v1.0/${api} \
+				-u test@liferay.com:${userPassword} \
+				-H Content-Type: application/json \
+		''';
+		var body = '''"externalReferenceCode": "${externalReferenceCode}","name": "${name}"''';
+
+		if (isSet(name)) {
+			var curl = StringUtil.add(${curl}, "-d {${body}}", " ");
+		}
+
+		return ${curl};
+	}
+
+	@summary = "Default summary"
+	macro createKnowledgeBaseFolder(parentKnowledgeBaseFolderId = null, name = null, externalReferenceCode = null) {
+		Variables.assertDefined(parameterList = ${name});
+
+		var curl = KnowledgeBaseFolderAPI._curlKnowledgeBaseFolder(
+			externalReferenceCode = ${externalReferenceCode},
+			name = ${name},
+			parentKnowledgeBaseFolderId = ${parentKnowledgeBaseFolderId});
+
+		var response = JSONCurlUtil.post(${curl}, "$.id");
+
+		return ${response};
+	}
+
+	@summary = "Default summary"
+	macro deleteKnowledgeBaseFolderById(knowledgeBaseFolderId = null) {
+		Variables.assertDefined(parameterList = ${knowledgeBaseFolderId});
+
+		var curl = KnowledgeBaseFolderAPI._curlKnowledgeBaseFolder(knowledgeBaseFolderId = ${knowledgeBaseFolderId});
+
+		JSONCurlUtil.delete(${curl});
+	}
+
+	@summary = "Default summary"
+	macro setUpGlobalKnowledgeBaseFolderId(parentKnowledgeBaseFolderId = null, name = null, externalReferenceCode = null) {
+		var response = KnowledgeBaseFolderAPI.createKnowledgeBaseFolder(
+			externalReferenceCode = ${externalReferenceCode},
+			name = ${name},
+			parentKnowledgeBaseFolderId = ${parentKnowledgeBaseFolderId});
+
+		if (isSet(parentKnowledgeBaseFolderId)) {
+			var subKBFolderId = ${response};
+
+			static var staticSubKBFolderId = ${subKBFolderId};
+
+			return ${staticSubKBFolderId};
+		}
+		else {
+			var kBFolderId = ${response};
+
+			static var staticKBFolderId = ${kBFolderId};
+
+			return ${staticKBFolderId};
+		}
+	}
+
+}

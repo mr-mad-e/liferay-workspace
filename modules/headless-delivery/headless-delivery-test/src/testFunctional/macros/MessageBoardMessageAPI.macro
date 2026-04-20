@@ -1,0 +1,95 @@
+definition {
+
+	@summary = "Default summary"
+	macro _curlMessageBoardMessage(headline = null, messageBoardMessageId = null, messageBoardThreadId = null, parentMessageBoardMessageId = null) {
+		var portalURL = JSONCompany.getPortalURL();
+		var userPassword = PropsUtil.get("default.admin.password");
+
+		if (isSet(messageBoardThreadId)) {
+			var api = "message-board-threads/${messageBoardThreadId}/message-board-messages";
+		}
+		else if (isSet(messageBoardMessageId)) {
+			var api = "message-board-messages/${messageBoardMessageId}";
+		}
+		else {
+			var api = "message-board-messages/${parentMessageBoardMessageId}/message-board-messages";
+		}
+
+		var command = '''
+				-u test@liferay.com:${userPassword} \
+				-H Content-Type: application/json
+		''';
+
+		if (isSet(headline)) {
+			var body = '''
+				-d {
+					"headline": "${headline}"
+				}
+			''';
+
+			var command = StringUtil.add(${command}, " \ ${body}", "");
+		}
+
+		var curl = StringUtil.add("${portalURL}/o/headless-delivery/v1.0/${api}", " \ ${command}", "");
+
+		return ${curl};
+	}
+
+	@summary = "Default summary"
+	macro createChildMbMessageByMbMessageId(headline = null, parentMessageBoardMessageId = null) {
+		Variables.assertDefined(parameterList = "${headline},${parentMessageBoardMessageId}");
+
+		var curl = MessageBoardMessageAPI._curlMessageBoardMessage(
+			headline = ${headline},
+			parentMessageBoardMessageId = ${parentMessageBoardMessageId});
+
+		var response = JSONCurlUtil.post(${curl});
+
+		return ${response};
+	}
+
+	@summary = "Default summary"
+	macro createMbMessageByMbThreadId(headline = null, messageBoardThreadId = null) {
+		Variables.assertDefined(parameterList = "${headline},${messageBoardThreadId}");
+
+		var curl = MessageBoardMessageAPI._curlMessageBoardMessage(
+			headline = ${headline},
+			messageBoardThreadId = ${messageBoardThreadId});
+
+		var response = JSONCurlUtil.post(${curl});
+
+		return ${response};
+	}
+
+	@summary = "Default summary"
+	macro getIdOfCreatedMbMessageByMbThreadId(headline = null, messageBoardThreadId = null) {
+		var response = MessageBoardMessageAPI.createMbMessageByMbThreadId(
+			headline = ${headline},
+			messageBoardThreadId = ${messageBoardThreadId});
+
+		var messageboardMessageId = JSONUtil.getWithJSONPath(${response}, "$.id");
+
+		return ${messageboardMessageId};
+	}
+
+	@summary = "Default summary"
+	macro getMbMessageByMbMessageId(messageBoardMessageId = null) {
+		Variables.assertDefined(parameterList = ${messageBoardMessageId});
+
+		var curl = MessageBoardMessageAPI._curlMessageBoardMessage(messageBoardMessageId = ${messageBoardMessageId});
+
+		var response = JSONCurlUtil.get(${curl});
+
+		return ${response};
+	}
+
+	@summary = "Default summary"
+	macro getMbMessageErcByMbMessageId(messageBoardMessageId = null) {
+		var response = MessageBoardMessageAPI.getMbMessageByMbMessageId(messageBoardMessageId = ${messageBoardMessageId});
+
+		var messageBoardMessageErc = JSONUtil.getWithJSONPath(${response}, "$.externalReferenceCode");
+
+		return ${messageBoardMessageErc};
+	}
+
+}

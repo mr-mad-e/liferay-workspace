@@ -1,0 +1,46 @@
+definition {
+
+	@summary = "Default summary"
+	macro _getLanguages(depotName = null, siteId = null) {
+		var portalURL = JSONCompany.getPortalURL();
+		var userPassword = PropsUtil.get("default.admin.password");
+
+		if (isSet(depotName)) {
+			var assetLibraryId = JSONGroupAPI._getDepotIdByName(depotName = ${depotName});
+
+			var api = "asset-libraries/${assetLibraryId}";
+		}
+		else {
+			var api = "sites/${siteId}";
+		}
+
+		var curl = '''
+			${portalURL}/o/headless-delivery/v1.0/${api}/languages \
+				-u test@liferay.com:${userPassword} \
+				-H accept: application/json \
+		''';
+
+		var curl = JSONCurlUtil.get(${curl});
+
+		return ${curl};
+	}
+
+	@summary = "Default summary"
+	macro getAssetLibraryLanguages(depotName = null) {
+		Variables.assertDefined(parameterList = ${depotName});
+
+		LanguageAPI._getLanguages(depotName = ${depotName});
+	}
+
+	@summary = "Default summary"
+	macro getSiteLanguages(groupName = null) {
+		Variables.assertDefined(parameterList = ${groupName});
+
+		var siteId = JSONGroupAPI._getGroupIdByNameNoSelenium(
+			groupName = ${groupName},
+			site = "true");
+
+		LanguageAPI._getLanguages(siteId = ${siteId});
+	}
+
+}

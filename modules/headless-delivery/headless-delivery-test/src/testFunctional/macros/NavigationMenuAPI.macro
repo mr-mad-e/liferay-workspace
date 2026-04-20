@@ -1,0 +1,71 @@
+definition {
+
+	@summary = "Default summary"
+	macro _assertResponseIncludeCorrectElement(responseToParse = null, expectedElement = null, element = null) {
+		Variables.assertDefined(parameterList = "${element},${expectedElement}");
+
+		if (isSet(responseFromSite)) {
+			var actual = JSONUtil.getWithJSONPath(${responseToParse}, "$.items..navigationMenuItems..${element}");
+		}
+		else {
+			var actual = JSONUtil.getWithJSONPath(${responseToParse}, "$.navigationMenuItems..${element}");
+		}
+
+		StringUtil.assertEquals(${expectedElement}, ${actual});
+	}
+
+	@summary = "Default summary"
+	macro assertResponseHasCorrectInformations(expectedURL = null, responseToParse = null, expectedType = null, expectedUseCustomName = null, responseFromSite = null) {
+		Variables.assertDefined(parameterList = "${expectedURL},${expectedType},${expectedUseCustomName},${responseToParse}");
+
+		var portalURL = JSONCompany.getPortalURL();
+
+		var expectedContentURL = "${portalURL}/${expectedURL}";
+
+		NavigationMenuAPI._assertResponseIncludeCorrectElement(
+			element = "contentURL",
+			expectedElement = ${expectedContentURL},
+			responseFromSite = ${responseFromSite},
+			responseToParse = ${responseToParse});
+
+		NavigationMenuAPI._assertResponseIncludeCorrectElement(
+			element = "type",
+			expectedElement = ${expectedType},
+			responseFromSite = ${responseFromSite},
+			responseToParse = ${responseToParse});
+
+		NavigationMenuAPI._assertResponseIncludeCorrectElement(
+			element = "useCustomName",
+			expectedElement = ${expectedUseCustomName},
+			responseFromSite = ${responseFromSite},
+			responseToParse = ${responseToParse});
+	}
+
+	@summary = "Default summary"
+	macro getNavigationMenu(groupName = null, navigationMenuId = null) {
+		var portalURL = JSONCompany.getPortalURL();
+		var userPassword = PropsUtil.get("default.admin.password");
+
+		if (isSet(navigationMenuId)) {
+			var api = "navigation-menus/${navigationMenuId}";
+		}
+		else {
+			var siteId = JSONGroupAPI._getGroupIdByNameNoSelenium(
+				groupName = ${groupName},
+				site = "true");
+
+			var api = "sites/${siteId}/navigation-menus/";
+		}
+
+		var curl = '''
+			${portalURL}/o/headless-delivery/v1.0/${api} \
+				-u test@liferay.com:${userPassword} \
+				-H accept: application/json
+		''';
+
+		var response = JSONCurlUtil.get(${curl});
+
+		return ${response};
+	}
+
+}

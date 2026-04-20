@@ -1,0 +1,54 @@
+definition {
+
+	@summary = "Default summary"
+	macro _curlMessageBoardSection(parentMessageBoardSectionId = null, title = null) {
+		var portalURL = JSONCompany.getPortalURL();
+		var userPassword = PropsUtil.get("default.admin.password");
+
+		if (isSet(parentMessageBoardSectionId)) {
+			var api = "message-board-sections/${parentMessageBoardSectionId}";
+		}
+		else {
+			var siteId = JSONGroupAPI._getGroupIdByNameNoSelenium(
+				groupName = "Guest",
+				site = "true");
+
+			var api = "sites/${siteId}";
+		}
+
+		var command = '''
+			-u test@liferay.com:${userPassword} \
+			-H Content-Type: application/json \
+			-d {
+				"title": "${title}"
+			}
+		''';
+
+		var curl = StringUtil.add("${portalURL}/o/headless-delivery/v1.0/${api}/message-board-sections", " \ ${command}", "");
+
+		return ${curl};
+	}
+
+	@summary = "Default summary"
+	macro createChildMessageBoardSection(parentMessageBoardSectionId = null, title = null) {
+		Variables.assertDefined(parameterList = "${title},${parentMessageBoardSectionId}");
+
+		var curl = MessageBoardSectionAPI._curlMessageBoardSection(title = ${title});
+
+		var response = JSONCurlUtil.post(${curl});
+
+		return ${response};
+	}
+
+	@summary = "Default summary"
+	macro createMessageBoardSection(title = null) {
+		Variables.assertDefined(parameterList = ${title});
+
+		var curl = MessageBoardSectionAPI._curlMessageBoardSection(title = ${title});
+
+		var response = JSONCurlUtil.post(${curl});
+
+		return ${response};
+	}
+
+}

@@ -1,0 +1,100 @@
+definition {
+
+	@summary = "Default summary"
+	macro _addWebcontentFolder(depotName = null, name = null, siteId = null) {
+		Variables.assertDefined(parameterList = ${name});
+
+		var portalURL = JSONCompany.getPortalURL();
+
+		if (!(isSet(userEmailAddress))) {
+			var userEmailAddress = "test@liferay.com";
+		}
+
+		if (!(isSet(userPassword))) {
+			var userPassword = PropsUtil.get("default.admin.password");
+		}
+
+		if (!(isSet(externalReferenceCode))) {
+			var externalReferenceCode = "";
+		}
+
+		if (isSet(depotName)) {
+			var assetLibraryId = JSONGroupAPI._getDepotIdByName(depotName = ${depotName});
+
+			var api = "asset-libraries/${assetLibraryId}/structured-content-folders";
+		}
+		else {
+			var api = "sites/${siteId}/structured-content-folders";
+		}
+
+		var curl = '''
+			${portalURL}/o/headless-delivery/v1.0/${api} \
+				-u ${userEmailAddress}:${userPassword} \
+				-H accept: application/json \
+				-H Content-Type: application/json \
+				-d {
+					"externalReferenceCode": "${externalReferenceCode}",
+					"name": "${name}"
+				}
+		''';
+
+		var response = JSONCurlUtil.post(${curl});
+
+		return ${response};
+	}
+
+	@summary = "Default summary"
+	macro _subscribeStructuredContentFolder(structuredContentFolderId = null, userName = null) {
+		var portalURL = JSONCompany.getPortalURL();
+		var userPassword = PropsUtil.get("default.admin.password");
+
+		var curl = '''
+			${portalURL}/o/headless-delivery/v1.0/structured-content-folders/${structuredContentFolderId}/subscribe \
+				-u ${userName}@liferay.com:${userPassword} \
+				-H accept: application/json \
+		''';
+
+		var curl = JSONCurlUtil.put(${curl});
+
+		return ${curl};
+	}
+
+	@summary = "Default summary"
+	macro createStructuredContentFolder(groupName = null, userPassword = null, viewableBy = null, name = null, description = null, userEmailAddress = null, externalReferenceCode = null) {
+		Variables.assertDefined(parameterList = "${groupName},${name}");
+
+		var siteId = JSONGroupAPI._getSiteIdByGroupKey(groupName = ${groupName});
+
+		var response = HeadlessWebcontentFolderAPI._addWebcontentFolder(
+			description = ${description},
+			externalReferenceCode = ${externalReferenceCode},
+			name = ${name},
+			siteId = ${siteId},
+			userEmailAddress = ${userEmailAddress},
+			userPassword = ${userPassword},
+			viewableBy = ${viewableBy});
+
+		return ${response};
+	}
+
+	@summary = "Default summary"
+	macro getElementOfCreatedStructuredContentFolder(responseToParse = null, element = null) {
+		Variables.assertDefined(parameterList = "${responseToParse},${element}");
+
+		var elementValue = JSONUtil.getWithJSONPath(${responseToParse}, ${element});
+
+		return ${elementValue};
+	}
+
+	@summary = "Default summary"
+	macro structuredContentFolderSubscribeByUserName(structuredContentFolderId = null, userName = null) {
+		Variables.assertDefined(parameterList = "${structuredContentFolderId},${userName}");
+
+		var response = HeadlessWebcontentFolderAPI._subscribeStructuredContentFolder(
+			structuredContentFolderId = ${structuredContentFolderId},
+			userName = ${userName});
+
+		return ${response};
+	}
+
+}

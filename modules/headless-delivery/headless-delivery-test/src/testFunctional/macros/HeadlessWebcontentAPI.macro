@@ -1,0 +1,852 @@
+definition {
+
+	@summary = "Default summary"
+	macro _addWebContent(groupId = null, contentMap = null, structureId = null, descriptionMap = null, title = null, titleMap = null, folderId = null) {
+		Variables.assertDefined(parameterList = "${content},${title}");
+
+		var portalURL = JSONCompany.getPortalURL();
+
+		if (!(isSet(userEmailAddress))) {
+			var userEmailAddress = "test@liferay.com";
+		}
+
+		if (!(isSet(userPassword))) {
+			var userPassword = PropsUtil.get("default.admin.password");
+		}
+
+		if (!(isSet(description))) {
+			var description = "";
+		}
+
+		if (isSet(assetTagNames)) {
+			var list = ListUtil.newList();
+
+			for (var assetTagName : list ${assetTagNames}) {
+				var assetTagName = '''"${assetTagName}"''';
+
+				ListUtil.add(${list}, ${assetTagName});
+			}
+
+			var assetTagNames = ListUtil.toString(${list});
+		}
+		else {
+			var assetTagNames = "";
+		}
+
+		if (!(isSet(assetCategoryIds))) {
+			var assetCategoryIds = 0;
+		}
+
+		if (!(isSet(viewableBy))) {
+			var viewableBy = "Anyone";
+		}
+
+		if (isSet(folderId)) {
+			var api = "structured-content-folders/${folderId}/structured-contents";
+		}
+		else {
+			var api = "sites/${groupId}/structured-contents";
+		}
+
+		var os = OSDetector.isWindows();
+
+		if (${os} == "true") {
+			var content = StringUtil.replace(${content}, ">", "^>");
+
+			var content = StringUtil.replace(${content}, "<", "^<");
+		}
+
+		if (!(isSet(relatedContents))) {
+			var relatedContents = "";
+		}
+
+		var curl = '''
+			${portalURL}/o/headless-delivery/v1.0/${api} \
+				-u ${userEmailAddress}:${userPassword} \
+				-H accept: application/json \
+				-H Content-Type: application/json \
+				-d {
+					"contentFields": [
+						{
+							"contentFieldValue": {
+								"data": "${content}"
+							},
+							"contentFieldValue_i18n": ${contentMap},
+							"name": "content",
+							"fieldReference": "content"
+						}
+					],
+					"contentStructureId": ${structureId},
+					"description": "${description}",
+					"keywords": [${assetTagNames}],
+					"taxonomyCategoryIds": [${assetCategoryIds}],
+					"description_i18n": ${descriptionMap},
+					"title": "${title}",
+					"title_i18n": ${titleMap},
+					"relatedContents": [${relatedContents}],
+					"viewableBy": "${viewableBy}"
+				}
+		''';
+
+		var articleId = JSONCurlUtil.post(${curl}, "$.id");
+
+		if (${articleId} == "") {
+			fail("FAIL. Cannot add journal article.");
+		}
+
+		return ${articleId};
+	}
+
+	@summary = "Default summary"
+	macro _allStructuredContent() {
+		var portalURL = JSONCompany.getPortalURL();
+		var userPassword = PropsUtil.get("default.admin.password");
+
+		if (!(isSet(siteId))) {
+			var siteId = JSONGroupAPI._getGroupIdByName(
+				groupName = "Guest",
+				site = "true");
+		}
+
+		var curl = '''
+			${portalURL}/o/headless-admin-content/v1.0/sites/${siteId}/structured-contents \
+				-u test@liferay.com:${userPassword} \
+				-H accept: application/json
+		''';
+
+		var curl = JSONCurlUtil.get(${curl});
+
+		return ${curl};
+	}
+
+	@summary = "Default summary"
+	macro _createStructuredContent(depotName = null, data = null, ddmStructureId = null, label = null, title = null, structuredContentFolderId = null, name = null) {
+		Variables.assertDefined(parameterList = "${data},${label},${name},${ddmStructureId},${title}");
+
+		var portalURL = JSONCompany.getPortalURL();
+		var userPassword = PropsUtil.get("default.admin.password");
+
+		if (!(isSet(externalReferenceCode))) {
+			var externalReferenceCode = "";
+		}
+
+		if (!(isSet(priority))) {
+			var priority = "";
+		}
+
+		if (isSet(structuredContentFolderId)) {
+			var api = "structured-content-folders/${structuredContentFolderId}";
+		}
+		else if (isSet(depotName)) {
+			var assetLibraryId = JSONGroupAPI._getDepotIdByName(depotName = ${depotName});
+
+			var api = "asset-libraries/${assetLibraryId}/";
+		}
+		else {
+			if (!(isSet(siteId))) {
+				var siteId = JSONGroupAPI._getGroupIdByName(
+					groupName = "Guest",
+					site = "true");
+			}
+
+			var api = "sites/${siteId}";
+		}
+
+		var curl = '''
+			${portalURL}/o/headless-delivery/v1.0/${api}/structured-contents/ \
+				-u test@liferay.com:${userPassword} \
+				-H Content-Type: application/json \
+				-d {
+					"contentFields": [{
+						"contentFieldValue": {
+							"data": "${data}"
+						},
+						"dataType": "string",
+						"label": "${label}",
+						"name": "${name}",
+						"nestedContentFields": [],
+						"repeatable": false
+					}],
+					"contentStructureId": "${ddmStructureId}",
+					"title": "${title}",
+					"priority": "${priority}",
+					"externalReferenceCode": "${externalReferenceCode}"
+				}
+		''';
+
+		var curl = JSONCurlUtil.post(${curl});
+
+		return ${curl};
+	}
+
+	@summary = "Default summary"
+	macro _createStructuredContentDraft(data = null, ddmStructureId = null, name = null, label = null, priority = null, title = null) {
+		Variables.assertDefined(parameterList = "${data},${label},${name},${ddmStructureId},${priority},${title}");
+
+		var portalURL = JSONCompany.getPortalURL();
+		var siteId = JSONGroupAPI._getGroupIdByName(
+			groupName = "Guest",
+			site = "true");
+		var userPassword = PropsUtil.get("default.admin.password");
+
+		var curl = '''
+			${portalURL}/o/headless-admin-content/v1.0/sites/${siteId}/structured-contents/draft \
+				-u test@liferay.com:${userPassword} \
+				-H Content-Type: application/json \
+				-d {
+					"contentFields": [{
+						"contentFieldValue": {
+							"data": "${data}"
+						},
+						"dataType": "string",
+						"label": "${label}",
+						"name": "${name}",
+						"nestedContentFields": [],
+						"repeatable": false
+					}],
+					"contentStructureId": "${ddmStructureId}",
+					"priority": "${priority}",
+					"title": "${title}"
+				}
+		''';
+
+		var curl = JSONCurlUtil.post(${curl});
+
+		return ${curl};
+	}
+
+	@summary = "Default summary"
+	macro _deleteStructuredContent(structuredContentId = null) {
+		Variables.assertDefined(parameterList = ${structuredContentId});
+
+		var portalURL = JSONCompany.getPortalURL();
+		var userPassword = PropsUtil.get("default.admin.password");
+
+		var curl = '''
+			${portalURL}/o/headless-delivery/v1.0/structured-contents/${structuredContentId} \
+				-u test@liferay.com:${userPassword} \
+				-H accept: application/json
+		''';
+
+		var curl = JSONCurlUtil.delete(${curl});
+
+		return ${curl};
+	}
+
+	@summary = "Default summary"
+	macro _deleteStructuredContentByExternalReferenceCode(depotName = null, siteId = null, externalReferenceCode = null) {
+		Variables.assertDefined(parameterList = ${externalReferenceCode});
+
+		var portalURL = JSONCompany.getPortalURL();
+		var userPassword = PropsUtil.get("default.admin.password");
+
+		if (isSet(depotName)) {
+			var assetLibraryId = JSONGroupAPI._getDepotIdByName(depotName = ${depotName});
+
+			var api = "asset-libraries/${assetLibraryId}/structured-contents/by-external-reference-code/${externalReferenceCode}";
+		}
+		else {
+			var api = "sites/${siteId}/structured-contents/by-external-reference-code/${externalReferenceCode}";
+		}
+
+		var curl = '''
+			${portalURL}/o/headless-delivery/v1.0/${api} \
+				-u test@liferay.com:${userPassword} \
+				-H accept: application/json
+		''';
+
+		var curl = JSONCurlUtil.delete(${curl});
+
+		return ${curl};
+	}
+
+	@summary = "Default summary"
+	macro _editStructuredContent(structuredContentId = null, data = null, ddmStructureId = null, name = null, label = null, title = null, priority = null) {
+		Variables.assertDefined(parameterList = "${data},${label},${name},${ddmStructureId},${title},${priority},${structuredContentId}");
+
+		var portalURL = JSONCompany.getPortalURL();
+		var siteId = JSONGroupAPI._getGroupIdByName(
+			groupName = "Guest",
+			site = "true");
+		var userPassword = PropsUtil.get("default.admin.password");
+
+		var curl = '''
+			${portalURL}/o/headless-delivery/v1.0/structured-contents/${structuredContentId} \
+				-u test@liferay.com:${userPassword} \
+				-H Content-Type: application/json \
+				-H accept: application/json \
+				-d {
+					"contentFields": [{
+						"contentFieldValue": {
+							"data": "${data}"
+						},
+						"dataType": "string",
+						"label": "${label}",
+						"name": "${name}",
+						"nestedContentFields": [],
+						"repeatable": false
+					}],
+					"contentStructureId": "${ddmStructureId}",
+					"title": "${title}",
+					"priority": "${priority}"
+				}
+		''';
+
+		var curl = JSONCurlUtil.put(${curl});
+
+		return ${curl};
+	}
+
+	@summary = "Default summary"
+	macro _filterAdminStructuredContent(filtervalue = null) {
+		Variables.assertDefined(parameterList = ${filtervalue});
+
+		var portalURL = JSONCompany.getPortalURL();
+		var siteId = JSONGroupAPI._getGroupIdByName(
+			groupName = "Guest",
+			site = "true");
+		var userPassword = PropsUtil.get("default.admin.password");
+
+		var curl = '''
+			${portalURL}/o/headless-admin-content/v1.0/sites/${siteId}/structured-contents?filter=${filtervalue} \
+				-u test@liferay.com:${userPassword} \
+				-H accept: application/json
+		''';
+
+		var curl = JSONCurlUtil.get(${curl});
+
+		return ${curl};
+	}
+
+	@summary = "Default summary"
+	macro _filterAndSortAdminStructuredContent(sortvalue = null, filtervalue = null) {
+		Variables.assertDefined(parameterList = "${filtervalue},${sortvalue}");
+
+		var portalURL = JSONCompany.getPortalURL();
+		var siteId = JSONGroupAPI._getGroupIdByName(
+			groupName = "Guest",
+			site = "true");
+		var userPassword = PropsUtil.get("default.admin.password");
+
+		var curl = '''
+			${portalURL}/o/headless-admin-content/v1.0/sites/${siteId}/structured-contents?filter=${filtervalue}\&sort=${sortvalue} \
+				-u test@liferay.com:${userPassword} \
+				-H accept: application/json
+		''';
+
+		var curl = JSONCurlUtil.get(${curl});
+
+		return ${curl};
+	}
+
+	@summary = "Default summary"
+	macro _filterStructuredContent(filtervalue = null) {
+		Variables.assertDefined(parameterList = ${filtervalue});
+
+		var portalURL = JSONCompany.getPortalURL();
+		var siteId = JSONGroupAPI._getGroupIdByName(
+			groupName = "Guest",
+			site = "true");
+		var userPassword = PropsUtil.get("default.admin.password");
+
+		var curl = '''
+			${portalURL}/o/headless-delivery/v1.0/sites/${siteId}/structured-contents?filter=${filtervalue} \
+				-u test@liferay.com:${userPassword} \
+				-H accept: application/json
+		''';
+
+		var curl = JSONCurlUtil.get(${curl});
+
+		return ${curl};
+	}
+
+	@summary = "Default summary"
+	macro _filterStructuredContentInAssetLibrary(depotName = null, filtervalue = null) {
+		Variables.assertDefined(parameterList = "${depotName},${filtervalue}");
+
+		var portalURL = JSONCompany.getPortalURL();
+		var assetLibraryId = JSONGroupAPI._getDepotIdByName(depotName = ${depotName});
+		var userPassword = PropsUtil.get("default.admin.password");
+
+		var curl = '''
+			${portalURL}/o/headless-delivery/v1.0/asset-libraries/${assetLibraryId}/structured-contents?filter=${filtervalue} \
+				-u test@liferay.com:${userPassword} \
+				-H accept: application/json
+		''';
+
+		var curl = JSONCurlUtil.get(${curl});
+
+		return ${curl};
+	}
+
+	@summary = "Default summary"
+	macro _getStructuredContentsByErcInAssetLibrary(depotName = null, externalReferenceCode = null) {
+		Variables.assertDefined(parameterList = ${externalReferenceCode});
+
+		var portalURL = JSONCompany.getPortalURL();
+		var userPassword = PropsUtil.get("default.admin.password");
+
+		if (!(isSet(assetLibraryId))) {
+			var assetLibraryId = JSONGroupAPI._getDepotIdByName(depotName = ${depotName});
+		}
+
+		var curl = '''
+			${portalURL}/o/headless-delivery/v1.0/asset-libraries/${assetLibraryId}/structured-contents/by-external-reference-code/${externalReferenceCode} \
+				-u test@liferay.com:${userPassword} \
+				-H Content-Type: application/json
+		''';
+
+		var curl = JSONCurlUtil.get(${curl});
+
+		return ${curl};
+	}
+
+	@summary = "Default summary"
+	macro _getStructuredContentsWithDifferentParameters(structuredContentId = null, groupName = null, parameter = null, parameterValue = null, updatedValueInAPI = null) {
+		var portalURL = JSONCompany.getPortalURL();
+		var userPassword = PropsUtil.get("default.admin.password");
+
+		if (isSet(groupName)) {
+			var siteId = JSONGroupAPI._getSiteIdByGroupKey(groupName = ${groupName});
+
+			var api = "sites/${siteId}/structured-contents";
+		}
+
+		if (isSet(structuredContentId)) {
+			var api = "structured-contents/${structuredContentId}";
+		}
+
+		if (isSet(updatedValueInAPI)) {
+			var api = StringUtil.add(${api}, ${updatedValueInAPI}, "/");
+		}
+
+		if (isSet(parameter)) {
+			var api = StringUtil.add(${api}, "?${parameter}=${parameterValue}", "");
+		}
+
+		if (!(isSet(headlessComponent))) {
+			var headlessComponent = "headless-admin-content";
+		}
+
+		var curl = '''
+			${portalURL}/o/${headlessComponent}/v1.0/${api} \
+				-u test@liferay.com:${userPassword} \
+				-H Content-Type: application/json \
+		''';
+
+		return ${curl};
+	}
+
+	@summary = "Updates only the fields received in the request body, leaving any other fields untouched."
+	macro _patchStructuredContent(structuredContentId = null, data = null) {
+		Variables.assertDefined(parameterList = "${data},${structuredContentId}");
+
+		var portalURL = JSONCompany.getPortalURL();
+		var userPassword = PropsUtil.get("default.admin.password");
+
+		var curl = '''
+			${portalURL}/o/headless-delivery/v1.0/structured-contents/${structuredContentId} \
+				-u test@liferay.com:${userPassword} \
+				-H Content-Type: application/json \
+				-d {
+					${data}
+				}
+		''';
+
+		var curl = JSONCurlUtil.patch(${curl});
+
+		return ${curl};
+	}
+
+	@summary = "Default summary"
+	macro _sortStructureContent(sortvalue = null) {
+		Variables.assertDefined(parameterList = ${sortvalue});
+
+		var portalURL = JSONCompany.getPortalURL();
+		var siteId = JSONGroupAPI._getGroupIdByName(
+			groupName = "Guest",
+			site = "true");
+		var userPassword = PropsUtil.get("default.admin.password");
+
+		var curl = '''
+			${portalURL}/o/headless-delivery/v1.0/sites/${siteId}/structured-contents?sort=${sortvalue} \
+				-u test@liferay.com:${userPassword} \
+				-H accept: application/json
+		''';
+
+		var curl = JSONCurlUtil.get(${curl});
+
+		return ${curl};
+	}
+
+	@summary = "Default summary"
+	macro _updateStructuredContentByErcInAssetLibrary(updateExternalReferenceCode = null, depotName = null, data = null, ddmStructureId = null, name = null, label = null, title = null, externalReferenceCode = null) {
+		Variables.assertDefined(parameterList = "${depotName},${externalReferenceCode},${data},${label},${name},${ddmStructureId},${title},${updateExternalReferenceCode}");
+
+		var portalURL = JSONCompany.getPortalURL();
+		var assetLibraryId = JSONGroupAPI._getDepotIdByName(depotName = ${depotName});
+		var userPassword = PropsUtil.get("default.admin.password");
+
+		var curl = '''
+			${portalURL}/o/headless-delivery/v1.0/asset-libraries/${assetLibraryId}/structured-contents/by-external-reference-code/${externalReferenceCode} \
+				-u test@liferay.com:${userPassword} \
+				-H Content-Type: application/json \
+				-d {
+					"contentFields": [{
+						"contentFieldValue": {
+							"data": "${data}"
+						},
+						"label": "${label}",
+						"name": "${name}"
+					}],
+					"contentStructureId": "${ddmStructureId}",
+					"externalReferenceCode": "${updateExternalReferenceCode}",
+					"title": "${title}"
+				}
+		''';
+
+		var curl = JSONCurlUtil.put(${curl});
+
+		return ${curl};
+	}
+
+	@summary = "Default summary"
+	macro _versionStructureContent(responseToParse = null, versionvalue = null, parameter = null, parameterValue = null) {
+		if (!(isSet(structuredContentId))) {
+			Variables.assertDefined(parameterList = "${responseToParse},${versionvalue}");
+
+			var structuredContentId = JSONPathUtil.getIdValue(response = ${responseToParse});
+		}
+		else {
+			Variables.assertDefined(parameterList = ${structuredContentId});
+		}
+
+		if (isSet(versionvalue)) {
+			if (isSet(parameter)) {
+				var api = "${structuredContentId}/by-version/${versionvalue}?${parameter}=${parameterValue}";
+			}
+			else {
+				var api = "${structuredContentId}/by-version/${versionvalue}";
+			}
+		}
+		else {
+			var api = "${structuredContentId}/versions";
+		}
+
+		var portalURL = JSONCompany.getPortalURL();
+		var userPassword = PropsUtil.get("default.admin.password");
+
+		var curl = '''
+			${portalURL}/o/headless-admin-content/v1.0/structured-contents/${api} \
+				-u test@liferay.com:${userPassword} \
+				-H accept: application/json
+		''';
+
+		var curl = JSONCurlUtil.get(${curl});
+
+		return ${curl};
+	}
+
+	@summary = "Default summary"
+	macro assertExternalReferenceCodeWithCorrectValue(responseToParse = null) {
+		if (!(isSet(expectedExternalReferenceCodeValue))) {
+			var expectedExternalReferenceCodeValue = JSONUtil.getWithJSONPath(${responseToParse}, "$.['uuid']");
+		}
+
+		var actualExternalReferenceCodeValue = JSONUtil.getWithJSONPath(${responseToParse}, "$..externalReferenceCode");
+
+		StringUtil.assertEquals(${expectedExternalReferenceCodeValue}, ${actualExternalReferenceCodeValue});
+	}
+
+	@summary = "Default summary"
+	macro assertInFacetsWithCorrectValue(structuredContentId = null, responseToParse = null, expectedValue = null) {
+		Variables.assertDefined(parameterList = "${expectedValue},${structuredContentId}");
+
+		var actualValue = JSONUtil.getWithJSONPath(${responseToParse}, "$.facets..facetValues[?(@.term=='${structuredContentId}' && @.numberOfOccurrences==${expectedValue})].numberOfOccurrences");
+
+		StringUtil.assertEquals(${expectedValue}, ${actualValue});
+	}
+
+	@summary = "Default summary"
+	macro assertPriorityFieldWithCorrectValue(responseToParse = null, expectedPriorityValue = null) {
+		var actualPriorityValue = JSONUtil.getWithJSONPath(${responseToParse}, "$..priority");
+
+		StringUtil.assertEquals(${expectedPriorityValue}, ${actualPriorityValue});
+	}
+
+	@summary = "Default summary"
+	macro assertProperNumberOfItems(responseToParse = null, expectedTotalElement = null) {
+		var actualTotalElement = JSONUtil.getWithJSONPath(${responseToParse}, "$..['totalCount']");
+
+		StringUtil.assertEquals(${expectedTotalElement}, ${actualTotalElement});
+	}
+
+	@summary = "Default summary"
+	macro assertStructuredContentIdIsFilteredWithCorrectValue(responseToParse = null) {
+		var editStructuredContentId = JSONUtil.getWithJSONPath(${editStructuredContentId}, "$.['id']");
+		var filterStructuredContentId = JSONUtil.getWithJSONPath(${responseToParse}, "$..['items'][0].id");
+
+		StringUtil.assertEquals(${editStructuredContentId}, ${filterStructuredContentId});
+	}
+
+	@summary = "Default summary"
+	macro assertTitleFieldWithCorrectName(expectedTitleName = null, responseToParse = null) {
+		var actualTitleName = JSONUtil.getWithJSONPath(${responseToParse}, "$..title");
+
+		StringUtil.assertEquals(${expectedTitleName}, ${actualTitleName});
+	}
+
+	@summary = "Default summary"
+	macro createStructuredContent(depotName = null, data = null, ddmStructureId = null, name = null, label = null, priority = null, structuredContentFolderId = null, title = null, externalReferenceCode = null) {
+		if (!(isSet(groupName))) {
+			var groupName = "Guest";
+		}
+
+		var siteId = JSONGroupAPI._getSiteIdByGroupKey(groupName = ${groupName});
+
+		var response = HeadlessWebcontentAPI._createStructuredContent(
+			data = ${data},
+			ddmStructureId = ${ddmStructureId},
+			depotName = ${depotName},
+			externalReferenceCode = ${externalReferenceCode},
+			label = ${label},
+			name = ${name},
+			priority = ${priority},
+			siteId = ${siteId},
+			structuredContentFolderId = ${structuredContentFolderId},
+			title = ${title});
+
+		return ${response};
+	}
+
+	@summary = "Default summary"
+	macro createStructuredContentDraft(data = null, ddmStructureId = null, name = null, label = null, title = null) {
+		if (!(isSet(priority))) {
+			var priority = "";
+		}
+
+		var response = HeadlessWebcontentAPI._createStructuredContentDraft(
+			data = ${data},
+			ddmStructureId = ${ddmStructureId},
+			label = ${label},
+			name = ${name},
+			priority = ${priority},
+			title = ${title});
+
+		return ${response};
+	}
+
+	@summary = "Default summary"
+	macro deleteAllStructuredContent() {
+		var structuredContentId = ListUtil.newListFromString(${structuredContentId});
+
+		var size = ListUtil.size(${structuredContentId});
+		var i = 0;
+
+		while (${i} != ${size}) {
+			var locale = ListUtil.get(${structuredContentId}, ${i});
+
+			var response = HeadlessWebcontentAPI._deleteStructuredContent(structuredContentId = ${locale});
+			var i = ${i} + 1;
+		}
+	}
+
+	@summary = "Default summary"
+	macro deleteStructuredContentInAssetLibrary(depotName = null, externalReferenceCode = null) {
+		Variables.assertDefined(parameterList = "${depotName},${externalReferenceCode}");
+
+		HeadlessWebcontentAPI._deleteStructuredContentByExternalReferenceCode(
+			depotName = ${depotName},
+			externalReferenceCode = ${externalReferenceCode});
+	}
+
+	@summary = "Default summary"
+	macro editStructuredContent(data = null, responseToParse = null, ddmStructureId = null, name = null, label = null, title = null) {
+		Variables.assertDefined(parameterList = "${responseToParse},${data},${ddmStructureId},${label},${name},${priority},${title}");
+
+		var structuredContentId = JSONUtil.getWithJSONPath(${responseToParse}, "$.['id']");
+
+		if (!(isSet(priority))) {
+			var priority = "";
+		}
+
+		var response = HeadlessWebcontentAPI._editStructuredContent(
+			data = ${data},
+			ddmStructureId = ${ddmStructureId},
+			label = ${label},
+			name = ${name},
+			priority = ${priority},
+			structuredContentId = ${structuredContentId},
+			title = ${title});
+
+		return ${response};
+	}
+
+	@summary = "Default summary"
+	macro filterAdminStructuredContent(filtervalue = null) {
+		var response = HeadlessWebcontentAPI._filterAdminStructuredContent(filtervalue = ${filtervalue});
+
+		return ${response};
+	}
+
+	@summary = "Default summary"
+	macro filterAndSortAdminStructuredContent(sortvalue = null, filtervalue = null) {
+		var response = HeadlessWebcontentAPI._filterAndSortAdminStructuredContent(
+			filtervalue = ${filtervalue},
+			sortvalue = ${sortvalue});
+
+		return ${response};
+	}
+
+	@summary = "Default summary"
+	macro filterStructuredContent(filtervalue = null) {
+		var response = HeadlessWebcontentAPI._filterStructuredContent(filtervalue = ${filtervalue});
+
+		return ${response};
+	}
+
+	@summary = "Default summary"
+	macro filterStructuredContentInAssetLibrary(depotName = null, filtervalue = null) {
+		var response = HeadlessWebcontentAPI._filterStructuredContentInAssetLibrary(
+			depotName = ${depotName},
+			filtervalue = ${filtervalue});
+
+		return ${response};
+	}
+
+	@summary = "Default summary"
+	macro getStructuredContentIdByTitle(groupName = null, title = null) {
+		Variables.assertDefined(parameterList = ${title});
+
+		if (isSet(groupName)) {
+			var siteId = JSONGroupSetter.setGroupId(groupName = ${groupName});
+		}
+
+		var response = HeadlessWebcontentAPI._allStructuredContent(siteId = ${siteId});
+
+		var structuredContentId = JSONUtil.getWithJSONPath(${response}, "$..['items'][?(@.title == '${title}')].id");
+
+		return ${structuredContentId};
+	}
+
+	@summary = "Default summary"
+	macro getStructuredContentsByErcInAssetLibrary(depotName = null, assetLibraryId = null, externalReferenceCode = null) {
+		var response = HeadlessWebcontentAPI._getStructuredContentsByErcInAssetLibrary(
+			assetLibraryId = ${assetLibraryId},
+			depotName = ${depotName},
+			externalReferenceCode = ${externalReferenceCode});
+
+		return ${response};
+	}
+
+	@summary = "Default summary"
+	macro getStructuredContentsVersion(structuredContentId = null, groupName = null, parameter = null, parameterValue = null, updatedValueInAPI = null) {
+		var curl = HeadlessWebcontentAPI._getStructuredContentsWithDifferentParameters(
+			groupName = ${groupName},
+			parameter = ${parameter},
+			parameterValue = ${parameterValue},
+			structuredContentId = ${structuredContentId},
+			updatedValueInAPI = ${updatedValueInAPI});
+
+		var response = JSONCurlUtil.get(${curl});
+
+		return ${response};
+	}
+
+	@summary = "Default summary"
+	macro getStructuredContentsWithDifferentParameters(structuredContentId = null, groupName = null, parameter = null, headlessComponent = null, parameterValue = null) {
+		var curl = HeadlessWebcontentAPI._getStructuredContentsWithDifferentParameters(
+			groupName = ${groupName},
+			headlessComponent = ${headlessComponent},
+			parameter = ${parameter},
+			parameterValue = ${parameterValue},
+			structuredContentId = ${structuredContentId});
+
+		var response = JSONCurlUtil.get(${curl});
+
+		return ${response};
+	}
+
+	@summary = "Default summary"
+	macro getTitleOfStructuredContent(responseToParse = null) {
+		Variables.assertDefined(parameterList = ${responseToParse});
+
+		var title = JSONUtil.getWithJSONPath(${responseToParse}, "$.['title']");
+
+		return ${title};
+	}
+
+	@summary = "Default summary"
+	macro getUuidOfStructuredContent(responseToParse = null) {
+		Variables.assertDefined(parameterList = ${responseToParse});
+
+		var uuid = JSONUtil.getWithJSONPath(${responseToParse}, "$.['uuid']");
+
+		return ${uuid};
+	}
+
+	@summary = "Default summary"
+	macro getWebContentIdFromResponse(responseToParse = null) {
+		Variables.assertDefined(parameterList = ${responseToParse});
+
+		var idFromResponse = JSONUtil.getWithJSONPath(${responseToParse}, "$.['id']");
+
+		return ${idFromResponse};
+	}
+
+	@summary = "Default summary"
+	macro returnAllstructuredContentId() {
+		var response = HeadlessWebcontentAPI._allStructuredContent();
+
+		var structuredContentId = JSONUtil.getWithJSONPath(${response}, "$..['items'][?(@.creator)].id");
+
+		return ${structuredContentId};
+	}
+
+	@summary = "Default summary"
+	macro sortStructureContent(sortvalue = null) {
+		var response = HeadlessWebcontentAPI._sortStructureContent(sortvalue = ${sortvalue});
+
+		return ${response};
+	}
+
+	@summary = "Default summary"
+	macro updateStructuredContentByErcInAssetLibrary(depotName = null, data = null, ddmStructureId = null, name = null, label = null, title = null, externalReferenceCode = null) {
+		if (!(isSet(updateExternalReferenceCode))) {
+			var updateExternalReferenceCode = "";
+		}
+
+		var response = HeadlessWebcontentAPI._updateStructuredContentByErcInAssetLibrary(
+			data = ${data},
+			ddmStructureId = ${ddmStructureId},
+			depotName = ${depotName},
+			externalReferenceCode = ${externalReferenceCode},
+			label = ${label},
+			name = ${name},
+			title = ${title},
+			updateExternalReferenceCode = ${updateExternalReferenceCode});
+
+		return ${response};
+	}
+
+	@summary = "Default summary"
+	macro versionStructureContent(structuredContentId = null, versionvalue = null, responseToParse = null, parameter = null, parameterValue = null) {
+		if (!(isSet(responseToParse))) {
+			Variables.assertDefined(parameterList = ${structuredContentId});
+
+			var response = HeadlessWebcontentAPI._versionStructureContent(
+				parameter = ${parameter},
+				parameterValue = ${parameterValue},
+				structuredContentId = ${structuredContentId},
+				versionvalue = ${versionvalue});
+		}
+		else {
+			var response = HeadlessWebcontentAPI._versionStructureContent(
+				responseToParse = ${responseToParse},
+				versionvalue = ${versionvalue});
+		}
+
+		return ${response};
+	}
+
+}
