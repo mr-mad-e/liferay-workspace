@@ -809,7 +809,7 @@ public abstract class BaseDocumentFolderResourceTestCase {
 		createBatchAction.put("method", "POST");
 		createBatchAction.put(
 			"href",
-			"http://localhost:8080/o/headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-folders/batch".
+			"http://localhost:8080/o/x-headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-folders/batch".
 				replace("{assetLibraryId}", String.valueOf(assetLibraryId)));
 
 		expectedActions.put("createBatch", createBatchAction);
@@ -2605,7 +2605,7 @@ public abstract class BaseDocumentFolderResourceTestCase {
 		createBatchAction.put("method", "POST");
 		createBatchAction.put(
 			"href",
-			"http://localhost:8080/o/headless-delivery/v1.0/sites/{siteId}/document-folders/batch".
+			"http://localhost:8080/o/x-headless-delivery/v1.0/sites/{siteId}/document-folders/batch".
 				replace("{siteId}", String.valueOf(siteId)));
 
 		expectedActions.put("createBatch", createBatchAction);

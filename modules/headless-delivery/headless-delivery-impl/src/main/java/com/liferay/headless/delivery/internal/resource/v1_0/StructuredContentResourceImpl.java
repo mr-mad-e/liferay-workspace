@@ -45,7 +45,7 @@ import com.liferay.headless.delivery.dynamic.data.mapping.DDMFormFieldUtil;
 import com.liferay.headless.delivery.internal.dto.v1_0.util.DisplayPageRendererUtil;
 import com.liferay.headless.delivery.internal.dto.v1_0.util.RatingUtil;
 import com.liferay.headless.delivery.internal.dto.v1_0.util.RenderedContentValueUtil;
-import com.liferay.headless.delivery.internal.odata.entity.v1_0.EntityFieldsProvider;
+// import com.liferay.headless.delivery.internal.odata.entity.v1_0.EntityFieldsProvider;
 import com.liferay.headless.delivery.internal.odata.entity.v1_0.StructuredContentEntityModel;
 import com.liferay.headless.delivery.resource.v1_0.StructuredContentResource;
 import com.liferay.headless.delivery.search.aggregation.AggregationUtil;
@@ -297,7 +297,7 @@ public class StructuredContentResourceImpl
 			DDMStructure ddmStructure = _ddmStructureService.getStructure(
 				contentStructureId);
 
-			entityFields = _entityFieldsProvider.provide(ddmStructure);
+			// entityFields = _entityFieldsProvider.provide(ddmStructure);
 		}
 
 		return new StructuredContentEntityModel(
@@ -1616,8 +1616,8 @@ public class StructuredContentResourceImpl
 	@Reference
 	private DTOConverterRegistry _dtoConverterRegistry;
 
-	@Reference
-	private EntityFieldsProvider _entityFieldsProvider;
+	// @Reference
+	// private EntityFieldsProvider _entityFieldsProvider;
 
 	@Reference
 	private ExpandoColumnLocalService _expandoColumnLocalService;

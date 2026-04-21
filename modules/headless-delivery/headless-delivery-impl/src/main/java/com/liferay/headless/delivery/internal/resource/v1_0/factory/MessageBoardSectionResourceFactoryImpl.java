@@ -55,7 +55,7 @@ import org.osgi.service.component.annotations.ReferenceScope;
  * @generated
  */
 @Component(
-	property = "resource.locator.key=/headless-delivery/v1.0/MessageBoardSection",
+	property = "resource.locator.key=/x-headless-delivery/v1.0/MessageBoardSection",
 	service = MessageBoardSectionResource.Factory.class
 )
 @Generated("")

@@ -1232,7 +1232,7 @@ public abstract class BaseCommentResourceTestCase {
 		createBatchAction.put("method", "POST");
 		createBatchAction.put(
 			"href",
-			"http://localhost:8080/o/headless-delivery/v1.0/blog-postings/{blogPostingId}/comments/batch".
+			"http://localhost:8080/o/x-headless-delivery/v1.0/blog-postings/{blogPostingId}/comments/batch".
 				replace("{blogPostingId}", String.valueOf(blogPostingId)));
 
 		expectedActions.put("createBatch", createBatchAction);
@@ -2380,7 +2380,7 @@ public abstract class BaseCommentResourceTestCase {
 		createBatchAction.put("method", "POST");
 		createBatchAction.put(
 			"href",
-			"http://localhost:8080/o/headless-delivery/v1.0/documents/{documentId}/comments/batch".
+			"http://localhost:8080/o/x-headless-delivery/v1.0/documents/{documentId}/comments/batch".
 				replace("{documentId}", String.valueOf(documentId)));
 
 		expectedActions.put("createBatch", createBatchAction);
@@ -3653,7 +3653,7 @@ public abstract class BaseCommentResourceTestCase {
 		createBatchAction.put("method", "POST");
 		createBatchAction.put(
 			"href",
-			"http://localhost:8080/o/headless-delivery/v1.0/structured-contents/{structuredContentId}/comments/batch".
+			"http://localhost:8080/o/x-headless-delivery/v1.0/structured-contents/{structuredContentId}/comments/batch".
 				replace(
 					"{structuredContentId}",
 					String.valueOf(structuredContentId)));

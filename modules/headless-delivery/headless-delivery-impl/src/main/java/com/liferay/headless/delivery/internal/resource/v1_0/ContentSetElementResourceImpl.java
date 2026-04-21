@@ -19,7 +19,6 @@ import com.liferay.info.pagination.InfoPage;
 import com.liferay.petra.string.StringPool;
 import com.liferay.portal.events.ServicePreAction;
 import com.liferay.portal.events.ThemeServicePreAction;
-import com.liferay.portal.kernel.feature.flag.FeatureFlagManagerUtil;
 import com.liferay.portal.kernel.service.ServiceContext;
 import com.liferay.portal.kernel.service.ServiceContextThreadLocal;
 import com.liferay.portal.kernel.servlet.DummyHttpServletResponse;
@@ -111,10 +110,6 @@ public class ContentSetElementResourceImpl
 				Long siteId, String key, Pagination pagination)
 		throws Exception {
 
-		if (!FeatureFlagManagerUtil.isEnabled("LPD-32867")) {
-			throw new UnsupportedOperationException();
-		}
-
 		InfoCollectionProvider<?> infoCollectionProvider =
 			_infoItemServiceRegistry.getInfoItemService(
 				InfoCollectionProvider.class, key);
@@ -162,7 +157,7 @@ public class ContentSetElementResourceImpl
 
 		long[] segmentsEntryIds = _segmentsEntryRetriever.getSegmentsEntryIds(
 			assetListEntry.getGroupId(), contextUser.getUserId(),
-			_requestContextMapper.map(contextHttpServletRequest));
+			_requestContextMapper.map(contextHttpServletRequest), new long[0]);
 
 		InfoPage<AssetEntry> infoPage =
 			_assetListAssetEntryProvider.getAssetEntriesInfoPage(

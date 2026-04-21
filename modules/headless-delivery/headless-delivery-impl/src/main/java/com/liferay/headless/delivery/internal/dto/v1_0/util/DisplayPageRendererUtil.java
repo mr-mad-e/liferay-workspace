@@ -83,7 +83,7 @@ public class DisplayPageRendererUtil {
 						layoutPageTemplateEntry::isDefaultTemplate);
 					setRenderedContentURL(
 						() -> JaxRsLinkUtil.getJaxRsLink(
-							"headless-delivery", baseClass, methodName, uriInfo,
+							"x-headless-delivery", baseClass, methodName, uriInfo,
 							itemClassPK,
 							layoutPageTemplateEntry.
 								getLayoutPageTemplateEntryKey()));

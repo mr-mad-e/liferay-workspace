@@ -317,7 +317,7 @@ public interface ContentTemplateResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/asset-libraries/{assetLibraryId}/content-templates");
+						"/o/x-headless-delivery/v1.0/asset-libraries/{assetLibraryId}/content-templates");
 
 			httpInvoker.path("assetLibraryId", assetLibraryId);
 
@@ -423,7 +423,7 @@ public interface ContentTemplateResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/sites/{siteId}/content-templates/{contentTemplateId}");
+						"/o/x-headless-delivery/v1.0/sites/{siteId}/content-templates/{contentTemplateId}");
 
 			httpInvoker.path("siteId", siteId);
 			httpInvoker.path("contentTemplateId", contentTemplateId);
@@ -553,7 +553,7 @@ public interface ContentTemplateResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/sites/{siteId}/content-templates");
+						"/o/x-headless-delivery/v1.0/sites/{siteId}/content-templates");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -683,7 +683,7 @@ public interface ContentTemplateResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/asset-libraries/{assetLibraryId}/content-templates/export-batch");
+						"/o/x-headless-delivery/v1.0/asset-libraries/{assetLibraryId}/content-templates/export-batch");
 
 			httpInvoker.path("assetLibraryId", assetLibraryId);
 
@@ -813,7 +813,7 @@ public interface ContentTemplateResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/sites/{siteId}/content-templates/export-batch");
+						"/o/x-headless-delivery/v1.0/sites/{siteId}/content-templates/export-batch");
 
 			httpInvoker.path("siteId", siteId);
 

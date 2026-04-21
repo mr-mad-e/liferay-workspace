@@ -196,7 +196,7 @@ public class ServletDataImpl implements ServletData {
 	}
 
 	public String getApplicationName() {
-		return "Liferay.Headless.Delivery";
+		return "Dev.Liferay.Headless.Delivery";
 	}
 
 	@Override
@@ -206,7 +206,7 @@ public class ServletDataImpl implements ServletData {
 
 	@Override
 	public String getPath() {
-		return "/headless-delivery-graphql/v1_0";
+		return "/x-headless-delivery-graphql/v1_0";
 	}
 
 	@Override

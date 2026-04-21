@@ -11,7 +11,7 @@ definition {
 		var userPassword = PropsUtil.get("default.admin.password");
 
 		var curl = '''
-			${portalURL}/o/headless-delivery/v1.0/sites/${siteId}/wiki-pages/by-external-reference-code/${wikiPageErc}/wiki-page-attachments/by-external-reference-code/${wikiPageAttachmentErc} \
+			${portalURL}/o/x-headless-delivery/v1.0/sites/${siteId}/wiki-pages/by-external-reference-code/${wikiPageErc}/wiki-page-attachments/by-external-reference-code/${wikiPageAttachmentErc} \
 				-u test@liferay.com:${userPassword} \
 				-H Content-Type: application/json \
 				-H accept: application/json \
@@ -42,7 +42,7 @@ definition {
 		}
 
 		var curl = '''
-			${portalURL}/o/headless-delivery/v1.0/${api} \
+			${portalURL}/o/x-headless-delivery/v1.0/${api} \
 				-u test@liferay.com:${userPassword} \
 				-H Content-Type: application/json
 		''';
@@ -58,7 +58,7 @@ definition {
 		var userPassword = PropsUtil.get("default.admin.password");
 
 		var curl = '''
-			${portalURL}/o/headless-delivery/v1.0/wiki-page-attachments/${wikiPageAttachmentId} \
+			${portalURL}/o/x-headless-delivery/v1.0/wiki-page-attachments/${wikiPageAttachmentId} \
 				-u test@liferay.com:${userPassword} \
 				-H Content-Type: application/json \
 				-H accept: application/json \
@@ -88,7 +88,7 @@ definition {
 		var userPassword = PropsUtil.get("default.admin.password");
 
 		var curl = '''
-			${portalURL}/o/headless-delivery/v1.0/wiki-pages/${wikiPageId}/wiki-page-attachments \
+			${portalURL}/o/x-headless-delivery/v1.0/wiki-pages/${wikiPageId}/wiki-page-attachments \
 				-u test@liferay.com:${userPassword} \
 				-H Content-Type: multipart/form-data \
 				-F file=@${filePath}

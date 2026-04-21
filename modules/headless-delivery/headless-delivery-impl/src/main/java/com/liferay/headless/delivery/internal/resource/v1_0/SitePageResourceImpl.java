@@ -40,7 +40,6 @@ import com.liferay.layout.util.LayoutServiceContextHelper;
 import com.liferay.layout.util.structure.LayoutStructure;
 import com.liferay.petra.string.StringBundler;
 import com.liferay.petra.string.StringPool;
-import com.liferay.portal.kernel.feature.flag.FeatureFlagManagerUtil;
 import com.liferay.portal.kernel.log.Log;
 import com.liferay.portal.kernel.log.LogFactoryUtil;
 import com.liferay.portal.kernel.model.Group;
@@ -211,7 +210,7 @@ public class SitePageResourceImpl
 				HashMapBuilder.put(
 					"href",
 					JaxRsLinkUtil.getJaxRsLink(
-						"headless-delivery", BaseSitePageResourceImpl.class,
+						"x-headless-delivery", BaseSitePageResourceImpl.class,
 						"getSiteSitePagesPage", contextUriInfo, siteId)
 				).put(
 					"method", "GET"
@@ -263,10 +262,6 @@ public class SitePageResourceImpl
 	@Override
 	public SitePage postSiteSitePage(Long siteId, SitePage sitePage)
 		throws Exception {
-
-		if (!FeatureFlagManagerUtil.isEnabled("LPS-178052")) {
-			throw new UnsupportedOperationException();
-		}
 
 		Map<Locale, String> titleMap = LocalizedMapUtil.getLocalizedMap(
 			contextAcceptLanguage.getPreferredLocale(), sitePage.getTitle(),
@@ -438,7 +433,7 @@ public class SitePageResourceImpl
 		Layout layout = _layoutService.addLayout(
 			null, siteId, false, parentLayoutId, nameMap, titleMap,
 			descriptionMap, keywordsMap, robotsMap,
-			LayoutConstants.TYPE_CONTENT,
+			sitePage.getPageType(), // LayoutConstants.TYPE_CONTENT,
 			typeSettingsUnicodeProperties.toString(), hidden, friendlyUrlMap,
 			null, serviceContext);
 
@@ -464,8 +459,11 @@ public class SitePageResourceImpl
 			}
 
 			Layout draftLayout = _updateDraftLayout(layout);
+			if (draftLayout != null) {
+				layout.setModifiedDate(draftLayout.getModifiedDate());
+			}
 
-			layout.setModifiedDate(draftLayout.getModifiedDate());
+			layout = _layoutLocalService.getLayout(layout.getPlid());
 
 			layout.setStatus(WorkflowConstants.STATUS_APPROVED);
 
@@ -629,7 +627,7 @@ public class SitePageResourceImpl
 					layout.getPlid(),
 					_segmentsEntryRetriever.getSegmentsEntryIds(
 						layout.getGroupId(), contextUser.getUserId(),
-						_requestContextMapper.map(httpServletRequest)));
+						_requestContextMapper.map(httpServletRequest), new long[0]));
 
 		if (ArrayUtil.isEmpty(segmentsExperienceIds)) {
 			return _segmentsExperienceLocalService.fetchSegmentsExperience(
@@ -850,6 +848,8 @@ public class SitePageResourceImpl
 
 	private Layout _updateDraftLayout(Layout layout) throws Exception {
 		Layout draftLayout = layout.fetchDraftLayout();
+
+		if (draftLayout == null) return null;
 
 		draftLayout = _layoutLocalService.copyLayoutContent(
 			layout, draftLayout);

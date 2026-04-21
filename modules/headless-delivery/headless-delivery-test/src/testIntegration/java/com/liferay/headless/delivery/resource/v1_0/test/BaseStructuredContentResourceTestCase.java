@@ -1177,7 +1177,7 @@ public abstract class BaseStructuredContentResourceTestCase {
 		createBatchAction.put("method", "POST");
 		createBatchAction.put(
 			"href",
-			"http://localhost:8080/o/headless-delivery/v1.0/asset-libraries/{assetLibraryId}/structured-contents/batch".
+			"http://localhost:8080/o/x-headless-delivery/v1.0/asset-libraries/{assetLibraryId}/structured-contents/batch".
 				replace("{assetLibraryId}", String.valueOf(assetLibraryId)));
 
 		expectedActions.put("createBatch", createBatchAction);
@@ -2701,7 +2701,7 @@ public abstract class BaseStructuredContentResourceTestCase {
 		createBatchAction.put("method", "POST");
 		createBatchAction.put(
 			"href",
-			"http://localhost:8080/o/headless-delivery/v1.0/sites/{siteId}/structured-contents/batch".
+			"http://localhost:8080/o/x-headless-delivery/v1.0/sites/{siteId}/structured-contents/batch".
 				replace("{siteId}", String.valueOf(siteId)));
 
 		expectedActions.put("createBatch", createBatchAction);
@@ -3562,7 +3562,7 @@ public abstract class BaseStructuredContentResourceTestCase {
 		createBatchAction.put("method", "POST");
 		createBatchAction.put(
 			"href",
-			"http://localhost:8080/o/headless-delivery/v1.0/structured-content-folders/{structuredContentFolderId}/structured-contents/batch".
+			"http://localhost:8080/o/x-headless-delivery/v1.0/structured-content-folders/{structuredContentFolderId}/structured-contents/batch".
 				replace(
 					"{structuredContentFolderId}",
 					String.valueOf(structuredContentFolderId)));

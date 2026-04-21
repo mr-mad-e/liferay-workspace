@@ -31,7 +31,7 @@ definition {
 				-F knowledgeBaseAttachment={"externalReferenceCode": "${externalReferenceCode}"}
 			''';
 
-			var curl = StringUtil.add("${portalURL}/o/headless-delivery/v1.0/${api} \"", ${body}, "");
+			var curl = StringUtil.add("${portalURL}/o/x-headless-delivery/v1.0/${api} \"", ${body}, "");
 		}
 		else {
 			var body = '''
@@ -39,7 +39,7 @@ definition {
 				-H accept: application/json
 			''';
 
-			var curl = StringUtil.add("${portalURL}/o/headless-delivery/v1.0/${api} \"", ${body}, "");
+			var curl = StringUtil.add("${portalURL}/o/x-headless-delivery/v1.0/${api} \"", ${body}, "");
 		}
 
 		return ${curl};

@@ -1161,7 +1161,7 @@ public abstract class BaseNavigationMenuResourceTestCase {
 		createBatchAction.put("method", "POST");
 		createBatchAction.put(
 			"href",
-			"http://localhost:8080/o/headless-delivery/v1.0/sites/{siteId}/navigation-menus/batch".
+			"http://localhost:8080/o/x-headless-delivery/v1.0/sites/{siteId}/navigation-menus/batch".
 				replace("{siteId}", String.valueOf(siteId)));
 
 		expectedActions.put("createBatch", createBatchAction);

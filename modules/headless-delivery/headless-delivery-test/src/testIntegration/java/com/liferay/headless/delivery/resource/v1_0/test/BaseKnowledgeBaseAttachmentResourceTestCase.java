@@ -695,7 +695,7 @@ public abstract class BaseKnowledgeBaseAttachmentResourceTestCase {
 		createBatchAction.put("method", "POST");
 		createBatchAction.put(
 			"href",
-			"http://localhost:8080/o/headless-delivery/v1.0/knowledge-base-articles/{knowledgeBaseArticleId}/knowledge-base-attachments/batch".
+			"http://localhost:8080/o/x-headless-delivery/v1.0/knowledge-base-articles/{knowledgeBaseArticleId}/knowledge-base-attachments/batch".
 				replace(
 					"{knowledgeBaseArticleId}",
 					String.valueOf(knowledgeBaseArticleId)));

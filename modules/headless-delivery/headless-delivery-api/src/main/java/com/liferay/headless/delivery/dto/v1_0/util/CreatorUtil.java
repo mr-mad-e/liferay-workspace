@@ -9,7 +9,6 @@ import com.liferay.headless.delivery.dto.v1_0.Creator;
 import com.liferay.headless.delivery.dto.v1_0.UserGroupBrief;
 import com.liferay.petra.function.transform.TransformUtil;
 import com.liferay.petra.string.StringPool;
-import com.liferay.portal.kernel.feature.flag.FeatureFlagManagerUtil;
 import com.liferay.portal.kernel.model.Group;
 import com.liferay.portal.kernel.model.User;
 import com.liferay.portal.kernel.theme.ThemeDisplay;
@@ -74,8 +73,7 @@ public class CreatorUtil {
 					});
 				setUserGroupBriefs(
 					() -> {
-						if (!FeatureFlagManagerUtil.isEnabled("LPS-185892") ||
-							(dtoConverterContext == null) ||
+						if ((dtoConverterContext == null) ||
 							!(GetterUtil.getBoolean(
 								dtoConverterContext.getAttribute(
 									"userGroupBriefs")) ||

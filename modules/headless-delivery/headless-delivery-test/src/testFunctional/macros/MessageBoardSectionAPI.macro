@@ -24,7 +24,7 @@ definition {
 			}
 		''';
 
-		var curl = StringUtil.add("${portalURL}/o/headless-delivery/v1.0/${api}/message-board-sections", " \ ${command}", "");
+		var curl = StringUtil.add("${portalURL}/o/x-headless-delivery/v1.0/${api}/message-board-sections", " \ ${command}", "");
 
 		return ${curl};
 	}

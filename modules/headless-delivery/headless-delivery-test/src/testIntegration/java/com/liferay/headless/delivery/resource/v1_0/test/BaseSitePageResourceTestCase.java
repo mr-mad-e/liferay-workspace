@@ -753,7 +753,7 @@ public abstract class BaseSitePageResourceTestCase {
 		createBatchAction.put("method", "POST");
 		createBatchAction.put(
 			"href",
-			"http://localhost:8080/o/headless-delivery/v1.0/sites/{siteId}/site-pages/batch".
+			"http://localhost:8080/o/x-headless-delivery/v1.0/sites/{siteId}/site-pages/batch".
 				replace("{siteId}", String.valueOf(siteId)));
 
 		expectedActions.put("createBatch", createBatchAction);

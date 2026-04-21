@@ -709,7 +709,7 @@ public abstract class BaseWikiPageResourceTestCase {
 		createBatchAction.put("method", "POST");
 		createBatchAction.put(
 			"href",
-			"http://localhost:8080/o/headless-delivery/v1.0/wiki-nodes/{wikiNodeId}/wiki-pages/batch".
+			"http://localhost:8080/o/x-headless-delivery/v1.0/wiki-nodes/{wikiNodeId}/wiki-pages/batch".
 				replace("{wikiNodeId}", String.valueOf(wikiNodeId)));
 
 		expectedActions.put("createBatch", createBatchAction);

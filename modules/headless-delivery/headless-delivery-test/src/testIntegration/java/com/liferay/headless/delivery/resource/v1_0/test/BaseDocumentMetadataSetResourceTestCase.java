@@ -984,7 +984,7 @@ public abstract class BaseDocumentMetadataSetResourceTestCase {
 		createBatchAction.put("method", "POST");
 		createBatchAction.put(
 			"href",
-			"http://localhost:8080/o/headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-metadata-sets/batch".
+			"http://localhost:8080/o/x-headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-metadata-sets/batch".
 				replace("{assetLibraryId}", String.valueOf(assetLibraryId)));
 
 		expectedActions.put("createBatch", createBatchAction);
@@ -1753,7 +1753,7 @@ public abstract class BaseDocumentMetadataSetResourceTestCase {
 		createBatchAction.put("method", "POST");
 		createBatchAction.put(
 			"href",
-			"http://localhost:8080/o/headless-delivery/v1.0/sites/{siteId}/document-metadata-sets/batch".
+			"http://localhost:8080/o/x-headless-delivery/v1.0/sites/{siteId}/document-metadata-sets/batch".
 				replace("{siteId}", String.valueOf(siteId)));
 
 		expectedActions.put("createBatch", createBatchAction);

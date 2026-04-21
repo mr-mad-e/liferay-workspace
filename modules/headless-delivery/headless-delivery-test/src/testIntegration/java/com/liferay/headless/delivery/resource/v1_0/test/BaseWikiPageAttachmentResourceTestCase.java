@@ -1195,7 +1195,7 @@ public abstract class BaseWikiPageAttachmentResourceTestCase {
 		createBatchAction.put("method", "POST");
 		createBatchAction.put(
 			"href",
-			"http://localhost:8080/o/headless-delivery/v1.0/wiki-pages/{wikiPageId}/wiki-page-attachments/batch".
+			"http://localhost:8080/o/x-headless-delivery/v1.0/wiki-pages/{wikiPageId}/wiki-page-attachments/batch".
 				replace("{wikiPageId}", String.valueOf(wikiPageId)));
 
 		expectedActions.put("createBatch", createBatchAction);

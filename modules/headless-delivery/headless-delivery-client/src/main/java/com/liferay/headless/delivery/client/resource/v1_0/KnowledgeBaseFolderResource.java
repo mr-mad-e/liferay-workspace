@@ -409,7 +409,7 @@ public interface KnowledgeBaseFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/knowledge-base-folders/{knowledgeBaseFolderId}");
+						"/o/x-headless-delivery/v1.0/knowledge-base-folders/{knowledgeBaseFolderId}");
 
 			httpInvoker.path("knowledgeBaseFolderId", knowledgeBaseFolderId);
 
@@ -512,7 +512,7 @@ public interface KnowledgeBaseFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/knowledge-base-folders/batch");
+						"/o/x-headless-delivery/v1.0/knowledge-base-folders/batch");
 
 			if ((_builder._login != null) && (_builder._password != null)) {
 				httpInvoker.userNameAndPassword(
@@ -618,7 +618,7 @@ public interface KnowledgeBaseFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/sites/{siteId}/knowledge-base-folders/by-external-reference-code/{externalReferenceCode}");
+						"/o/x-headless-delivery/v1.0/sites/{siteId}/knowledge-base-folders/by-external-reference-code/{externalReferenceCode}");
 
 			httpInvoker.path("siteId", siteId);
 			httpInvoker.path("externalReferenceCode", externalReferenceCode);
@@ -725,7 +725,7 @@ public interface KnowledgeBaseFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/knowledge-base-folders/{knowledgeBaseFolderId}");
+						"/o/x-headless-delivery/v1.0/knowledge-base-folders/{knowledgeBaseFolderId}");
 
 			httpInvoker.path("knowledgeBaseFolderId", knowledgeBaseFolderId);
 
@@ -841,7 +841,7 @@ public interface KnowledgeBaseFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/knowledge-base-folders/{parentKnowledgeBaseFolderId}/knowledge-base-folders");
+						"/o/x-headless-delivery/v1.0/knowledge-base-folders/{parentKnowledgeBaseFolderId}/knowledge-base-folders");
 
 			httpInvoker.path(
 				"parentKnowledgeBaseFolderId", parentKnowledgeBaseFolderId);
@@ -954,7 +954,7 @@ public interface KnowledgeBaseFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/knowledge-base-folders/{knowledgeBaseFolderId}/permissions");
+						"/o/x-headless-delivery/v1.0/knowledge-base-folders/{knowledgeBaseFolderId}/permissions");
 
 			httpInvoker.path("knowledgeBaseFolderId", knowledgeBaseFolderId);
 
@@ -1063,7 +1063,7 @@ public interface KnowledgeBaseFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/sites/{siteId}/knowledge-base-folders/by-external-reference-code/{externalReferenceCode}");
+						"/o/x-headless-delivery/v1.0/sites/{siteId}/knowledge-base-folders/by-external-reference-code/{externalReferenceCode}");
 
 			httpInvoker.path("siteId", siteId);
 			httpInvoker.path("externalReferenceCode", externalReferenceCode);
@@ -1176,7 +1176,7 @@ public interface KnowledgeBaseFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/sites/{siteId}/knowledge-base-folders/permissions");
+						"/o/x-headless-delivery/v1.0/sites/{siteId}/knowledge-base-folders/permissions");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -1290,7 +1290,7 @@ public interface KnowledgeBaseFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/sites/{siteId}/knowledge-base-folders");
+						"/o/x-headless-delivery/v1.0/sites/{siteId}/knowledge-base-folders");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -1402,7 +1402,7 @@ public interface KnowledgeBaseFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/knowledge-base-folders/{knowledgeBaseFolderId}");
+						"/o/x-headless-delivery/v1.0/knowledge-base-folders/{knowledgeBaseFolderId}");
 
 			httpInvoker.path("knowledgeBaseFolderId", knowledgeBaseFolderId);
 
@@ -1515,7 +1515,7 @@ public interface KnowledgeBaseFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/knowledge-base-folders/{parentKnowledgeBaseFolderId}/knowledge-base-folders");
+						"/o/x-headless-delivery/v1.0/knowledge-base-folders/{parentKnowledgeBaseFolderId}/knowledge-base-folders");
 
 			httpInvoker.path(
 				"parentKnowledgeBaseFolderId", parentKnowledgeBaseFolderId);
@@ -1626,7 +1626,7 @@ public interface KnowledgeBaseFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/sites/{siteId}/knowledge-base-folders");
+						"/o/x-headless-delivery/v1.0/sites/{siteId}/knowledge-base-folders");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -1730,7 +1730,7 @@ public interface KnowledgeBaseFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/sites/{siteId}/knowledge-base-folders/batch");
+						"/o/x-headless-delivery/v1.0/sites/{siteId}/knowledge-base-folders/batch");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -1845,7 +1845,7 @@ public interface KnowledgeBaseFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/sites/{siteId}/knowledge-base-folders/export-batch");
+						"/o/x-headless-delivery/v1.0/sites/{siteId}/knowledge-base-folders/export-batch");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -1957,7 +1957,7 @@ public interface KnowledgeBaseFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/knowledge-base-folders/{knowledgeBaseFolderId}");
+						"/o/x-headless-delivery/v1.0/knowledge-base-folders/{knowledgeBaseFolderId}");
 
 			httpInvoker.path("knowledgeBaseFolderId", knowledgeBaseFolderId);
 
@@ -2059,7 +2059,7 @@ public interface KnowledgeBaseFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/knowledge-base-folders/batch");
+						"/o/x-headless-delivery/v1.0/knowledge-base-folders/batch");
 
 			if ((_builder._login != null) && (_builder._password != null)) {
 				httpInvoker.userNameAndPassword(
@@ -2173,7 +2173,7 @@ public interface KnowledgeBaseFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/knowledge-base-folders/{knowledgeBaseFolderId}/permissions");
+						"/o/x-headless-delivery/v1.0/knowledge-base-folders/{knowledgeBaseFolderId}/permissions");
 
 			httpInvoker.path("knowledgeBaseFolderId", knowledgeBaseFolderId);
 
@@ -2287,7 +2287,7 @@ public interface KnowledgeBaseFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/sites/{siteId}/knowledge-base-folders/by-external-reference-code/{externalReferenceCode}");
+						"/o/x-headless-delivery/v1.0/sites/{siteId}/knowledge-base-folders/by-external-reference-code/{externalReferenceCode}");
 
 			httpInvoker.path("siteId", siteId);
 			httpInvoker.path("externalReferenceCode", externalReferenceCode);
@@ -2404,7 +2404,7 @@ public interface KnowledgeBaseFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/sites/{siteId}/knowledge-base-folders/permissions");
+						"/o/x-headless-delivery/v1.0/sites/{siteId}/knowledge-base-folders/permissions");
 
 			httpInvoker.path("siteId", siteId);
 

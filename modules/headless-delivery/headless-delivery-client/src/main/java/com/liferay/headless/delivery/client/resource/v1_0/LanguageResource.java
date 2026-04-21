@@ -269,7 +269,7 @@ public interface LanguageResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/asset-libraries/{assetLibraryId}/languages");
+						"/o/x-headless-delivery/v1.0/asset-libraries/{assetLibraryId}/languages");
 
 			httpInvoker.path("assetLibraryId", assetLibraryId);
 
@@ -374,7 +374,7 @@ public interface LanguageResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/sites/{siteId}/languages");
+						"/o/x-headless-delivery/v1.0/sites/{siteId}/languages");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -489,7 +489,7 @@ public interface LanguageResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/asset-libraries/{assetLibraryId}/languages/export-batch");
+						"/o/x-headless-delivery/v1.0/asset-libraries/{assetLibraryId}/languages/export-batch");
 
 			httpInvoker.path("assetLibraryId", assetLibraryId);
 
@@ -604,7 +604,7 @@ public interface LanguageResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/sites/{siteId}/languages/export-batch");
+						"/o/x-headless-delivery/v1.0/sites/{siteId}/languages/export-batch");
 
 			httpInvoker.path("siteId", siteId);
 

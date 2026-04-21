@@ -1113,7 +1113,7 @@ public abstract class BaseBlogPostingImageResourceTestCase {
 		createBatchAction.put("method", "POST");
 		createBatchAction.put(
 			"href",
-			"http://localhost:8080/o/headless-delivery/v1.0/sites/{siteId}/blog-posting-images/batch".
+			"http://localhost:8080/o/x-headless-delivery/v1.0/sites/{siteId}/blog-posting-images/batch".
 				replace("{siteId}", String.valueOf(siteId)));
 
 		expectedActions.put("createBatch", createBatchAction);

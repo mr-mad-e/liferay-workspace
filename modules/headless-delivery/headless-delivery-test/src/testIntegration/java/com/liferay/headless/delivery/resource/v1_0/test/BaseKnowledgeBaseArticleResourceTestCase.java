@@ -1727,7 +1727,7 @@ public abstract class BaseKnowledgeBaseArticleResourceTestCase {
 		createBatchAction.put("method", "POST");
 		createBatchAction.put(
 			"href",
-			"http://localhost:8080/o/headless-delivery/v1.0/knowledge-base-folders/{knowledgeBaseFolderId}/knowledge-base-articles/batch".
+			"http://localhost:8080/o/x-headless-delivery/v1.0/knowledge-base-folders/{knowledgeBaseFolderId}/knowledge-base-articles/batch".
 				replace(
 					"{knowledgeBaseFolderId}",
 					String.valueOf(knowledgeBaseFolderId)));
@@ -2527,7 +2527,7 @@ public abstract class BaseKnowledgeBaseArticleResourceTestCase {
 		createBatchAction.put("method", "POST");
 		createBatchAction.put(
 			"href",
-			"http://localhost:8080/o/headless-delivery/v1.0/sites/{siteId}/knowledge-base-articles/batch".
+			"http://localhost:8080/o/x-headless-delivery/v1.0/sites/{siteId}/knowledge-base-articles/batch".
 				replace("{siteId}", String.valueOf(siteId)));
 
 		expectedActions.put("createBatch", createBatchAction);

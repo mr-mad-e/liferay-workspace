@@ -55,7 +55,7 @@ import org.osgi.service.component.annotations.ReferenceScope;
  * @generated
  */
 @Component(
-	property = "resource.locator.key=/headless-delivery/v1.0/DocumentDataDefinitionType",
+	property = "resource.locator.key=/x-headless-delivery/v1.0/DocumentDataDefinitionType",
 	service = DocumentDataDefinitionTypeResource.Factory.class
 )
 @Generated("")

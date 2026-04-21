@@ -1579,7 +1579,7 @@ public abstract class BaseMessageBoardMessageResourceTestCase {
 		createBatchAction.put("method", "POST");
 		createBatchAction.put(
 			"href",
-			"http://localhost:8080/o/headless-delivery/v1.0/message-board-threads/{messageBoardThreadId}/message-board-messages/batch".
+			"http://localhost:8080/o/x-headless-delivery/v1.0/message-board-threads/{messageBoardThreadId}/message-board-messages/batch".
 				replace(
 					"{messageBoardThreadId}",
 					String.valueOf(messageBoardThreadId)));
