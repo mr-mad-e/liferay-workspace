@@ -1,0 +1,1250 @@
+[
+  {
+    "title": "Building an Agentic Mesh for News Intelligence: A2A Communication, Temporal Workflows, and Scalable Multi-Agent Design",
+    "url": "https://www.thenirvanalab.com/blog/agentic-ai-workflow-orchestration-news-intelligence/",
+    "slug": "agentic-ai-workflow-orchestration-news-intelligence",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2026/04/Building-an-Agentic-Mesh-for-News-Intelligence-A2A-Communication-Temporal-Workflows-and-Scalable-Multi-Agent-Design-1024x576.png",
+    "summary": "In recent years the term agentic mesh has moved from academic papers to production‑grade systems. At its core, an agentic mesh is a network of autonomous, purpose‑built AI agents that...",
+    "date": "April 20, 2026"
+  },
+  {
+    "title": "Building a Multi-Agent System Using gRPC + n8n",
+    "url": "https://www.thenirvanalab.com/blog/multi-agent-system-using-grpc-and-n8n/",
+    "slug": "multi-agent-system-using-grpc-and-n8n",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2026/04/Building-a-Multi-Agent-System-Using-gRPC-n8n--1024x576.png",
+    "summary": "So lately we have been spending a lot of our time exploring what people are calling \"Agentic AI\" - where instead of just one AI model doing everything, you have...",
+    "date": "April 9, 2026"
+  },
+  {
+    "title": "Why Suppliers Hate Your Manufacturing Portal (And How Liferay Can Fix It)",
+    "url": "https://www.thenirvanalab.com/blog/liferay-supplier-portal-for-manufacturing/",
+    "slug": "liferay-supplier-portal-for-manufacturing",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/11/Why-Suppliers-Hate-Your-Manufacturing-Portal-And-How-Liferay-Can-Fix-It-1024x576.png",
+    "summary": "In manufacturing, supplier portals are having to make collaboration properly, but many suppliers are tired using these portals due to frustrating issues that reduce productivity and collaboration. This article explores...",
+    "date": "March 16, 2026"
+  },
+  {
+    "title": "From Legacy to Agility: A Business-Focused Guide to Migrating from Service Builder to Liferay Objects with SB2Object Bridge Basic",
+    "url": "https://www.thenirvanalab.com/blog/service-builder-to-liferay-objects-migration/",
+    "slug": "service-builder-to-liferay-objects-migration",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2026/02/Image-3-1024x576.png",
+    "summary": "Many organizations that use Liferay today are operating on a hybrid reality: they run mature, business-critical applications built years ago with Service Builder, while at the same time facing pressure...",
+    "date": "February 18, 2026"
+  },
+  {
+    "title": "Why ERP, CRM, and MES Don’t Talk to Each Other – And How Smart Manufacturing Systems Fix It",
+    "url": "https://www.thenirvanalab.com/blog/why-erp-crm-and-mes-dont-talk-to-each-other-and-how-smart-manufacturing-systems-fix-it/",
+    "slug": "why-erp-crm-and-mes-dont-talk-to-each-other-and-how-smart-manufacturing-systems-fix-it",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2026/02/Nirvana_Lab_blog_image-2-1024x576.png",
+    "summary": "In the era of Industry 4.0, manufacturers across the United States and North America are being challenged to produce faster, more efficiently, and with greater customization than ever before. Yet...",
+    "date": "February 17, 2026"
+  },
+  {
+    "title": "Liferay Commerce Performance: How We Scaled to 100k+ SKU Imports (Without Crashing the JVM)",
+    "url": "https://www.thenirvanalab.com/blog/liferay-commerce-performance-how-we-scaled-to-100k-sku-imports-without-crashing-the-jvm/",
+    "slug": "liferay-commerce-performance-how-we-scaled-to-100k-sku-imports-without-crashing-the-jvm",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2026/02/Nirvana_lab_image-2-1024x576.png",
+    "summary": "If you’ve worked on a Liferay Commerce 7.4 implementation for any serious B2B client, you know the feeling. Dev goes great. You test your product import logic with a CSV...",
+    "date": "February 10, 2026"
+  },
+  {
+    "title": "Modernizing Legacy Enterprise Portals: Reducing Risk and Building for Scale",
+    "url": "https://www.thenirvanalab.com/blog/modernizing-legacy-enterprise-portals-reducing-risk-and-building-for-scale/",
+    "slug": "modernizing-legacy-enterprise-portals-reducing-risk-and-building-for-scale",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2026/02/Image-3-2-1024x576.png",
+    "summary": "Updating legacy enterprise portals is a huge step for any business looking to stay ahead and scale up safely. We all know that outdated systems often create bottlenecks, but modern...",
+    "date": "January 23, 2026"
+  },
+  {
+    "title": "Liferay DXP vs Headless CMS: What Enterprises Should Choose in 2026",
+    "url": "https://www.thenirvanalab.com/blog/liferay-dxp-vs-headless-cms-what-enterprises-should-choose-in-2026/",
+    "slug": "liferay-dxp-vs-headless-cms-what-enterprises-should-choose-in-2026",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2026/01/Nirvana_lab_blog_image-1024x576.png",
+    "summary": "In the rapidly shifting digital landscape of 2026, the conversation for enterprise leaders across the USA and Canada has evolved. We are no longer just talking about \"content management\"; we...",
+    "date": "January 13, 2026"
+  },
+  {
+    "title": "Configuring Liferay DXP with Microsoft Entra ID (Azure AD) SAML 2.0 SSO: A Step-by-Step Integration Guide",
+    "url": "https://www.thenirvanalab.com/blog/configuring-liferay-dxp-with-microsoft-entra-id-azure-ad-saml-2-0-sso-a-step-by-step-integration-guide/",
+    "slug": "configuring-liferay-dxp-with-microsoft-entra-id-azure-ad-saml-2-0-sso-a-step-by-step-integration-guide",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2026/01/Liferay-DXP-with-Microsoft-Entra-ID-scaled-1-1024x576.jpg",
+    "summary": "In today’s enterprise environment, seamless and secure authentication is essential. Organizations using Liferay DXP as their digital experience platform increasingly integrate it with Microsoft Entra ID (formerly Azure AD) using...",
+    "date": "January 3, 2026"
+  },
+  {
+    "title": "Integration in Supplier Portal: The Ultimate Guide of 2025",
+    "url": "https://www.thenirvanalab.com/blog/integration-in-supplier-portal-the-ultimate-guide-of-2025-2/",
+    "slug": "integration-in-supplier-portal-the-ultimate-guide-of-2025-2",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/12/Banner-01-01-1024x576.jpg",
+    "summary": "In a business environment defined by rapid globalization, complex supply chains, and ever-evolving customer expectations, organizations must collaborate efficiently with their suppliers. This is where Supplier Portal Integration becomes not...",
+    "date": "December 30, 2025"
+  },
+  {
+    "title": "AI-Powered Video Intelligence for Defense Surveillance",
+    "url": "https://www.thenirvanalab.com/blog/ai-powered-video-intelligence-for-defense-surveillance/",
+    "slug": "ai-powered-video-intelligence-for-defense-surveillance",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2026/03/Near-Realtime-Automated-Video-Tagging-for-Surveillance-companies-Using-Python-and-Vision-LLMs--1024x576.png",
+    "summary": "Modern defense operations rely heavily on video surveillance from cameras, drones, and mobile monitoring systems. These systems generate vast amounts of footage every day. While this information is extremely valuable,...",
+    "date": "December 29, 2025"
+  },
+  {
+    "title": "Inside Agentforce: How to Build Your First Salesforce AI Agent",
+    "url": "https://www.thenirvanalab.com/blog/inside-agentforce-how-to-build-your-first-salesforce-ai-agent/",
+    "slug": "inside-agentforce-how-to-build-your-first-salesforce-ai-agent",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/11/Inside-Agentforce-01-1024x576.jpg",
+    "summary": "Artificial intelligence has shifted from an experiment to an operational necessity. For organizations already running on Salesforce, Agentforce is the next leap - a framework for creating AI-powered agents that...",
+    "date": "December 23, 2025"
+  },
+  {
+    "title": "Building a GenAI-Powered Developer Tool: Code Snippets Included",
+    "url": "https://www.thenirvanalab.com/blog/genai-powered-developer-tool/",
+    "slug": "genai-powered-developer-tool",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/12/Building-a-GenAI-Powered-Developer-Tool-01-1024x576.jpg",
+    "summary": "The next era of software development is about writing smarter code, faster. And that’s where GenAI-powered developer tools come in. They’re not just “assistants” anymore, they’re evolving into autonomous collaborators...",
+    "date": "December 16, 2025"
+  },
+  {
+    "title": "Liferay Made Easier: The Latest on Content Scheduling & Permission Models",
+    "url": "https://www.thenirvanalab.com/blog/liferay-made-easier-the-latest-on-content-scheduling-permission-models/",
+    "slug": "liferay-made-easier-the-latest-on-content-scheduling-permission-models",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/12/Liferay-Made-Easier-01-1024x576.jpg",
+    "summary": "Modern enterprises run on content. From internal knowledge hubs to customer portals, content determines how people experience your brand. That’s where Liferay shines as a robust platform for managing complex...",
+    "date": "December 9, 2025"
+  },
+  {
+    "title": "Liferay 7.3 vs 7.4: Key Changes Every Developer Must Know",
+    "url": "https://www.thenirvanalab.com/blog/liferay-7-3-vs-7-4-key-changes-every-developer-must-know/",
+    "slug": "liferay-7-3-vs-7-4-key-changes-every-developer-must-know",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/10/WhatsApp-Image-2025-11-11-at-9.24.17-PM-1-1024x576.jpeg",
+    "summary": "Upgrading enterprise platforms (especially one as central as Liferay) is rarely just a version bump. It’s a strategic decision and one that should deliver measurable business value. In this post,...",
+    "date": "December 2, 2025"
+  },
+  {
+    "title": "From Pilot to Production: Scaling ML-Driven Products Across Global Operations",
+    "url": "https://www.thenirvanalab.com/blog/from-pilot-to-production-scaling-ml-driven-products-across-global-operations/",
+    "slug": "from-pilot-to-production-scaling-ml-driven-products-across-global-operations",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2026/01/Banner-01-4-scaled-1-1024x576.jpg",
+    "summary": "Artificial Intelligence and Machine Learning (ML) have moved far beyond experiments and prototypes. Enterprises worldwide are now seeking to scale ML-driven products across their global operations to open up measurable...",
+    "date": "November 25, 2025"
+  },
+  {
+    "title": "Data Engineering as the Foundation of AI: Why Data Readiness Outweighs Model Choice",
+    "url": "https://www.thenirvanalab.com/blog/data-engineering-as-the-foundation-of-ai-why-data-readiness-outweighs-model-choice/",
+    "slug": "data-engineering-as-the-foundation-of-ai-why-data-readiness-outweighs-model-choice",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2026/01/Banner-01-3-scaled-1-1024x576.jpg",
+    "summary": "In the race to build high-performing AI systems, organizations often obsess over model selection from fine-tuning GPT-like architectures to experimenting with deep neural networks. But here’s a truth most leaders...",
+    "date": "November 20, 2025"
+  },
+  {
+    "title": "Why Liferay Digital Experience Platform (DXP) Should Be Your Next Strategic Investment",
+    "url": "https://www.thenirvanalab.com/blog/why-liferay-digital-experience-platform-dxp-should-be-your-next-strategic-investment/",
+    "slug": "why-liferay-digital-experience-platform-dxp-should-be-your-next-strategic-investment",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2026/01/Banner-01-01-1024x576.jpg",
+    "summary": "Customer expectations have evolved beyond simple online interactions. Today’s enterprises compete on experience - how fast they adapt, how unified their touchpoints feel and how intelligently they serve each user....",
+    "date": "November 14, 2025"
+  },
+  {
+    "title": "Observability First: Why DevOps Teams Are Shifting from Monitoring to Full-Stack Observability",
+    "url": "https://www.thenirvanalab.com/blog/observability-first-why-devops-teams-are-shifting-from-monitoring-to-full-stack-observability/",
+    "slug": "observability-first-why-devops-teams-are-shifting-from-monitoring-to-full-stack-observability",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2026/01/Banner-01-01-2-1024x576.jpg",
+    "summary": "The way modern systems behave has changed dramatically, and DevOps teams can no longer rely on traditional dashboards and static alerts to stay ahead. This shift is now reshaping how...",
+    "date": "November 11, 2025"
+  },
+  {
+    "title": "Agentic AI in the Enterprise: What Leadership Needs to Know",
+    "url": "https://www.thenirvanalab.com/blog/agentic-ai-in-the-enterprise-what-leadership-needs-to-know/",
+    "slug": "agentic-ai-in-the-enterprise-what-leadership-needs-to-know",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2026/01/Banner-01-2-scaled-1-1024x576.jpg",
+    "summary": "The enterprise world has witnessed waves of automation, from rule-based systems to predictive AI. But 2025 marks the era of something far more transformative - Agentic AI in the enterprise....",
+    "date": "November 10, 2025"
+  },
+  {
+    "title": "Integrating Liferay with AI-Driven Personalisation: A Roadmap for 2026",
+    "url": "https://www.thenirvanalab.com/blog/integrating-liferay-with-ai-driven-personalisation-a-roadmap-for-2026/",
+    "slug": "integrating-liferay-with-ai-driven-personalisation-a-roadmap-for-2026",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2026/01/Banner-01-5-scaled-1-1024x576.jpg",
+    "summary": "Imagine a digital portal that knows your enterprise clients so well that it proactively surfaces the exact white paper they need, recommends a complementary service before they even ask, and...",
+    "date": "November 4, 2025"
+  },
+  {
+    "title": "How Liferay Unlocks Omnichannel Customer Journeys for B2B and B2C",
+    "url": "https://www.thenirvanalab.com/blog/how-liferay-unlocks-omnichannel-customer-journeys-for-b2b-and-b2c/",
+    "slug": "how-liferay-unlocks-omnichannel-customer-journeys-for-b2b-and-b2c",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2026/01/Banner-01-01-1-1024x576.jpg",
+    "summary": "Digital transformation has raised the bar for what customers expect. Whether in a B2B or B2C context, they want experiences that are consistent, personal and easy to navigate across every...",
+    "date": "November 2, 2025"
+  },
+  {
+    "title": "Observability Gets Smarter: AI Agents for Root-Cause Detection",
+    "url": "https://www.thenirvanalab.com/blog/observability-gets-smarter-ai-agents-for-root-cause-detection/",
+    "slug": "observability-gets-smarter-ai-agents-for-root-cause-detection",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/12/Observability-Gets-Smarter-01-1024x576.jpg",
+    "summary": "When systems fail, every second counts. A stalled checkout flow can cost millions in lost sales. A delayed patient data system can put lives at risk. In both cases, teams...",
+    "date": "October 28, 2025"
+  },
+  {
+    "title": "Architecting AI Agents: Memory, Tools, and Multi-Agent Collaboration",
+    "url": "https://www.thenirvanalab.com/blog/architecting-ai-agents/",
+    "slug": "architecting-ai-agents",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/10/Architecting-AI-Agents-01-1024x576.jpg",
+    "summary": "Artificial Intelligence has moved beyond static models that simply generate text. We’re now entering the era of AI Agents, systems that can reason, act, and adapt. For decision-makers, the real...",
+    "date": "October 21, 2025"
+  },
+  {
+    "title": "AI Agents in 2025: From Copilots to Autonomous Colleagues",
+    "url": "https://www.thenirvanalab.com/blog/ai-agents-in-2025/",
+    "slug": "ai-agents-in-2025",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/10/AI-Agents-in-2025-01-1024x576.jpg",
+    "summary": "2025 is shaping up to be the year when AI Agents move from experimental copilots to fully autonomous colleagues. For business leaders, the shift is about reimagining how organizations operate,...",
+    "date": "October 14, 2025"
+  },
+  {
+    "title": "Salesforce Einstein Copilot: From CRM Tool to AI Business Brain",
+    "url": "https://www.thenirvanalab.com/blog/salesforce-einstein-copilot/",
+    "slug": "salesforce-einstein-copilot",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/10/Salesforce-Einstein-Copilot-01-1024x576.jpg",
+    "summary": "For decades, Salesforce has been the go-to CRM for companies seeking more than just a database of customer records. But the role of a CRM is changing. It’s no longer...",
+    "date": "October 7, 2025"
+  },
+  {
+    "title": "Liferay Community Edition vs DXP: What Developers Need to Know with the New CE Annual Release Strategy",
+    "url": "https://www.thenirvanalab.com/blog/liferay-community-edition-vs-dxp-what-developers-need-to-know-with-the-new-ce-annual-release-strategy/",
+    "slug": "liferay-community-edition-vs-dxp-what-developers-need-to-know-with-the-new-ce-annual-release-strategy",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/12/Liferay-Community-Edition-vs-DXP-01-1024x576.jpg",
+    "summary": "In the past, choosing between Liferay CE vs DXP felt like a binary bet: go with the free open-source platform and be ready to bear all the operational burden, or...",
+    "date": "October 1, 2025"
+  },
+  {
+    "title": "How to Use ChatGPT for Business: Real-World Applications",
+    "url": "https://www.thenirvanalab.com/blog/chatgpt-for-business/",
+    "slug": "chatgpt-for-business",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/09/How-to-Use-ChatGPT-for-Busines-01-1024x576.jpg",
+    "summary": "Artificial intelligence has quickly moved from hype to utility, and nowhere is this clearer than in how businesses are adopting conversational AI. ChatGPT is becoming a genuine driver of business...",
+    "date": "September 26, 2025"
+  },
+  {
+    "title": "Personalization: The Gem of Liferay Supplier Onboarding",
+    "url": "https://www.thenirvanalab.com/blog/personalization-in-supplier-onboarding/",
+    "slug": "personalization-in-supplier-onboarding",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/09/Reinforcement-Learning-01-1024x576.jpg",
+    "summary": "Supplier onboarding has always been one of those processes that can either accelerate a business relationship or stall it before it even begins. Vendors want clarity, buyers want compliance, and...",
+    "date": "September 24, 2025"
+  },
+  {
+    "title": "Prompt Engineering: From Templates to Enterprise Grade Infrastructure",
+    "url": "https://www.thenirvanalab.com/blog/prompt-templates/",
+    "slug": "prompt-templates",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/09/WhatsApp-Image-2025-09-22-at-8.21.07-PM-1024x576.jpeg",
+    "summary": "The conversation around prompt engineering has evolved quickly. What started as a handful of clever templates for coaxing better answers out of AI systems is now moving toward something far...",
+    "date": "September 23, 2025"
+  },
+  {
+    "title": "How Liferay Supplier Portal Enhances Supplier Onboarding Experience",
+    "url": "https://www.thenirvanalab.com/blog/liferay-supplier-portal/",
+    "slug": "liferay-supplier-portal",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/09/How-Liferay-Supplier-Portal-Enhances-Supplier-Onboarding-Experience-01-1024x576.jpg",
+    "summary": "In the 2025 business environment and beyond, efficient supplier onboarding is crucial for maintaining strong supply chain relationships. Manual, error-prone, and slow, traditional onboarding processes often cause unnecessary delays and...",
+    "date": "September 20, 2025"
+  },
+  {
+    "title": "Building High-Performance Spring Boot Microservices with gRPC",
+    "url": "https://www.thenirvanalab.com/blog/spring-boot-grpc-microservices-guide/",
+    "slug": "spring-boot-grpc-microservices-guide",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2026/03/Spring-Boot-gRPC-1024x576.png",
+    "summary": "In today's fast-paced digital landscape, building scalable, high-performance microservices is essential for enterprise systems. Spring Boot, a popular Java-based framework, paired with gRPC, a high-performance RPC framework, offers a robust...",
+    "date": "September 19, 2025"
+  },
+  {
+    "title": "Reinforcement Learning: Teaching AI Through Trial and Error",
+    "url": "https://www.thenirvanalab.com/blog/reinforcement-learning/",
+    "slug": "reinforcement-learning",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/09/Reinforcement-Learning-01-01-1024x576.jpg",
+    "summary": "Artificial Intelligence has progressed through various learning paradigms, including supervised learning, unsupervised learning, and, most recently, reinforcement learning. Among these, reinforcement learning (RL) is unique because it doesn’t rely solely...",
+    "date": "September 16, 2025"
+  },
+  {
+    "title": "Why Liferay Still Wins: Insights from 2025 Gartner DXP Reports",
+    "url": "https://www.thenirvanalab.com/blog/liferay-gartner-dxp-report-2025/",
+    "slug": "liferay-gartner-dxp-report-2025",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/09/Why-Liferay-Still-Wins-01-1024x576.jpg",
+    "summary": "Decision makers don’t need another vendor list. You need clarity on when Liferay is the smartest call and what outcomes you can expect. The short version: in Gartner’s 2025 coverage...",
+    "date": "September 11, 2025"
+  },
+  {
+    "title": "Beginner Friendly Guide to Multimodal Prompting 101",
+    "url": "https://www.thenirvanalab.com/blog/multimodal-prompting/",
+    "slug": "multimodal-prompting",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/09/Bengineer-Fridendly-Guide-to-Multimodal-Prompting-01-1024x576.jpg",
+    "summary": "Artificial intelligence isn’t just about text anymore. Models today can process images, audio, video, and text in a single workflow, opening doors to richer applications that go beyond simple Q&A....",
+    "date": "September 9, 2025"
+  },
+  {
+    "title": "Liferay Java Transition: Preparing for Jakarta EE and Java 21",
+    "url": "https://www.thenirvanalab.com/blog/liferay-java-transition/",
+    "slug": "liferay-java-transition",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/09/Liferay-Java-Transition-Preparing-for-Jakarta-EE-and-Java-21-1024x576.jpg",
+    "summary": "Here’s the thing: Liferay’s moving the needle hard on its Java stack. If you're running Liferay DXP or planning upgrades, you need to be on top of this. Let’s break...",
+    "date": "September 5, 2025"
+  },
+  {
+    "title": "Kubernetes on Cloud: Managing Containers at Scale",
+    "url": "https://www.thenirvanalab.com/blog/kubernetes-on-cloud/",
+    "slug": "kubernetes-on-cloud",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/09/Kubernetes-on-Cloud-01-1024x576.png",
+    "summary": "In the cloud-native orbit, organizations prioritize deploying and managing applications with maximum efficiency. Kubernetes, the leading container orchestration platform, has become the backbone of modern infrastructure, enabling businesses to run...",
+    "date": "September 2, 2025"
+  },
+  {
+    "title": "AI vs ML vs Deep Learning: What’s the Difference?",
+    "url": "https://www.thenirvanalab.com/blog/difference-between-ai-ml-and-deep-learning/",
+    "slug": "difference-between-ai-ml-and-deep-learning",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/07/AI-vs-ML-vs-Deep-Learning-01-1024x576.jpg",
+    "summary": "Artificial Intelligence (AI), Machine Learning (ML), and Deep Learning (DL) are often used interchangeably, but they represent distinct concepts with unique applications. Understanding the difference between AI, ML, and deep...",
+    "date": "August 5, 2025"
+  },
+  {
+    "title": "Liferay for Secure Government Portals",
+    "url": "https://www.thenirvanalab.com/blog/liferay-government-portal/",
+    "slug": "liferay-government-portal",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/07/Liferay_government_portal-01-1024x576.jpg",
+    "summary": "Government agencies worldwide are accelerating their digital transformation efforts to improve citizen services, enhance transparency, and ensure secure information exchange. However, with increasing cyber threats, secure government portals are no...",
+    "date": "June 30, 2025"
+  },
+  {
+    "title": "Cloud Cost Optimization for Legacy Enterprises",
+    "url": "https://www.thenirvanalab.com/blog/cloud-cost-optimization-2/",
+    "slug": "cloud-cost-optimization-2",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/06/could-cost-01-1024x576.jpg",
+    "summary": "As enterprises modernize their IT infrastructure, migrating legacy systems to the cloud has become a priority. However, without proper cloud cost optimization, organizations risk overspending, inefficient resource allocation, and budget...",
+    "date": "June 20, 2025"
+  },
+  {
+    "title": "Kubernetes Orchestration: Optimizing Containerized Applications",
+    "url": "https://www.thenirvanalab.com/blog/kubernetes-orchestration/",
+    "slug": "kubernetes-orchestration",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/06/banner01-01-1024x576.jpg",
+    "summary": "Kubernetes has become the de facto standard for orchestrating containerized applications, enabling organizations to deploy, scale, and manage workloads efficiently. However, as applications grow in complexity, optimizing Kubernetes clusters becomes...",
+    "date": "June 12, 2025"
+  },
+  {
+    "title": "Integrating Liferay Commerce for Seamless E-commerce Solutions",
+    "url": "https://www.thenirvanalab.com/blog/liferay-commerce-integration/",
+    "slug": "liferay-commerce-integration",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/07/Ecommerce-01-01-1024x576.jpg",
+    "summary": "In 2025, businesses need more than just a transactional online store, they require a unified, scalable, and personalized e-commerce experience. Liferay Commerce, a powerful extension of Liferay DXP, empowers organizations...",
+    "date": "June 9, 2025"
+  },
+  {
+    "title": "What is Prompt Engineering",
+    "url": "https://www.thenirvanalab.com/blog/what-is-prompt-engineering/",
+    "slug": "what-is-prompt-engineering",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/07/Engineering01-01-01-1024x576.jpg",
+    "summary": "In 2025, one essential skill that has become pivotal for businesses and decision-makers is prompt engineering. As AI models like GPT-4, Claude, and Gemini become more sophisticated, the ability to...",
+    "date": "June 6, 2025"
+  },
+  {
+    "title": "Building Intranets with Liferay: Features and Benefits",
+    "url": "https://www.thenirvanalab.com/blog/liferay-intranet-features/",
+    "slug": "liferay-intranet-features",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/07/Features-1024x576.jpg",
+    "summary": "In 2025, organizations need an intranet that goes beyond basic document storage and employee directories. A modern intranet should foster collaboration, streamline workflows, and enhance productivity while integrating seamlessly with...",
+    "date": "June 2, 2025"
+  },
+  {
+    "title": "Cloud Cost Efficiency Without Compromising Performance",
+    "url": "https://www.thenirvanalab.com/blog/cloud-cost-optimization-3/",
+    "slug": "cloud-cost-optimization-3",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/08/Cloud-Costs-01-1024x576.jpg",
+    "summary": "In recent years, cloud computing has reformed the way businesses operate, offering scalability, flexibility, and efficiency. As cloud adoption accelerates, so do the associated expenses, posing a significant challenge for...",
+    "date": "May 28, 2025"
+  },
+  {
+    "title": "How Cloud Cost Optimization Tools Can Save Your Business Thousands",
+    "url": "https://www.thenirvanalab.com/blog/cloud-cost-optimization/",
+    "slug": "cloud-cost-optimization",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/05/How-Cloud-Cost-Optimization-Tools-Can-Save-Your-Business-Thousands-01-1024x576.jpg",
+    "summary": "Are you overspending on cloud services without even realizing it? You're not alone. Many businesses waste thousands each month on unused resources, inefficient setups, and hidden fees lurking in their...",
+    "date": "May 22, 2025"
+  },
+  {
+    "title": "10 Best Prompt Engineering Techniques for Better AI Responses",
+    "url": "https://www.thenirvanalab.com/blog/prompt-engineering-techniques/",
+    "slug": "prompt-engineering-techniques",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/05/Prompt_Engineering-01-1024x576.jpg",
+    "summary": "In 2025, AI becomes increasingly integrated into business workflows, and the ability to extract high-quality responses from AI models has become a critical skill. Prompt engineering, the practice of crafting...",
+    "date": "May 22, 2025"
+  },
+  {
+    "title": "Why Should Businesses Use No Code or Low Code Development?",
+    "url": "https://www.thenirvanalab.com/blog/why-should-businesses-use-no-code-or-low-code-development/",
+    "slug": "why-should-businesses-use-no-code-or-low-code-development",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/06/Why-Should-Businesses-Use-No-Code-or-Low-Code-01-1024x576.jpg",
+    "summary": "What if you could turn your best ideas into functional apps without waiting months for a developer or blowing your budget? That’s the promise of low-code development and no-code platforms....",
+    "date": "May 15, 2025"
+  },
+  {
+    "title": "Liferay vs. Traditional Portals: Measuring ROI in Enterprise Deployments",
+    "url": "https://www.thenirvanalab.com/blog/liferay-vs-traditional-portals/",
+    "slug": "liferay-vs-traditional-portals",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/06/Liferay-vs.-Traditional-Portals-01-1024x576.jpg",
+    "summary": "Enterprises rely heavily on portals to streamline operations, enhance collaboration, and improve customer engagement. However, not all portal solutions are created equal. When comparing Liferay vs. Traditional Portals, organizations must...",
+    "date": "May 9, 2025"
+  },
+  {
+    "title": "Liferay: PaaS vs SaaS – What’s the Difference?",
+    "url": "https://www.thenirvanalab.com/blog/liferay-paas-vs-saas/",
+    "slug": "liferay-paas-vs-saas",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/06/Liferay-PaaS-vs-SaaS-Whats-the-Difference-1024x576.png",
+    "summary": "Choosing the right deployment model for Liferay can make or break your digital experience. But with PaaS vs SaaS offering different advantages, how do you decide which one aligns with...",
+    "date": "May 6, 2025"
+  },
+  {
+    "title": "How DevSecOps Reduces Cybersecurity Risks While Accelerating Software Delivery",
+    "url": "https://www.thenirvanalab.com/blog/devsecops-in-cybersecurity/",
+    "slug": "devsecops-in-cybersecurity",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/05/How-DevSecOps-Reduces-Cybersecurity-Risks-While-Accelerating-Software-Delivery-01-1024x576.jpg",
+    "summary": "Speed and security often feel like opposing forces. But what if you could have both? This is where DevSecOps comes in handy; it is the game-changing approach that bakes security...",
+    "date": "April 30, 2025"
+  },
+  {
+    "title": "Liferay Cloud for Education: Building Scalable & Secure Student Portals",
+    "url": "https://www.thenirvanalab.com/blog/liferay-cloud-for-education/",
+    "slug": "liferay-cloud-for-education",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/05/Liferay-Cloud-for-Education-01-1024x576.jpg",
+    "summary": "What if your institution could offer students a seamless, all-in-one portal without the headaches of slow performance or security risks? Liferay Cloud for Education makes it possible, empowering schools and...",
+    "date": "April 26, 2025"
+  },
+  {
+    "title": "How Cloud Computing Enables AI & Data-Driven Decision Making in Healthcare",
+    "url": "https://www.thenirvanalab.com/blog/cloud-computing-in-healthcare/",
+    "slug": "cloud-computing-in-healthcare",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/05/How-Cloud-Computing-Enables-AI-Data-Driven-Decision-Making-in-Healthcare-01-1024x576.jpg",
+    "summary": "Did you know AI-powered diagnostics can reduce medical errors by up to 30%? Behind this breakthrough lies an unsung hero: cloud computing in healthcare. By providing the scalable infrastructure needed...",
+    "date": "April 23, 2025"
+  },
+  {
+    "title": "How Liferay Personalization Increases Conversion Rates for E-commerce",
+    "url": "https://www.thenirvanalab.com/blog/liferay-personalization-for-e-commerce/",
+    "slug": "liferay-personalization-for-e-commerce",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/05/How-Liferay-Personalization-Increases-Conversion-Rates-for-E-commerce-01-1024x576.jpg",
+    "summary": "You’re leaving money on the table. In a world where 80% of shoppers only buy from brands that personalize their experience, generic product pages and one-size-fits-all promotions just don’t cut...",
+    "date": "April 21, 2025"
+  },
+  {
+    "title": "DevSecOps in Banking: Balancing Speed & Compliance for Faster Releases",
+    "url": "https://www.thenirvanalab.com/blog/devsecops-in-banking/",
+    "slug": "devsecops-in-banking",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/05/DevSecOps-in-Banking-01-1024x576.jpg",
+    "summary": "The banking industry thrives on innovation, but stringent compliance demands often slow down releases. What if you could accelerate deployments without compromising security? Enter DevSecOps in Banking, a game-changing approach...",
+    "date": "April 17, 2025"
+  },
+  {
+    "title": "How Liferay Cloud Enhances Security & Compliance for Global Enterprises",
+    "url": "https://www.thenirvanalab.com/blog/security-compliance-by-liferay-cloud/",
+    "slug": "security-compliance-by-liferay-cloud",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/05/How-Liferay-Cloud-Enhances-Security-Compliance-for-Global-Enterprises-1024x576.jpg",
+    "summary": "Imagine this: Your enterprise handles millions of customer transactions daily, but one overlooked vulnerability could expose sensitive data, costing you revenue, reputation, and regulatory penalties....",
+    "date": "April 14, 2025"
+  },
+  {
+    "title": "AI in Salesforce: How Einstein AI Improves Lead Conversion & Customer Retention",
+    "url": "https://www.thenirvanalab.com/blog/ai-in-salesforce/",
+    "slug": "ai-in-salesforce",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/05/AI-in-Salesforce-01-scaled-1-1024x576.jpg",
+    "summary": "What if your CRM could predict your next big deal or spot a fading customer before they walk away? Salesforce Einstein AI is your sales team’s sharpest ally, analyzing patterns...",
+    "date": "April 11, 2025"
+  },
+  {
+    "title": "How Manufacturing Companies Leverage Salesforce for Supply Chain Efficiency",
+    "url": "https://www.thenirvanalab.com/blog/salesforce-manufacturing-supply-chain-efficiency/",
+    "slug": "salesforce-manufacturing-supply-chain-efficiency",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/05/How-Manufacturing-Companies-Leverage-Salesforce-for-Supply-Chain-Efficiency-01-1024x576.jpg",
+    "summary": "Supply chain disruptions can cost manufacturers millions, delayed shipments, inventory mismanagement, and communication breakdowns create costly bottlenecks....",
+    "date": "April 9, 2025"
+  },
+  {
+    "title": "How Liferay Drives Customer Engagement & Revenue Growth in Financial Services",
+    "url": "https://www.thenirvanalab.com/blog/liferay-financial-services/",
+    "slug": "liferay-financial-services",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/04/How-Liferay-Drives-Customer-Engagement-Revenue-Growth-in-Financial-Services-01-1024x576.jpg",
+    "summary": "The financial services industry is at a crossroads. Customers demand seamless digital experiences, while banks and insurers struggle with legacy systems that slow them down....",
+    "date": "April 5, 2025"
+  },
+  {
+    "title": "The Hidden Costs of Cloud: How to Optimize Spend Without Sacrificing Performance",
+    "url": "https://www.thenirvanalab.com/blog/hidden-costs-of-cloud/",
+    "slug": "hidden-costs-of-cloud",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/05/The-Hidden-Costs-of-Cloud-01-1024x576.jpg",
+    "summary": "Did you know your cloud bill might be bleeding money without you even realizing it? Many businesses embrace the cloud for its scalability, only to face unexpected costs that spiral...",
+    "date": "April 2, 2025"
+  },
+  {
+    "title": "Challenges and Solutions: Implementing Generative AI in GovCon",
+    "url": "https://www.thenirvanalab.com/blog/generative-ai-in-govcon-2/",
+    "slug": "generative-ai-in-govcon-2",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/03/Challenges-and-Solutions-01-1024x576.jpg",
+    "summary": "The government contracting (GovCon) sector stands at a crossroads as generative AI promises to revolutionize everything from proposal writing to compliance but adoption isn’t as simple as flipping a switch....",
+    "date": "March 28, 2025"
+  },
+  {
+    "title": "Future Trends: How Generative AI is Shaping the Future of GovCon",
+    "url": "https://www.thenirvanalab.com/blog/generative-ai/",
+    "slug": "generative-ai",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/03/Future-of-GovCon-01-1024x576.jpg",
+    "summary": "Imagine a world where government contracts are drafted in minutes, compliance reports write themselves, and predictive analytics forecast procurement needs before agencies even request them. Sounds like science fiction? Not...",
+    "date": "March 26, 2025"
+  },
+  {
+    "title": "Future of AI in GovCon",
+    "url": "https://www.thenirvanalab.com/blog/future-of-ai-in-govcon/",
+    "slug": "future-of-ai-in-govcon",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/03/Future-of-AI-in-GovCon-01-1024x576.jpg",
+    "summary": "The government contracting (GovCon) industry is standing at the edge of a major technological shift, and artificial intelligence (AI) is leading the charge. As federal agencies and contractors face growing...",
+    "date": "March 24, 2025"
+  },
+  {
+    "title": "Step-by-Step Guide to Automating Workflows in Salesforce",
+    "url": "https://www.thenirvanalab.com/blog/salesforce-workflow-automation/",
+    "slug": "salesforce-workflow-automation",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/03/Step-by-Step-Guide-to-Automating-Workflows-in-Salesforce-01-1024x576.jpg",
+    "summary": "Let me tell you something: In the time to come, efficiency will be the key factor in deciding where your business will go. For organizations using Salesforce, automating workflows is...",
+    "date": "March 21, 2025"
+  },
+  {
+    "title": "Hybrid Cloud vs. Multi-Cloud: Which Strategy is Best for Your Business?",
+    "url": "https://www.thenirvanalab.com/blog/hybrid-cloud-vs-multi-cloud/",
+    "slug": "hybrid-cloud-vs-multi-cloud",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/03/Hybrid-Cloud-vs.-Multi-Cloud-Which-Strategy-is-Best-for-Your-Business-1024x576.jpg",
+    "summary": "Businesses are increasingly relying on cloud computing to drive - Innovation Scalability Operational Efficiency However, with the growing complexity of cloud environments, decision-makers are faced with a critical question: What...",
+    "date": "March 19, 2025"
+  },
+  {
+    "title": "6Rs of Cloud Migration: Strategies",
+    "url": "https://www.thenirvanalab.com/blog/6rs-of-cloud-migration/",
+    "slug": "6rs-of-cloud-migration",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/03/6Rs-of-Cloud-Migration-01-1024x576.jpg",
+    "summary": "Cloud migration has become a cornerstone of digital transformation for businesses across industries. As organizations strive to remain competitive, scalable, and agile, moving to the cloud is a necessity....",
+    "date": "March 17, 2025"
+  },
+  {
+    "title": "Liferay for Business Growth – How Liferay Improves Collaboration in Enterprises",
+    "url": "https://www.thenirvanalab.com/blog/liferay-for-business-growth/",
+    "slug": "liferay-for-business-growth",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/03/Liferay-for-Business-Growth-How-Liferay-Improves-Collaboration-in-Enterprises-01-1024x576.jpg",
+    "summary": "In 2025, enterprises should seek innovative solutions to streamline operations, enhance productivity, and foster collaboration. This is because as businesses grow, the need for a robust digital platform that can...",
+    "date": "March 14, 2025"
+  },
+  {
+    "title": "Salesforce Lightning: Enhancing User Experience and Efficiency",
+    "url": "https://www.thenirvanalab.com/blog/salesforce-lightning/",
+    "slug": "salesforce-lightning",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/03/Salesforce-Lightning-Enhancing-User-Experience-and-Efficiency-01-1024x576.jpg",
+    "summary": "We often hear that organizations are constantly seeking ways to streamline operations, improve productivity, and deliver exceptional customer experiences. Salesforce Lightning has emerged as a game-changer in this regard, offering...",
+    "date": "March 12, 2025"
+  },
+  {
+    "title": "Top Features of Liferay DXP You Should Know",
+    "url": "https://www.thenirvanalab.com/blog/liferay-dxp-features/",
+    "slug": "liferay-dxp-features",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/03/Top-Features-of-Liferay-DXP-You-Should-Know-01-1024x576.jpg",
+    "summary": "Businesses are constantly seeking innovative solutions to deliver exceptional customer experiences, streamline operations, and drive growth. Liferay Digital Experience Platform (DXP), a powerful, flexible, and scalable platform designed to meet...",
+    "date": "March 10, 2025"
+  },
+  {
+    "title": "Generative AI in GovCon: A Practical Guide",
+    "url": "https://www.thenirvanalab.com/blog/generative-ai-in-govcon/",
+    "slug": "generative-ai-in-govcon",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/03/Generative-AI-in-GovCon-01-1024x576.jpg",
+    "summary": "Are you maximizing the potential of your government contracting business? Are you leveraging the latest technologies to gain a competitive edge? If not, you're missing out on the transformative power...",
+    "date": "March 7, 2025"
+  },
+  {
+    "title": "How to Build a Cloud-Native Application in 2025",
+    "url": "https://www.thenirvanalab.com/blog/cloud-native-application/",
+    "slug": "cloud-native-application",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/03/How-to-Build-a-Cloud-Native-Application-in-2025-01-1024x576.jpg",
+    "summary": "Cloud-native application development is at peak. By 2025, the way we build, deploy, and manage applications will be fundamentally different from what we see today. Organizations are increasingly adopting cloud-native...",
+    "date": "March 5, 2025"
+  },
+  {
+    "title": "Integrating Liferay DXP with Other Enterprise Systems: Challenges and Solutions",
+    "url": "https://www.thenirvanalab.com/blog/liferay-dxp-integration/",
+    "slug": "liferay-dxp-integration",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/03/Integrating-Liferay-DXP-with-Other-Enterprise-Systems-01-1-1024x576.jpg",
+    "summary": "Enterprises are increasingly relying on robust platforms to deliver seamless customer experiences, streamline operations, and drive innovation. Liferay Digital Experience Platform (DXP) has emerged as a leading solution for organizations...",
+    "date": "March 3, 2025"
+  },
+  {
+    "title": "Cloud Cost Optimization Strategies for 2025",
+    "url": "https://www.thenirvanalab.com/blog/cloud-cost-optimization-strategies-for-2025/",
+    "slug": "cloud-cost-optimization-strategies-for-2025",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/03/Banner-01-6-1024x576.jpg",
+    "summary": "“The \"pay-as-you-go\" model can quickly become a \"pay-through-the-nose\" scenario if costs aren't carefully managed”. In 2025, cloud computing continues to be the backbone of digital transformation for enterprises worldwide. However,...",
+    "date": "February 28, 2025"
+  },
+  {
+    "title": "Cloud Security Trends in 2025: Ensuring Data Protection",
+    "url": "https://www.thenirvanalab.com/blog/cloud-security-trends-in-2025-ensuring-data-protection/",
+    "slug": "cloud-security-trends-in-2025-ensuring-data-protection",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/03/Banner-01-5-1024x576.jpg",
+    "summary": "As cloud adoption accelerates, so does the need for robust security frameworks to protect sensitive business data. The cyber threat landscape continues to evolve, making cloud security a top priority...",
+    "date": "February 26, 2025"
+  },
+  {
+    "title": "Liferay Cloud SaaS: Streamlining Digital Experiences with Minimal Effort",
+    "url": "https://www.thenirvanalab.com/blog/liferay-cloud-saas-streamlining-digital-experiences-with-minimal-effort/",
+    "slug": "liferay-cloud-saas-streamlining-digital-experiences-with-minimal-effort",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/03/Banner-01-4-1024x576.jpg",
+    "summary": "Organizations are increasingly turning to cloud-based solutions to enhance their digital experiences. One such robust platform that stands out is Liferay Cloud SaaS, offering businesses unparalleled flexibility and efficiency in...",
+    "date": "February 24, 2025"
+  },
+  {
+    "title": "What is Liferay Cloud",
+    "url": "https://www.thenirvanalab.com/blog/what-is-liferay-cloud/",
+    "slug": "what-is-liferay-cloud",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/03/Banner-01-3-1024x576.jpg",
+    "summary": "As enterprises strive to deliver seamless digital experiences, the complexity of managing cloud infrastructure often becomes a bottleneck. Liferay Cloud emerges as a game-changer, offering a fully managed, scalable solution...",
+    "date": "February 20, 2025"
+  },
+  {
+    "title": "Liferay Cloud PaaS: What You Need to Know",
+    "url": "https://www.thenirvanalab.com/blog/liferay-cloud-paas-what-you-need-to-know/",
+    "slug": "liferay-cloud-paas-what-you-need-to-know",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/03/Banner-1024x576.jpg",
+    "summary": "In 2025, businesses are constantly seeking ways to streamline their operations, enhance customer experiences, and stay ahead of the competition. One of the most effective ways to achieve these goals...",
+    "date": "February 19, 2025"
+  },
+  {
+    "title": "Liferay Cloud: Understanding the Power of SaaS and PaaS",
+    "url": "https://www.thenirvanalab.com/blog/liferay-cloud-understanding-the-power-of-saas-and-paas/",
+    "slug": "liferay-cloud-understanding-the-power-of-saas-and-paas",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/03/Blog-7-01-1024x576.jpg",
+    "summary": "Why Liferay Cloud is the Secret Weapon Your Business Has Been Missing Imagine having the flexibility to build custom digital experiences without the headache of managing infrastructure. What if you...",
+    "date": "February 17, 2025"
+  },
+  {
+    "title": "5 Common Salesforce Implementation Mistakes and How to Avoid Them",
+    "url": "https://www.thenirvanalab.com/blog/5-common-salesforce-implementation-mistakes-and-how-to-avoid-them/",
+    "slug": "5-common-salesforce-implementation-mistakes-and-how-to-avoid-them",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/03/Banner-01-2-1024x576.jpg",
+    "summary": "Avoid These 5 Salesforce Implementation Pitfalls - Before They Cost You Salesforce is a game-changer - when implemented correctly. But too often, businesses dive in without a solid plan, leading...",
+    "date": "February 14, 2025"
+  },
+  {
+    "title": "Building Scalable and Secure Enterprise Portals with Liferay DXP",
+    "url": "https://www.thenirvanalab.com/blog/building-scalable-and-secure-enterprise-portals-with-liferay-dxp/",
+    "slug": "building-scalable-and-secure-enterprise-portals-with-liferay-dxp",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/03/Banner-01-1-1024x576.jpg",
+    "summary": "Businesses need portals that are not only scalable but also highly secure to manage user access, data, and interactions seamlessly. A rigid or vulnerable portal can slow down operations, expose...",
+    "date": "February 12, 2025"
+  },
+  {
+    "title": "Serverless Computing: Future Trends and Applications",
+    "url": "https://www.thenirvanalab.com/blog/serverless-computing-future-trends-and-applications/",
+    "slug": "serverless-computing-future-trends-and-applications",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/03/Banner-01-1024x576.jpg",
+    "summary": "Imagine running applications without worrying about servers, scaling, or infrastructure maintenance. That’s the magic of serverless computing, a game-changing approach that allows developers to focus purely on code while cloud...",
+    "date": "February 11, 2025"
+  },
+  {
+    "title": "Top Salesforce Trends to Watch in 2025",
+    "url": "https://www.thenirvanalab.com/blog/top-salesforce-trends-to-watch-in-2025/",
+    "slug": "top-salesforce-trends-to-watch-in-2025",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/03/Top-Salesforce-Trends-to-Watch-in-2025-01-1024x576.jpg",
+    "summary": "The future of Salesforce CRM in 2025 is brimming with innovation, reshaping how businesses connect with customers, streamline processes, and leverage data. From cutting-edge AI agents to hyper-personalized customer journeys,...",
+    "date": "February 7, 2025"
+  },
+  {
+    "title": "Enhancing Customer Experience with Liferay DXP: Strategies and Best Practices",
+    "url": "https://www.thenirvanalab.com/blog/enhancing-customer-experience-with-liferay-dxp-strategies-and-best-practices/",
+    "slug": "enhancing-customer-experience-with-liferay-dxp-strategies-and-best-practices",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/03/Enhancing-Customer-Experience-with-Liferay-DXP-01-1024x576.jpg",
+    "summary": "Transform Customer Experience with Liferay DXP: Strategies for Success Customer expectations are higher than ever, and businesses must deliver seamless, personalized experiences to stay competitive. But how do you achieve...",
+    "date": "February 6, 2025"
+  },
+  {
+    "title": "Best Practices for Cloud Migration in 2025",
+    "url": "https://www.thenirvanalab.com/blog/best-practices-for-cloud-migration-in-2025/",
+    "slug": "best-practices-for-cloud-migration-in-2025",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/03/Best-Practices-for-Cloud-Migration-in-2025-01-1024x576.jpg",
+    "summary": "As businesses embrace the digital future, best practices for cloud migration in 2025 are more critical than ever. The promise of scalability, cost savings, and enhanced innovation makes cloud migration...",
+    "date": "February 4, 2025"
+  },
+  {
+    "title": "Liferay vs Other DXPs: What Sets It Apart?",
+    "url": "https://www.thenirvanalab.com/blog/liferay-vs-other-dxps-what-sets-it-apart/",
+    "slug": "liferay-vs-other-dxps-what-sets-it-apart",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/02/Liferay-vs-Other-DXPs-What-Sets-It-Apart-01-1024x576.jpg",
+    "summary": "When it comes to delivering exceptional digital experiences, the tools you choose matter. Liferay has gained a loyal following, but how does it fare against others (DXPs)? Is it just...",
+    "date": "December 30, 2024"
+  },
+  {
+    "title": "What Is Ecommerce Website Development? A Complete Guide",
+    "url": "https://www.thenirvanalab.com/blog/what-is-ecommerce-website-development-a-complete-guide/",
+    "slug": "what-is-ecommerce-website-development-a-complete-guide",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/02/Banner-1-1024x576.jpg",
+    "summary": "Every click, scroll, and purchase on an ecommerce website reflects the behind-the-scenes magic of great development. But what makes an e-commerce site truly exceptional? This guide unpacks the full journey...",
+    "date": "December 25, 2024"
+  },
+  {
+    "title": "Why Choose LWC Over Aura",
+    "url": "https://www.thenirvanalab.com/blog/why-choose-lwc-over-aura/",
+    "slug": "why-choose-lwc-over-aura",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/02/Why-Choose-LWC-Over-Aura-01-1024x576.jpg",
+    "summary": "Your Salesforce applications deserve the best, and Lightning Web Components (LWC) delivers. While Aura has been a trusted companion for years, LWC takes the spotlight with its superior capabilities, simplified...",
+    "date": "December 23, 2024"
+  },
+  {
+    "title": "Why Cybersecurity Should Be a Top Priority for Your Business in 2025",
+    "url": "https://www.thenirvanalab.com/blog/why-cybersecurity-should-be-a-top-priority-for-your-business-in-2025/",
+    "slug": "why-cybersecurity-should-be-a-top-priority-for-your-business-in-2025",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/02/hy-Cybersecurity-Should-Be-a-Top-Priority-for-Your-Business-in-2025-01-1024x576.jpg",
+    "summary": "Your 2025 Cybersecurity Wake-Up Call The escalating frequency and complexity of cyberattacks make one thing clear: cybersecurity can no longer be an afterthought. Over the past year, these threats have...",
+    "date": "December 20, 2024"
+  },
+  {
+    "title": "What Is Cloud Native?",
+    "url": "https://www.thenirvanalab.com/blog/what-is-cloud-native/",
+    "slug": "what-is-cloud-native",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/02/What-Is-Cloud-Native-01-1024x576.jpg",
+    "summary": "The tech world is buzzing about Cloud Native. But what does it mean, and why is it revolutionizing the way we build software? Think of it as a modern philosophy...",
+    "date": "December 19, 2024"
+  },
+  {
+    "title": "What is Cloud Modernization?",
+    "url": "https://www.thenirvanalab.com/blog/what-is-cloud-modernization/",
+    "slug": "what-is-cloud-modernization",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/02/What-is-Cloud-Modernization-01-1024x576.jpg",
+    "summary": "Revamp, Reimagine, Reinvent: The Power of Cloud Modernization In a world driven by technology, standing still means falling behind. Cloud modernization is about taking the leap toward innovation by upgrading...",
+    "date": "December 17, 2024"
+  },
+  {
+    "title": "What is a Multi Cloud Strategy?",
+    "url": "https://www.thenirvanalab.com/blog/what-is-a-multi-cloud-strategy/",
+    "slug": "what-is-a-multi-cloud-strategy",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/02/What-is-a-Multi-Cloud-Strategy-01-1024x576.jpg",
+    "summary": "Effective multi-cloud strategies are essential for optimizing performance and strengthening security. Discover key best practices to craft a successful approach. Businesses embracing a cloud-forward mindset must prioritize operational efficiency by...",
+    "date": "December 13, 2024"
+  },
+  {
+    "title": "LWC vs Aura: Which One To Choose",
+    "url": "https://www.thenirvanalab.com/blog/lwc-vs-aura-which-one-to-choose/",
+    "slug": "lwc-vs-aura-which-one-to-choose",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/02/LWC-vs-Aura-Which-One-To-Choose-01-1024x576.jpg",
+    "summary": "Salesforce, the leading customer relationship management platform, is committed to delivering exceptional customer experiences. As part of its ongoing innovation, Salesforce has made significant strides in its UI development frameworks....",
+    "date": "December 11, 2024"
+  },
+  {
+    "title": "What is Salesforce LWC: Advantages and Use Cases",
+    "url": "https://www.thenirvanalab.com/blog/what-is-salesforce-lwc-advantages-and-use-cases/",
+    "slug": "what-is-salesforce-lwc-advantages-and-use-cases",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/02/Banner-01-1024x576.jpg",
+    "summary": "Web development can feel like solving a never-ending puzzle, but Salesforce Lightning Web Components (LWC) simplifies the game. Built on modern web standards, LWC offers developers a straightforward yet powerful...",
+    "date": "December 9, 2024"
+  },
+  {
+    "title": "What is Salesforce Einstein",
+    "url": "https://www.thenirvanalab.com/blog/what-is-salesforce-einstein/",
+    "slug": "what-is-salesforce-einstein",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/02/Banner-1024x576.jpg",
+    "summary": "When we hear the name Einstein, the first thing that comes to mind is intelligence. Salesforce Einstein embodies this concept, focusing on artificial intelligence (AI) integrated within the world’s leading...",
+    "date": "December 6, 2024"
+  },
+  {
+    "title": "Salesforce Agentforce: Everything That You Need to Know",
+    "url": "https://www.thenirvanalab.com/blog/salesforce-agentforce-everything-that-you-need-to-know/",
+    "slug": "salesforce-agentforce-everything-that-you-need-to-know",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2024/12/Salesforce-Agentforce-Everything-That-You-Need-to-Know-1024x576.jpg",
+    "summary": "Salesforce Agentforce stands as a prime example of how technology continues to evolve. Older technologies are being enhanced while new innovations are seamlessly integrated into existing systems. One of the...",
+    "date": "December 4, 2024"
+  },
+  {
+    "title": "AI in Cloud Computing",
+    "url": "https://www.thenirvanalab.com/blog/ai-in-cloud-computing/",
+    "slug": "ai-in-cloud-computing",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/02/AI-in-Cloud-Computing-01-1024x576.jpg",
+    "summary": "Artificial intelligence innovations are advancing at an unprecedented pace and show no signs of slowing down. Cloud computing platforms leverage these AI breakthroughs to revolutionize a broad spectrum of technology...",
+    "date": "December 2, 2024"
+  },
+  {
+    "title": "Why Embracing Low-Code is a Game-Changer for Customer Portals in 2025",
+    "url": "https://www.thenirvanalab.com/blog/why-embracing-low-code-is-a-game-changer-for-customer-portals-in-2025/",
+    "slug": "why-embracing-low-code-is-a-game-changer-for-customer-portals-in-2025",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/02/Embracing-Low-Code-01-1024x576.jpg",
+    "summary": "Nowadays, customers expect instant access to information and seamless interactions. They seek quick resolutions to their inquiries, often through self-service and automation. Delivering exceptional customer service has become a crucial...",
+    "date": "November 28, 2024"
+  },
+  {
+    "title": "What is a Progressive Web App (PWA)?",
+    "url": "https://www.thenirvanalab.com/blog/what-is-a-progressive-web-app-pwa/",
+    "slug": "what-is-a-progressive-web-app-pwa",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/02/What-is-a-Progressive-Web-App-PWA-01-1024x576.jpg",
+    "summary": "Imagine a website that feels as smooth and fast as a mobile app works even without an internet connection, and doesn’t take up storage on your phone. That’s the magic...",
+    "date": "November 26, 2024"
+  },
+  {
+    "title": "Top Tech Trends of 2025",
+    "url": "https://www.thenirvanalab.com/blog/top-tech-trends-of-2025/",
+    "slug": "top-tech-trends-of-2025",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/02/Top-Tech-Trends-of-2025-01-1024x576.jpg",
+    "summary": "Global tech spending is expected to soar to an astounding $5.06 trillion this year, propelling businesses toward innovation at an unprecedented pace. AI, machine learning, big data, and automation have...",
+    "date": "November 22, 2024"
+  },
+  {
+    "title": "Top Cloud Computing Trends Defining Business Success in 2025",
+    "url": "https://www.thenirvanalab.com/blog/top-cloud-computing-trends-defining-business-success-in-2025/",
+    "slug": "top-cloud-computing-trends-defining-business-success-in-2025",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/02/Top-Cloud-Computing-Trends-Defining-Business-Success-in-2025-02-1024x576.jpg",
+    "summary": "Nearly every modern organization is transitioning to digital infrastructure and embracing cloud workspaces for faster workflows, streamlined business management, and impressive returns. Cloud computing is the backbone of digital transformation....",
+    "date": "November 20, 2024"
+  },
+  {
+    "title": "What is Salesforce Experience Cloud?",
+    "url": "https://www.thenirvanalab.com/blog/what-is-salesforce-experience-cloud/",
+    "slug": "what-is-salesforce-experience-cloud",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/02/What-is-Salesforce-Experience-Cloud-01-1024x576.jpg",
+    "summary": "Salesforce Experience Cloud, previously called Community Cloud, is a dynamic digital experience platform from Salesforce. It empowers businesses to design personalized and interconnected digital experiences for customers, partners, and employees....",
+    "date": "November 13, 2024"
+  },
+  {
+    "title": "Top DevOps Tools to Supercharge Your Workflow in 2025",
+    "url": "https://www.thenirvanalab.com/blog/top-devops-tools-to-supercharge-your-workflow-in-2025/",
+    "slug": "top-devops-tools-to-supercharge-your-workflow-in-2025",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/02/Top-DevOps-Tools-to-Supercharge-Your-Workflow-in-2025-01-1024x576.jpg",
+    "summary": "Choosing the right DevOps tools can make all the difference in delivering software faster and smarter. With 2025 approaching, new tools are emerging to help teams automate, collaborate, and innovate...",
+    "date": "November 13, 2024"
+  },
+  {
+    "title": "Why Move to the Cloud? 10 Compelling Reasons for Cloud Migration",
+    "url": "https://www.thenirvanalab.com/blog/why-move-to-the-cloud-10-compelling-reasons-for-cloud-migration/",
+    "slug": "why-move-to-the-cloud-10-compelling-reasons-for-cloud-migration",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/02/Why-Move-to-the-Cloud-01-1024x576.jpg",
+    "summary": "How businesses operate is changing, and cloud technology is at the heart of this transformation. You could miss out on faster operations, reduced costs, and improved security if you still...",
+    "date": "November 12, 2024"
+  },
+  {
+    "title": "What Is Predictive Analytics?",
+    "url": "https://www.thenirvanalab.com/blog/what-is-predictive-analytics/",
+    "slug": "what-is-predictive-analytics",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/02/What-is-a-Progressive-Web-App-PWA-01-1024x576.jpg",
+    "summary": "Predictive analytics leverages statistical and modeling techniques to anticipate future outcomes by analyzing both current and historical data patterns. These patterns are studied and projected to assess the probability of...",
+    "date": "November 11, 2024"
+  },
+  {
+    "title": "On-Premises vs Cloud: Which Model Suits Your Business?",
+    "url": "https://www.thenirvanalab.com/blog/on-premises-vs-cloud-which-model-suits-your-business/",
+    "slug": "on-premises-vs-cloud-which-model-suits-your-business",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/02/On-Premises-vs-Cloud-Which-Model-Suits-Your-Business-01-1024x576.jpg",
+    "summary": "\"On-Premises vs Cloud: Which is the right fit for your business?\" This question is on the minds of business leaders and decision-makers everywhere. On-premise infrastructure offers robust security and control,...",
+    "date": "November 8, 2024"
+  },
+  {
+    "title": "How DevOps Automation Drives Innovation and Cuts Costs",
+    "url": "https://www.thenirvanalab.com/blog/how-devops-automation-drives-innovation-and-cuts-costs/",
+    "slug": "how-devops-automation-drives-innovation-and-cuts-costs",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/02/How-DevOps-Automation-Drives-Innovation-and-Cuts-Costs-01-1024x576.jpg",
+    "summary": "What if innovation and cost savings didn’t have to be a trade-off? With DevOps automation, businesses are breaking this myth by accelerating development cycles, cutting operational expenses, and enhancing product...",
+    "date": "November 6, 2024"
+  },
+  {
+    "title": "Data Visualization Best Practices with Power BI",
+    "url": "https://www.thenirvanalab.com/blog/data-visualization-best-practices-with-power-bi/",
+    "slug": "data-visualization-best-practices-with-power-bi",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/02/Data-Visualization-Best-Practices-with-Power-BI-01-1024x576.jpg",
+    "summary": "Data visualization empowers business users and decision-makers to interpret large, complex data sets easily. However, crafting impactful visualizations can be challenging and demands a solid grasp of the data and...",
+    "date": "November 4, 2024"
+  },
+  {
+    "title": "Cloud Migration Best Practices: How to Ensure Data Security During the Process",
+    "url": "https://www.thenirvanalab.com/blog/cloud-migration-best-practices/",
+    "slug": "cloud-migration-best-practices",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/02/Cloud-Migration-Best-Practices-01-1024x576.jpg",
+    "summary": "Data breaches and data loss can be a nightmare for businesses during cloud migration. The question isn’t whether to move but how to move safely. In this blog, we’ll explore...",
+    "date": "November 1, 2024"
+  },
+  {
+    "title": "What is Salesforce Commerce Cloud?",
+    "url": "https://www.thenirvanalab.com/blog/what-is-salesforce-commerce-cloud/",
+    "slug": "what-is-salesforce-commerce-cloud",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/02/What-is-Salesforce-Commerce-Cloud-01-1024x576.jpg",
+    "summary": "According to Salesforce research, 76% of customers now expect seamless interactions across all departments. Running a successful online store requires more than just having a website – it demands a...",
+    "date": "October 31, 2024"
+  },
+  {
+    "title": "What is Microsoft Dynamics 365 CRM",
+    "url": "https://www.thenirvanalab.com/blog/what-is-microsoft-dynamics-365-crm/",
+    "slug": "what-is-microsoft-dynamics-365-crm",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/02/What-is-Microsoft-Dynamics-365-CRM-01-1024x576.jpg",
+    "summary": "Need help keeping up with customer demands? Microsoft Dynamics 365 CRM can be the solution you need. Designed to centralize and streamline all your customer data, it helps businesses manage...",
+    "date": "October 29, 2024"
+  },
+  {
+    "title": "What is Cloud Computing?",
+    "url": "https://www.thenirvanalab.com/blog/what-is-cloud-computing/",
+    "slug": "what-is-cloud-computing",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/02/What-is-Cloud-Computing-01-1024x576.jpg",
+    "summary": "Why carry the weight of the world when you can store it in the cloud? Cloud computing is like renting space on the internet to store your data or run...",
+    "date": "October 24, 2024"
+  },
+  {
+    "title": "Salesforce vs. Other CRM Solutions: What Sets It Apart?",
+    "url": "https://www.thenirvanalab.com/blog/salesforce-vs-other-crm-solutions/",
+    "slug": "salesforce-vs-other-crm-solutions",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/02/Salesforce-vs-01-1024x576.jpg",
+    "summary": "A great relationship is built on understanding, and the same goes for business. When it comes to managing customer relationships, Salesforce is one of the most recognized names in the...",
+    "date": "October 23, 2024"
+  },
+  {
+    "title": "The Role of Liferay in Manufacturing",
+    "url": "https://www.thenirvanalab.com/blog/the-role-of-liferay-in-manufacturing/",
+    "slug": "the-role-of-liferay-in-manufacturing",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/02/The-Role-of-Liferay-in-Manufacturing-01-1024x576.jpg",
+    "summary": "Are You Ready for Digital Transformation? Digital transformation is reshaping industries worldwide, and manufacturing is right in the mix. Have you noticed the rising expectations from customers? With competition heating...",
+    "date": "October 21, 2024"
+  },
+  {
+    "title": "Salesforce Integration Best Practices",
+    "url": "https://www.thenirvanalab.com/blog/salesforce-integration-best-practice/",
+    "slug": "salesforce-integration-best-practice",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/02/Salesforce-Integration-Best-Practices-01-1024x576.jpg",
+    "summary": "Integrating Salesforce with other systems can take time and effort. From syncing data to managing workflows, a poorly planned salesforce integration can lead to headaches and inefficiencies. But don’t worry;...",
+    "date": "October 18, 2024"
+  },
+  {
+    "title": "How Salesforce Manufacturing Cloud is Revolutionizing Manufacturing",
+    "url": "https://www.thenirvanalab.com/blog/how-salesforce-manufacturing-cloud-is-revolutionizing-manufacturing/",
+    "slug": "how-salesforce-manufacturing-cloud-is-revolutionizing-manufacturing",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/02/How-Salesforce-Manufacturing-Cloud-is-Revolutionizing-Manufacturing-01-1024x576.jpg",
+    "summary": "According to McKinsey, research indicates that a single negative experience can drive away 25% of customers. In the aftermath of the COVID-19 pandemic and various global disruptions, manufacturers have recognized...",
+    "date": "October 16, 2024"
+  },
+  {
+    "title": "How Commercial Banks Utilize Liferay to Enhance Client Engagement",
+    "url": "https://www.thenirvanalab.com/blog/how-commercial-banks-utilize-liferay-to-enhance-client-engagement/",
+    "slug": "how-commercial-banks-utilize-liferay-to-enhance-client-engagement",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2024/10/Supporting-Clients-01.jpg",
+    "summary": "The financial services industry, particularly commercial organizations, is facing significant pressure to modernize in order to meet the expectations of younger, tech-savvy clients. B2B clients now demand the same smooth,...",
+    "date": "October 14, 2024"
+  },
+  {
+    "title": "Five Ways Liferay DXP Drives Success for Insurance Providers",
+    "url": "https://www.thenirvanalab.com/blog/five-ways-liferay-dxp-drives-success-for-insurance-providers/",
+    "slug": "five-ways-liferay-dxp-drives-success-for-insurance-providers",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/02/Five-Ways-Liferay-DXP-Drives-Success-for-Insurance-Providers-01-1024x576.jpg",
+    "summary": "The digital era presents unique hurdles for insurance providers, from new competitive pressures to outdated technology and stricter regulations. Yet, many still need to figure out how to transform and...",
+    "date": "October 11, 2024"
+  },
+  {
+    "title": "Digital Transformation in Manufacturing: 8 Compelling Benefits of Customer Portals",
+    "url": "https://www.thenirvanalab.com/blog/digital-transformation-in-manufacturing-8-compelling-benefits-of-customer-portals/",
+    "slug": "digital-transformation-in-manufacturing-8-compelling-benefits-of-customer-portals",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/02/Digital-Transformation-in-Manufacturing-01-1024x576.jpg",
+    "summary": "Manufacturing companies often need a complex network of supply chain, production, and shipping processes that can frustrate both internal teams and customers. If customers can track orders, get answers to...",
+    "date": "October 8, 2024"
+  },
+  {
+    "title": "Benefits of Salesforce Commerce Cloud for E-commerce",
+    "url": "https://www.thenirvanalab.com/blog/benefit-of-salesforce-commerce-cloud-for-e-commerce/",
+    "slug": "benefit-of-salesforce-commerce-cloud-for-e-commerce",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/02/Benefits-of-Salesforce-Commerce-Cloud-for-E-commerce-01-1024x576.jpg",
+    "summary": "What if your e-commerce platform could think ahead of your customers? Salesforce Commerce Cloud is leading the charge with its innovative approach to online shopping. It enables businesses to engage...",
+    "date": "October 3, 2024"
+  },
+  {
+    "title": "Accelerate Your Customer Portal with Low-Code in 2024",
+    "url": "https://www.thenirvanalab.com/blog/low-code-customer-portal-acceleration/",
+    "slug": "low-code-customer-portal-acceleration",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2025/02/Accelerate-Your-Customer-Portal-01-scaled-1-1024x576.jpg",
+    "summary": "Wondering how low-code can accelerate your customer portal and drive business growth? Keep reading to explore the future of low-code. Businesses are looking for faster and more efficient ways to...",
+    "date": "October 1, 2024"
+  },
+  {
+    "title": "How to Develop an E-commerce Website in 2024",
+    "url": "https://www.thenirvanalab.com/blog/how-to-develop-an-e-commerce-website-in-2024/",
+    "slug": "how-to-develop-an-e-commerce-website-in-2024",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2024/11/How-to-Develop-an-E-commerce-Website-in-2024-01-1024x576.jpg",
+    "summary": "Developing an e-commerce website in 2024 is more exciting and accessible than ever before. With the latest tools and technology, businesses of all sizes can create powerful online stores that...",
+    "date": "September 30, 2024"
+  },
+  {
+    "title": "What is Predictive Maintenance?",
+    "url": "https://www.thenirvanalab.com/blog/what-is-predictive-maintenance/",
+    "slug": "what-is-predictive-maintenance",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2024/11/What-is-Predictive-Maintenance-01-1-1024x576.jpg",
+    "summary": "Predictive maintenance takes the guesswork out of equipment care by forecasting when a machine will likely fail. Using sensors and data analytics, businesses can predict issues and fix them before...",
+    "date": "September 26, 2024"
+  },
+  {
+    "title": "Best Practices for Successful DevOps Implementation",
+    "url": "https://www.thenirvanalab.com/blog/best-practices-for-successful-devops-implementation/",
+    "slug": "best-practices-for-successful-devops-implementation",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2024/11/Best-Practices-for-Successful-DevOps-Implementation-01-1024x576.jpg",
+    "summary": "Getting started with DevOps may feel overwhelming, but the benefits are worth it. By streamlining collaboration between development and operations, your teams can work faster and more efficiently. If you’re...",
+    "date": "September 24, 2024"
+  },
+  {
+    "title": "What is Industry 4.0?",
+    "url": "https://www.thenirvanalab.com/blog/what-is-industry-4-0/",
+    "slug": "what-is-industry-4-0",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2024/11/What-is-Industry-4-01-1024x576.jpg",
+    "summary": "\"Industry 4.0, the fourth industrial revolution, integrates digital technologies into manufacturing to produce superior products at lower costs.\" Industry 4.0 is the next big shift in how things are made...",
+    "date": "September 20, 2024"
+  },
+  {
+    "title": "The Influence of Technology on the Manufacturing Sector through Liferay DXP",
+    "url": "https://www.thenirvanalab.com/blog/the-influence-of-technology-on-the-manufacturing-sector-through-liferay-dxp/",
+    "slug": "the-influence-of-technology-on-the-manufacturing-sector-through-liferay-dxp",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2024/11/Technology-on-the-Manufacturing-Sector-01-1024x576.jpg",
+    "summary": "Traditionally, B2B transactions focused on efficiency, ensuring orders were delivered swiftly and smoothly. However, today's businesses have shifted towards a more customer-centric approach, emphasizing the importance of a personalized digital...",
+    "date": "September 19, 2024"
+  },
+  {
+    "title": "The Role of DevOps in Digital Transformation",
+    "url": "https://www.thenirvanalab.com/blog/the-role-of-devops-in-digital-transformation/",
+    "slug": "the-role-of-devops-in-digital-transformation",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2024/11/The-Role-of-DevOps-in-Digital-Transformation-01-1024x576.jpg",
+    "summary": "DevOps is emerging as the unsung digital transformation hero in a world where speed and agility are key. By merging the strengths of development and operations, DevOps promises faster innovation...",
+    "date": "September 17, 2024"
+  },
+  {
+    "title": "What is Cloud Migration Strategy, Services & Benefits",
+    "url": "https://www.thenirvanalab.com/blog/what-is-cloud-migration-strategy-services-benefits/",
+    "slug": "what-is-cloud-migration-strategy-services-benefits",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2024/11/What-is-Cloud-Migration-Strategy-Services-Benefits-01-1024x576.jpg",
+    "summary": "“Moving to the cloud means moving towards a future where businesses are more adaptable, efficient, and scalable.” Cloud migration involves transferring a company's digital operations, data, and applications from on-premises...",
+    "date": "September 12, 2024"
+  },
+  {
+    "title": "Streamlining Supplier Management: A Guide to Building an Effective Supplier Portal",
+    "url": "https://www.thenirvanalab.com/blog/streamlining-supplier-management-a-guide-to-building-an-effective-supplier-portal/",
+    "slug": "streamlining-supplier-management-a-guide-to-building-an-effective-supplier-portal",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2024/11/A-Guide-to-Building-an-Effective-Supplier-Portal-01-1024x576.jpg",
+    "summary": "Suppliers, also known as vendors, are critical in driving your business success. The more effectively they deliver materials, parts, and services, the faster and better you can serve your customers....",
+    "date": "September 10, 2024"
+  },
+  {
+    "title": "Supplier Portals with Liferay DXP: Supporting Features and Capabilities",
+    "url": "https://www.thenirvanalab.com/blog/supplier-portals-with-liferay-dxp-supporting-features-and-capabilities/",
+    "slug": "supplier-portals-with-liferay-dxp-supporting-features-and-capabilities",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2024/11/Supplier-Portals-with-Liferay-DXP-01-1024x576.jpg",
+    "summary": "How are you engaging with your suppliers? Perhaps your communication occurs both online and offline through complex, manual processes that are difficult to track. Or you've invested in advanced systems...",
+    "date": "September 9, 2024"
+  },
+  {
+    "title": "The Role of AI in Manufacturing",
+    "url": "https://www.thenirvanalab.com/blog/the-role-of-ai-in-manufacturing/",
+    "slug": "the-role-of-ai-in-manufacturing",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2024/11/The-Role-of-AI-in-Manufacturing-01-1024x576.jpg",
+    "summary": "Imagine a factory where machines not only follow commands but also learn from their environment to improve efficiency and quality. This is the exciting reality brought to life by AI...",
+    "date": "September 6, 2024"
+  },
+  {
+    "title": "Top 10 Reasons to Choose Salesforce for Your Business",
+    "url": "https://www.thenirvanalab.com/blog/blogs-top-10-reasons-to-choose-salesforce-crm-for-your-business/",
+    "slug": "blogs-top-10-reasons-to-choose-salesforce-crm-for-your-business",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2024/11/Top-10-Reasons-to-Choose-Salesforce-for-Your-Business-01-1024x576.jpg",
+    "summary": "“Having the right tools can make or break your success.” Salesforce, one of the world’s leading customer relationship management (CRM) platforms, offers a range of solutions that help businesses streamline...",
+    "date": "September 4, 2024"
+  },
+  {
+    "title": "Benefits of Digital Transformation in Manufacturing",
+    "url": "https://www.thenirvanalab.com/blog/benefits-of-digital-transformation-in-manufacturing/",
+    "slug": "benefits-of-digital-transformation-in-manufacturing",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2024/09/Benefits-of-digital-transformation-in-manufacturing-01-1-1024x576.jpg",
+    "summary": "Digital transformation in manufacturing is changing how products are made and businesses operate. Manufacturers are adopting advanced technologies to find new ways to improve efficiency, reduce costs, and boost product...",
+    "date": "September 2, 2024"
+  },
+  {
+    "title": "Top 10 Web Development Trends in 2024",
+    "url": "https://www.thenirvanalab.com/blog/top-10-web-development-trends-in-2024/",
+    "slug": "top-10-web-development-trends-in-2024",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2024/08/Top-10-Web-Development-Trends-in-2024-1024x576.jpg",
+    "summary": "Web development has come a long way from relying on HTML, CSS, and JavaScript, though they remain essential foundations for any website. With the rapid evolution of technology, staying current...",
+    "date": "August 30, 2024"
+  },
+  {
+    "title": "What is E-Commerce Website Development",
+    "url": "https://www.thenirvanalab.com/blog/what-is-e-commerce-website-development/",
+    "slug": "what-is-e-commerce-website-development",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2024/08/Top-10-Web-Development-Trends-in-2024-1-2-1024x576.jpg",
+    "summary": "Over 2.14 billion people shop online, making e-commerce a powerful avenue for boosting your business's revenue. To tap into this potential, creating an e-commerce website is crucial. With around 24...",
+    "date": "August 28, 2024"
+  },
+  {
+    "title": "Best Practices for Salesforce Data Migration in 2024",
+    "url": "https://www.thenirvanalab.com/blog/best-practices-for-salesforce-data-migration-in-2024/",
+    "slug": "best-practices-for-salesforce-data-migration-in-2024",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2024/11/Best-Practices-for-Salesforce-Data-Migration-in-2024-1024x576.jpg",
+    "summary": "Data migration to Salesforce is a significant step that can transform your business's operations. With 2024 upon us, adopting the right strategies is essential to ensure your data transition is...",
+    "date": "August 26, 2024"
+  },
+  {
+    "title": "Salesforce Integration Best Practices in 2024",
+    "url": "https://www.thenirvanalab.com/blog/salesforce-integration-best-practices-in-2024/",
+    "slug": "salesforce-integration-best-practices-in-2024",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2024/11/Salesforce-Integration-1024x576.jpg",
+    "summary": "Businesses often find themselves stuck with disconnected systems that lead to data silos, frustrated employees handling multiple logins, and a lack of a unified customer view. This fragmented setup makes...",
+    "date": "August 23, 2024"
+  },
+  {
+    "title": "How to Build a DevOps Culture: Top 10 Tips for Successful Adoption",
+    "url": "https://www.thenirvanalab.com/blog/how-to-build-a-devops-culture-top-10-tips-for-successful-adoption/",
+    "slug": "how-to-build-a-devops-culture-top-10-tips-for-successful-adoption",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2024/11/DevOps-Culture-01-1024x576.jpg",
+    "summary": "Transforming how your team works together can be challenging, especially when adopting a DevOps culture. But what if the secret to smoother releases, fewer bugs, and happier teams lies in...",
+    "date": "August 21, 2024"
+  },
+  {
+    "title": "The Role of Cloud in Digital Transformation in 2024",
+    "url": "https://www.thenirvanalab.com/blog/the-role-of-cloud-in-digital-transformation-in-2024/",
+    "slug": "the-role-of-cloud-in-digital-transformation-in-2024",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2024/11/The-Role-of-Cloud-in-Digital-Transformation-in-2024-1024x576.jpg",
+    "summary": "Digital transformation is no longer a choice but necessary for businesses aiming to stay competitive in 2024. Cloud in digital transformation is at the heart of this shift, a technology...",
+    "date": "August 19, 2024"
+  },
+  {
+    "title": "Digital Transformation in Healthcare in 2024",
+    "url": "https://www.thenirvanalab.com/blog/digital-transformation-in-healthcare-in-2024/",
+    "slug": "digital-transformation-in-healthcare-in-2024",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2024/11/Digital-Transformation-in-Healthcare-in-2024-1024x576.jpg",
+    "summary": "Digital transformation in healthcare is reshaping the industry in ways we never imagined. From faster diagnoses to personalized treatments, technology is making healthcare more efficient and accessible. But what exactly...",
+    "date": "August 15, 2024"
+  },
+  {
+    "title": "Key Steps for a Successful Cloud Migration",
+    "url": "https://www.thenirvanalab.com/blog/key-steps-for-a-successful-cloud-migration/",
+    "slug": "key-steps-for-a-successful-cloud-migration",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2024/11/Key-Steps-for-a-Successful-Cloud-Migration-1024x576.jpg",
+    "summary": "Even for seasoned professionals, embarking on a cloud migration journey can feel like venturing into unknown territory. Moving away from a well-established IT setup that has served your business for...",
+    "date": "August 13, 2024"
+  },
+  {
+    "title": "Custom Mobile App Development For Businesses in 2024",
+    "url": "https://www.thenirvanalab.com/blog/custom-mobile-app-development-for-businesses-in-2024/",
+    "slug": "custom-mobile-app-development-for-businesses-in-2024",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2024/11/Custom-Mobile-App-Development-1024x576.jpg",
+    "summary": "As a visionary business leader, you're empowered to leverage mobile technologies to propel your organization ahead of the competition. But with so many options available, where do you start? Should...",
+    "date": "August 8, 2024"
+  },
+  {
+    "title": "Power BI and Tableau: Which is Better for Your Business?",
+    "url": "https://www.thenirvanalab.com/blog/power-bi-and-tableau-which-is-better-for-your-business/",
+    "slug": "power-bi-and-tableau-which-is-better-for-your-business",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2024/11/Power-BI-and-Tableau-1024x576.jpg",
+    "summary": "Choosing the right data visualization tool can be a game-changer for your business. Two of the most popular options are Power BI and Tableau. But which one is better for...",
+    "date": "August 7, 2024"
+  },
+  {
+    "title": "Top Cloud Migration Challenges and How to Overcome Them in 2024",
+    "url": "https://www.thenirvanalab.com/blog/top-cloud-migration-challenges-and-how-to-overcome-them-in-2024/",
+    "slug": "top-cloud-migration-challenges-and-how-to-overcome-them-in-2024",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2024/11/Top-Cloud-Migration-Challenges-and-How-to-Overcome-Them-in-2024-1024x576.jpg",
+    "summary": "Cloud migration has become a crucial step for businesses looking to modernize their IT infrastructure and stay competitive. Nevertheless, moving to the cloud comes with its own set of challenges....",
+    "date": "August 5, 2024"
+  },
+  {
+    "title": "Top 10 Reasons to Use Liferay for Digital Transformation",
+    "url": "https://www.thenirvanalab.com/blog/top-10-reasons-to-use-liferay-for-digital-transformation/",
+    "slug": "top-10-reasons-to-use-liferay-for-digital-transformation",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2024/11/Top-10-Reasons-to-Use-Liferay-for-Digital-Transformation-1024x576.jpg",
+    "summary": "Navigating the challenges of digital transformation can be overwhelming, but Liferay simplifies the process, delivering a powerful yet intuitive solution for seamless transformation. Imagine a platform that streamlines your operations,...",
+    "date": "August 1, 2024"
+  },
+  {
+    "title": "From Basics to Brilliance: Understanding Salesforce and Its Applications",
+    "url": "https://www.thenirvanalab.com/blog/from-basics-to-brilliance-understanding-salesforce-and-its-applications/",
+    "slug": "from-basics-to-brilliance-understanding-salesforce-and-its-applications",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2024/07/Understanding-Salesforce-and-Its-Applications-1024x576.jpg",
+    "summary": "Are you curious about how Salesforce can revolutionize the way you do business? You're in the right place! \"From Basics to Brilliance: Understanding Salesforce and Its Applications\" is your comprehensive...",
+    "date": "July 30, 2024"
+  },
+  {
+    "title": "What is Cloud Migration? and its Strategies",
+    "url": "https://www.thenirvanalab.com/blog/what-is-cloud-migration/",
+    "slug": "what-is-cloud-migration",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2024/07/Cloud-Migration-Strategies-1024x576.jpg",
+    "summary": "Cloud migration involves moving data, applications, and computing resources from your data center to cloud providers. It's like moving to a place with lower costs, more capabilities, frequent tech updates,...",
+    "date": "July 26, 2024"
+  },
+  {
+    "title": "What is Digital Transformation?",
+    "url": "https://www.thenirvanalab.com/blog/what-is-digital-transformation/",
+    "slug": "what-is-digital-transformation",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2024/08/What-is-Digital-Transforamation-1024x576.jpg",
+    "summary": "Digital transformation is a buzzword you've probably heard lately, but what does it mean? Simply put, leveraging digital technology transforms business operations and enhances customer value delivery. It's not just...",
+    "date": "July 24, 2024"
+  },
+  {
+    "title": "What is DevOps and Why is it Important?",
+    "url": "https://www.thenirvanalab.com/blog/what-is-devops-and-why-is-it-important/",
+    "slug": "what-is-devops-and-why-is-it-important",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2024/08/single-blog-banner1-scaled-1-1024x576.jpg",
+    "summary": "Staying ahead means adapting quickly and efficiently. This is where DevOps steps in. But what is DevOps, and why is everyone talking about it? DevOps is a blend of development...",
+    "date": "July 22, 2024"
+  },
+  {
+    "title": "How to Choose the Right Cloud Service for Your Business Needs",
+    "url": "https://www.thenirvanalab.com/blog/how-to-choose-the-right-cloud-service-for-your-business-needs/",
+    "slug": "how-to-choose-the-right-cloud-service-for-your-business-needs",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2024/07/How-to-choos-the-right-could-service-1024x576.jpg",
+    "summary": "Choosing the right cloud service provider is crucial for your business’s success, so making an informed decision is key. In this guide, we'll define a cloud service provider and explore...",
+    "date": "July 19, 2024"
+  },
+  {
+    "title": "What is Data Engineering?",
+    "url": "https://www.thenirvanalab.com/blog/what-is-data-engineering/",
+    "slug": "what-is-data-engineering",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2024/08/What-is-Data-Engineering-1024x576.jpg",
+    "summary": "Data engineering is the backbone of modern data management. It entails creating, managing, and maintaining systems that gather, store, and analyze vast amounts of data. Imagine having all the data...",
+    "date": "July 17, 2024"
+  },
+  {
+    "title": "What is API Integration?",
+    "url": "https://www.thenirvanalab.com/blog/what-is-api-integration/",
+    "slug": "what-is-api-integration",
+    "image": "",
+    "summary": "Imagine you're using a fitness app that seamlessly pulls data from your smartwatch and shares your progress on social media. How does this magic happen? It's all thanks to API...",
+    "date": "July 15, 2024"
+  },
+  {
+    "title": "What are Microservices Architecture?",
+    "url": "https://www.thenirvanalab.com/blog/what-are-microservices-architecture/",
+    "slug": "what-are-microservices-architecture",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2024/09/What-are-Microservices-Architecture-1024x576.jpg",
+    "summary": "Imagine you have a large, complex machine. Instead of one giant piece, what if you could break it into smaller, manageable parts that can work independently but still come together...",
+    "date": "July 12, 2024"
+  },
+  {
+    "title": "How Salesforce Can Transform Your Sales and Marketing Strategies",
+    "url": "https://www.thenirvanalab.com/blog/how-salesforce-can-transform-your-sales-and-marketing-strategies/",
+    "slug": "how-salesforce-can-transform-your-sales-and-marketing-strategies",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2024/08/how-salesforce-can-trasform-your-sales-and-marketing-strategies-1-1024x576.jpg",
+    "summary": "Envision a fine-tuned marketing strategy that makes every campaign feel personal and impactful. Salesforce makes this a reality. By seamlessly integrating advanced analytics, AI-driven insights, and automated processes, Salesforce empowers...",
+    "date": "July 11, 2024"
+  },
+  {
+    "title": "Liferay DXP: Why This Digital Experience Platform is Perfect for Your Business Needs",
+    "url": "https://www.thenirvanalab.com/blog/liferay-dxp-why-this-digital-experience-platform-is-perfect-for-your-business-needs/",
+    "slug": "liferay-dxp-why-this-digital-experience-platform-is-perfect-for-your-business-needs",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2024/08/Why-this-Digital-Experience-Platform-is-perfect-for-your-busness-needs-1024x576.jpg",
+    "summary": "Choosing the right platform for your digital experience is crucial. Liferay, a leader in digital experience platforms, offers unmatched versatility and innovation. Known for its open-source foundation, Liferay effortlessly integrates...",
+    "date": "July 9, 2024"
+  },
+  {
+    "title": "The Impact of 5G Technology on Business Operations",
+    "url": "https://www.thenirvanalab.com/blog/the-impact-of-5g-technology-on-business-operations/",
+    "slug": "the-impact-of-5g-technology-on-business-operations",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2024/08/WhatsApp-Image-2024-08-18-at-01.30.35_22ddd554-1024x576.jpg",
+    "summary": "The launch of 5G technology is a big step forward in how businesses change digitally. With super-fast speeds, much lower delays, and better connectivity, 5G will transform how companies work...",
+    "date": "July 4, 2024"
+  },
+  {
+    "title": "Why Cybersecurity Should Be a Top Priority for Your Business",
+    "url": "https://www.thenirvanalab.com/blog/why-cybersecurity-should-be-a-top-priority-for-your-business/",
+    "slug": "why-cybersecurity-should-be-a-top-priority-for-your-business",
+    "image": "https://www.thenirvanalab.com/wp-content/uploads/2024/08/Why-Cybersecurity-should-be-a-Top-Priority-for-your-business-1-1024x576.jpg",
+    "summary": "In a stark reminder of the importance of cybersecurity, a recent update from CrowdStrike led to one of the most significant IT outages in history. On July 19, 2024, Microsoft...",
+    "date": "July 2, 2024"
+  }
+]
