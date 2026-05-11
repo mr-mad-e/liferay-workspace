@@ -11,10 +11,5 @@ export const client = new LiferayHeadlessClient({
 //   baseUrl: 'https://apps.nlproducts.net',
 //   username: 'portal.admin@thenirvanalab.com',
 //   password: 'Welcome@123!',
-//   swaggerUrls: ['/o/headless-delivery/v1.0/openapi.json', '/o/cms/blogs/openapi.json', '/o/cms/basic-web-contents/openapi.json'],
+//   swaggerUrls: ['/o/x-headless-delivery/v1.0/openapi.json', '/o/cms/blogs/openapi.json', '/o/cms/basic-web-contents/openapi.json'],
 // });
-
-// await client.init();
-
-// console.log('client', client._services)
-

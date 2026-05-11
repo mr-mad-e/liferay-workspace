@@ -8,7 +8,7 @@ slugify.extend({ '&': '-', '/': '-' });
 const siteId = '20126';
 // const siteId = '1094776';
 
-const HTML_DIR = path.join(process.cwd(), 'html');
+const HTML_DIR = path.join(process.cwd(), 'pages');
 
 const pages = {
   Home: 'home',
@@ -92,7 +92,7 @@ const pages = {
  */
 const getSlug = (title) => slugify(title, { lower: true, strict: true });
 
-const getFilePath = (value) => (typeof value === 'string' ? path.join(HTML_DIR, `${value}_.html`) : null);
+const getFilePath = (value) => (typeof value === 'string' ? path.join(HTML_DIR, `${value}.html`) : null);
 
 const readHtmlFile = async (filePath) => {
   if (!filePath) return '';
@@ -166,7 +166,7 @@ const createPageRequest = async (body) => {
   // console.log('📄 Creating page:', body);
 
   try {
-    await client.headlessDelivery.sitePage.postSiteSitePage({ siteId, body });
+    await client.xHeadlessDelivery.sitePage.postSiteSitePage({ siteId, body });
   } catch (error) {
     console.log('error', body.title, error);
   }
@@ -213,7 +213,7 @@ const createPagesRecursively = async (node, parent = null) => {
 export const importPages = async (pages) => {
   try {
     await client.init();
-    if(!client.headlessDelivery?.sitePage?.postSiteSitePage) {
+    if(!client.xHeadlessDelivery?.sitePage?.postSiteSitePage) {
       throw new Error("API is not ready")
     } // TODO: throw error from proxy object
     await createPagesRecursively(pages);
