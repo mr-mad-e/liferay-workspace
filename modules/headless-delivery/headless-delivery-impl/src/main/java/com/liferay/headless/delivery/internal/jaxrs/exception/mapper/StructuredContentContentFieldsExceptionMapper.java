@@ -18,9 +18,9 @@ import org.osgi.service.component.annotations.Component;
  */
 @Component(
 	property = {
-		"osgi.jaxrs.application.select=(osgi.jaxrs.name=Dev.Liferay.Headless.Delivery)",
+		"osgi.jaxrs.application.select=(osgi.jaxrs.name=Liferay.Headless.Delivery)",
 		"osgi.jaxrs.extension=true",
-		"osgi.jaxrs.name=Dev.Liferay.Headless.Delivery.StructuredContentContentFieldsExceptionMapper"
+		"osgi.jaxrs.name=Liferay.Headless.Delivery.StructuredContentContentFieldsExceptionMapper"
 	},
 	service = ExceptionMapper.class
 )

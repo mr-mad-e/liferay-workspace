@@ -112,7 +112,7 @@ public class RenderedPageUtil {
 
 		if (!showSegmentsExperience) {
 			return JaxRsLinkUtil.getJaxRsLink(
-				"x-headless-delivery", BaseSitePageResourceImpl.class,
+				"headless-delivery", BaseSitePageResourceImpl.class,
 				"getSiteSitePageRenderedPage", uriInfo,
 				arguments.toArray(new Object[0]));
 		}
@@ -124,7 +124,7 @@ public class RenderedPageUtil {
 		arguments.add(segmentsExperience.getSegmentsExperienceKey());
 
 		return JaxRsLinkUtil.getJaxRsLink(
-			"x-headless-delivery", BaseSitePageResourceImpl.class,
+			"headless-delivery", BaseSitePageResourceImpl.class,
 			"getSiteSitePageExperienceExperienceKeyRenderedPage", uriInfo,
 			arguments.toArray(new Object[0]));
 	}

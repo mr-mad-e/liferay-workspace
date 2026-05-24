@@ -86,7 +86,7 @@ public class StructuredContentDTOConverter
 	@Override
 	public String getJaxRsLink(long classPK, UriInfo uriInfo) {
 		return JaxRsLinkUtil.getJaxRsLink(
-			"x-headless-delivery", BaseStructuredContentResourceImpl.class,
+			"headless-delivery", BaseStructuredContentResourceImpl.class,
 			"getStructuredContent", uriInfo, classPK);
 	}
 
@@ -297,7 +297,7 @@ public class StructuredContentDTOConverter
 							journalArticle.getDDMTemplateKey()));
 					setRenderedContentURL(
 						() -> JaxRsLinkUtil.getJaxRsLink(
-							"x-headless-delivery",
+							"headless-delivery",
 							BaseStructuredContentResourceImpl.class,
 							"getStructuredContentRenderedContentContent" +
 								"Template",

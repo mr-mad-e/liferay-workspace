@@ -314,7 +314,7 @@ public interface SitePageResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/site-pages/{friendlyUrlPath}");
+						"/o/headless-delivery/v1.0/sites/{siteId}/site-pages/{friendlyUrlPath}");
 
 			httpInvoker.path("siteId", siteId);
 			httpInvoker.path("friendlyUrlPath", friendlyUrlPath);
@@ -423,7 +423,7 @@ public interface SitePageResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/site-pages/{friendlyUrlPath}/experiences/{experienceKey}");
+						"/o/headless-delivery/v1.0/sites/{siteId}/site-pages/{friendlyUrlPath}/experiences/{experienceKey}");
 
 			httpInvoker.path("siteId", siteId);
 			httpInvoker.path("friendlyUrlPath", friendlyUrlPath);
@@ -533,7 +533,7 @@ public interface SitePageResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/site-pages/{friendlyUrlPath}/experiences/{experienceKey}/rendered-page");
+						"/o/headless-delivery/v1.0/sites/{siteId}/site-pages/{friendlyUrlPath}/experiences/{experienceKey}/rendered-page");
 
 			httpInvoker.path("siteId", siteId);
 			httpInvoker.path("friendlyUrlPath", friendlyUrlPath);
@@ -642,7 +642,7 @@ public interface SitePageResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/site-pages/{friendlyUrlPath}/rendered-page");
+						"/o/headless-delivery/v1.0/sites/{siteId}/site-pages/{friendlyUrlPath}/rendered-page");
 
 			httpInvoker.path("siteId", siteId);
 			httpInvoker.path("friendlyUrlPath", friendlyUrlPath);
@@ -751,7 +751,7 @@ public interface SitePageResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/site-pages/{friendlyUrlPath}/experiences");
+						"/o/headless-delivery/v1.0/sites/{siteId}/site-pages/{friendlyUrlPath}/experiences");
 
 			httpInvoker.path("siteId", siteId);
 			httpInvoker.path("friendlyUrlPath", friendlyUrlPath);
@@ -881,7 +881,7 @@ public interface SitePageResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/site-pages");
+						"/o/headless-delivery/v1.0/sites/{siteId}/site-pages");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -988,7 +988,7 @@ public interface SitePageResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/site-pages");
+						"/o/headless-delivery/v1.0/sites/{siteId}/site-pages");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -1090,7 +1090,7 @@ public interface SitePageResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/site-pages/batch");
+						"/o/headless-delivery/v1.0/sites/{siteId}/site-pages/batch");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -1220,7 +1220,7 @@ public interface SitePageResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/site-pages/export-batch");
+						"/o/headless-delivery/v1.0/sites/{siteId}/site-pages/export-batch");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -1244,4 +1244,4 @@ public interface SitePageResource {
 	}
 
 }
-// LIFERAY-REST-BUILDER-HASH:1064014947
+// LIFERAY-REST-BUILDER-HASH:-1531305762

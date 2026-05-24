@@ -353,7 +353,7 @@ public interface ContentStructureResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/asset-libraries/{assetLibraryId}/content-structures/permissions");
+						"/o/headless-delivery/v1.0/asset-libraries/{assetLibraryId}/content-structures/permissions");
 
 			httpInvoker.path("assetLibraryId", assetLibraryId);
 
@@ -484,7 +484,7 @@ public interface ContentStructureResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/asset-libraries/{assetLibraryId}/content-structures");
+						"/o/headless-delivery/v1.0/asset-libraries/{assetLibraryId}/content-structures");
 
 			httpInvoker.path("assetLibraryId", assetLibraryId);
 
@@ -589,7 +589,7 @@ public interface ContentStructureResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/content-structures/{contentStructureId}");
+						"/o/headless-delivery/v1.0/content-structures/{contentStructureId}");
 
 			httpInvoker.path("contentStructureId", contentStructureId);
 
@@ -701,7 +701,7 @@ public interface ContentStructureResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/content-structures/{contentStructureId}/permissions");
+						"/o/headless-delivery/v1.0/content-structures/{contentStructureId}/permissions");
 
 			httpInvoker.path("contentStructureId", contentStructureId);
 
@@ -813,7 +813,7 @@ public interface ContentStructureResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/content-structures/permissions");
+						"/o/headless-delivery/v1.0/sites/{siteId}/content-structures/permissions");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -944,7 +944,7 @@ public interface ContentStructureResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/content-structures");
+						"/o/headless-delivery/v1.0/sites/{siteId}/content-structures");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -1074,7 +1074,7 @@ public interface ContentStructureResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/asset-libraries/{assetLibraryId}/content-structures/export-batch");
+						"/o/headless-delivery/v1.0/asset-libraries/{assetLibraryId}/content-structures/export-batch");
 
 			httpInvoker.path("assetLibraryId", assetLibraryId);
 
@@ -1204,7 +1204,7 @@ public interface ContentStructureResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/content-structures/export-batch");
+						"/o/headless-delivery/v1.0/sites/{siteId}/content-structures/export-batch");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -1320,7 +1320,7 @@ public interface ContentStructureResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/asset-libraries/{assetLibraryId}/content-structures/permissions");
+						"/o/headless-delivery/v1.0/asset-libraries/{assetLibraryId}/content-structures/permissions");
 
 			httpInvoker.path("assetLibraryId", assetLibraryId);
 
@@ -1436,7 +1436,7 @@ public interface ContentStructureResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/content-structures/{contentStructureId}/permissions");
+						"/o/headless-delivery/v1.0/content-structures/{contentStructureId}/permissions");
 
 			httpInvoker.path("contentStructureId", contentStructureId);
 
@@ -1552,7 +1552,7 @@ public interface ContentStructureResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/content-structures/permissions");
+						"/o/headless-delivery/v1.0/sites/{siteId}/content-structures/permissions");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -1576,4 +1576,4 @@ public interface ContentStructureResource {
 	}
 
 }
-// LIFERAY-REST-BUILDER-HASH:-207353615
+// LIFERAY-REST-BUILDER-HASH:-456568178

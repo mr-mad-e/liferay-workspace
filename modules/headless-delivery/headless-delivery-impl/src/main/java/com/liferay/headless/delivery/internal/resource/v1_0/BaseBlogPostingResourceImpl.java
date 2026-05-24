@@ -93,7 +93,7 @@ public abstract class BaseBlogPostingResourceImpl
 	/**
 	 * Invoke this method with the command line:
 	 *
-	 * curl -X 'DELETE' 'http://localhost:8080/o/x-headless-delivery/v1.0/blog-postings/{blogPostingId}'  -u 'test@liferay.com:test'
+	 * curl -X 'DELETE' 'http://localhost:8080/o/headless-delivery/v1.0/blog-postings/{blogPostingId}'  -u 'test@liferay.com:test'
 	 */
 	@io.swagger.v3.oas.annotations.Operation(
 		description = "Deletes the blog post and returns a 204 if the operation succeeds."
@@ -124,7 +124,7 @@ public abstract class BaseBlogPostingResourceImpl
 	/**
 	 * Invoke this method with the command line:
 	 *
-	 * curl -X 'DELETE' 'http://localhost:8080/o/x-headless-delivery/v1.0/blog-postings/batch'  -u 'test@liferay.com:test'
+	 * curl -X 'DELETE' 'http://localhost:8080/o/headless-delivery/v1.0/blog-postings/batch'  -u 'test@liferay.com:test'
 	 */
 	@io.swagger.v3.oas.annotations.Parameters(
 		value = {
@@ -168,7 +168,7 @@ public abstract class BaseBlogPostingResourceImpl
 	/**
 	 * Invoke this method with the command line:
 	 *
-	 * curl -X 'DELETE' 'http://localhost:8080/o/x-headless-delivery/v1.0/blog-postings/{blogPostingId}/my-rating'  -u 'test@liferay.com:test'
+	 * curl -X 'DELETE' 'http://localhost:8080/o/headless-delivery/v1.0/blog-postings/{blogPostingId}/my-rating'  -u 'test@liferay.com:test'
 	 */
 	@io.swagger.v3.oas.annotations.Operation(
 		description = "Deletes the blog post rating of the user who authenticated the request."
@@ -199,7 +199,7 @@ public abstract class BaseBlogPostingResourceImpl
 	/**
 	 * Invoke this method with the command line:
 	 *
-	 * curl -X 'DELETE' 'http://localhost:8080/o/x-headless-delivery/v1.0/sites/{siteId}/blog-postings/by-external-reference-code/{externalReferenceCode}'  -u 'test@liferay.com:test'
+	 * curl -X 'DELETE' 'http://localhost:8080/o/headless-delivery/v1.0/sites/{siteId}/blog-postings/by-external-reference-code/{externalReferenceCode}'  -u 'test@liferay.com:test'
 	 */
 	@io.swagger.v3.oas.annotations.Operation(
 		description = "Deletes the blog post by external reference code."
@@ -240,7 +240,7 @@ public abstract class BaseBlogPostingResourceImpl
 	/**
 	 * Invoke this method with the command line:
 	 *
-	 * curl -X 'GET' 'http://localhost:8080/o/x-headless-delivery/v1.0/blog-postings/{blogPostingId}'  -u 'test@liferay.com:test'
+	 * curl -X 'GET' 'http://localhost:8080/o/headless-delivery/v1.0/blog-postings/{blogPostingId}'  -u 'test@liferay.com:test'
 	 */
 	@io.swagger.v3.oas.annotations.Operation(
 		description = "Retrieves the blog post."
@@ -285,7 +285,7 @@ public abstract class BaseBlogPostingResourceImpl
 	/**
 	 * Invoke this method with the command line:
 	 *
-	 * curl -X 'GET' 'http://localhost:8080/o/x-headless-delivery/v1.0/blog-postings/{blogPostingId}/my-rating'  -u 'test@liferay.com:test'
+	 * curl -X 'GET' 'http://localhost:8080/o/headless-delivery/v1.0/blog-postings/{blogPostingId}/my-rating'  -u 'test@liferay.com:test'
 	 */
 	@io.swagger.v3.oas.annotations.Operation(
 		description = "Retrieves the blog post rating of the user who authenticated the request."
@@ -326,7 +326,7 @@ public abstract class BaseBlogPostingResourceImpl
 	/**
 	 * Invoke this method with the command line:
 	 *
-	 * curl -X 'GET' 'http://localhost:8080/o/x-headless-delivery/v1.0/blog-postings/{blogPostingId}/permissions'  -u 'test@liferay.com:test'
+	 * curl -X 'GET' 'http://localhost:8080/o/headless-delivery/v1.0/blog-postings/{blogPostingId}/permissions'  -u 'test@liferay.com:test'
 	 */
 	@io.swagger.v3.oas.annotations.Parameters(
 		value = {
@@ -396,7 +396,7 @@ public abstract class BaseBlogPostingResourceImpl
 	/**
 	 * Invoke this method with the command line:
 	 *
-	 * curl -X 'GET' 'http://localhost:8080/o/x-headless-delivery/v1.0/blog-postings/{blogPostingId}/rendered-content-by-display-page/{displayPageKey}'  -u 'test@liferay.com:test'
+	 * curl -X 'GET' 'http://localhost:8080/o/headless-delivery/v1.0/blog-postings/{blogPostingId}/rendered-content-by-display-page/{displayPageKey}'  -u 'test@liferay.com:test'
 	 */
 	@io.swagger.v3.oas.annotations.Operation(
 		description = "Retrieves the blog post's rendered display page"
@@ -451,7 +451,7 @@ public abstract class BaseBlogPostingResourceImpl
 	/**
 	 * Invoke this method with the command line:
 	 *
-	 * curl -X 'GET' 'http://localhost:8080/o/x-headless-delivery/v1.0/sites/{siteId}/blog-postings/by-external-reference-code/{externalReferenceCode}'  -u 'test@liferay.com:test'
+	 * curl -X 'GET' 'http://localhost:8080/o/headless-delivery/v1.0/sites/{siteId}/blog-postings/by-external-reference-code/{externalReferenceCode}'  -u 'test@liferay.com:test'
 	 */
 	@io.swagger.v3.oas.annotations.Operation(
 		description = "Retrieves the site's blog post by external reference code."
@@ -506,7 +506,7 @@ public abstract class BaseBlogPostingResourceImpl
 	/**
 	 * Invoke this method with the command line:
 	 *
-	 * curl -X 'GET' 'http://localhost:8080/o/x-headless-delivery/v1.0/sites/{siteId}/blog-postings/by-friendly-url-path/{friendlyUrlPath}'  -u 'test@liferay.com:test'
+	 * curl -X 'GET' 'http://localhost:8080/o/headless-delivery/v1.0/sites/{siteId}/blog-postings/by-friendly-url-path/{friendlyUrlPath}'  -u 'test@liferay.com:test'
 	 */
 	@io.swagger.v3.oas.annotations.Parameters(
 		value = {
@@ -558,7 +558,7 @@ public abstract class BaseBlogPostingResourceImpl
 	/**
 	 * Invoke this method with the command line:
 	 *
-	 * curl -X 'GET' 'http://localhost:8080/o/x-headless-delivery/v1.0/sites/{siteId}/blog-postings/permissions'  -u 'test@liferay.com:test'
+	 * curl -X 'GET' 'http://localhost:8080/o/headless-delivery/v1.0/sites/{siteId}/blog-postings/permissions'  -u 'test@liferay.com:test'
 	 */
 	@io.swagger.v3.oas.annotations.Parameters(
 		value = {
@@ -625,7 +625,7 @@ public abstract class BaseBlogPostingResourceImpl
 	/**
 	 * Invoke this method with the command line:
 	 *
-	 * curl -X 'GET' 'http://localhost:8080/o/x-headless-delivery/v1.0/sites/{siteId}/blog-postings'  -u 'test@liferay.com:test'
+	 * curl -X 'GET' 'http://localhost:8080/o/headless-delivery/v1.0/sites/{siteId}/blog-postings'  -u 'test@liferay.com:test'
 	 */
 	@io.swagger.v3.oas.annotations.Operation(
 		description = "Retrieves the site's blog postings. Results can be paginated, filtered, searched, and sorted."
@@ -704,7 +704,7 @@ public abstract class BaseBlogPostingResourceImpl
 	/**
 	 * Invoke this method with the command line:
 	 *
-	 * curl -X 'PATCH' 'http://localhost:8080/o/x-headless-delivery/v1.0/blog-postings/{blogPostingId}' -d $'{"alternativeHeadline": ___, "articleBody": ___, "customFields": ___, "datePublished": ___, "description": ___, "externalReferenceCode": ___, "friendlyUrlPath": ___, "headline": ___, "image": ___, "keywords": ___, "relatedContents": ___, "taxonomyCategoryIds": ___, "viewableBy": ___}' --header 'Content-Type: application/json' -u 'test@liferay.com:test'
+	 * curl -X 'PATCH' 'http://localhost:8080/o/headless-delivery/v1.0/blog-postings/{blogPostingId}' -d $'{"alternativeHeadline": ___, "articleBody": ___, "customFields": ___, "datePublished": ___, "description": ___, "externalReferenceCode": ___, "friendlyUrlPath": ___, "headline": ___, "image": ___, "keywords": ___, "relatedContents": ___, "taxonomyCategoryIds": ___, "viewableBy": ___}' --header 'Content-Type: application/json' -u 'test@liferay.com:test'
 	 */
 	@io.swagger.v3.oas.annotations.Operation(
 		description = "Updates the blog post using only the fields received in the request body. Any other fields are left untouched. Returns the updated blog post."
@@ -792,7 +792,7 @@ public abstract class BaseBlogPostingResourceImpl
 	/**
 	 * Invoke this method with the command line:
 	 *
-	 * curl -X 'POST' 'http://localhost:8080/o/x-headless-delivery/v1.0/blog-postings/{blogPostingId}/my-rating' -d $'{"ratingValue": ___}' --header 'Content-Type: application/json' -u 'test@liferay.com:test'
+	 * curl -X 'POST' 'http://localhost:8080/o/headless-delivery/v1.0/blog-postings/{blogPostingId}/my-rating' -d $'{"ratingValue": ___}' --header 'Content-Type: application/json' -u 'test@liferay.com:test'
 	 */
 	@io.swagger.v3.oas.annotations.Operation(
 		description = "Creates a new blog post rating by the user who authenticated the request."
@@ -827,7 +827,7 @@ public abstract class BaseBlogPostingResourceImpl
 	/**
 	 * Invoke this method with the command line:
 	 *
-	 * curl -X 'POST' 'http://localhost:8080/o/x-headless-delivery/v1.0/sites/{siteId}/blog-postings' -d $'{"alternativeHeadline": ___, "articleBody": ___, "customFields": ___, "datePublished": ___, "description": ___, "externalReferenceCode": ___, "friendlyUrlPath": ___, "headline": ___, "image": ___, "keywords": ___, "relatedContents": ___, "taxonomyCategoryIds": ___, "viewableBy": ___}' --header 'Content-Type: application/json' -u 'test@liferay.com:test'
+	 * curl -X 'POST' 'http://localhost:8080/o/headless-delivery/v1.0/sites/{siteId}/blog-postings' -d $'{"alternativeHeadline": ___, "articleBody": ___, "customFields": ___, "datePublished": ___, "description": ___, "externalReferenceCode": ___, "friendlyUrlPath": ___, "headline": ___, "image": ___, "keywords": ___, "relatedContents": ___, "taxonomyCategoryIds": ___, "viewableBy": ___}' --header 'Content-Type: application/json' -u 'test@liferay.com:test'
 	 */
 	@io.swagger.v3.oas.annotations.Operation(
 		description = "Creates a new blog post."
@@ -862,7 +862,7 @@ public abstract class BaseBlogPostingResourceImpl
 	/**
 	 * Invoke this method with the command line:
 	 *
-	 * curl -X 'POST' 'http://localhost:8080/o/x-headless-delivery/v1.0/sites/{siteId}/blog-postings/batch'  -u 'test@liferay.com:test'
+	 * curl -X 'POST' 'http://localhost:8080/o/headless-delivery/v1.0/sites/{siteId}/blog-postings/batch'  -u 'test@liferay.com:test'
 	 */
 	@io.swagger.v3.oas.annotations.Parameters(
 		value = {
@@ -914,7 +914,7 @@ public abstract class BaseBlogPostingResourceImpl
 	/**
 	 * Invoke this method with the command line:
 	 *
-	 * curl -X 'POST' 'http://localhost:8080/o/x-headless-delivery/v1.0/sites/{siteId}/blog-postings/export-batch'  -u 'test@liferay.com:test'
+	 * curl -X 'POST' 'http://localhost:8080/o/headless-delivery/v1.0/sites/{siteId}/blog-postings/export-batch'  -u 'test@liferay.com:test'
 	 */
 	@io.swagger.v3.oas.annotations.Parameters(
 		value = {
@@ -1002,7 +1002,7 @@ public abstract class BaseBlogPostingResourceImpl
 	/**
 	 * Invoke this method with the command line:
 	 *
-	 * curl -X 'PUT' 'http://localhost:8080/o/x-headless-delivery/v1.0/blog-postings/{blogPostingId}' -d $'{"alternativeHeadline": ___, "articleBody": ___, "customFields": ___, "datePublished": ___, "description": ___, "externalReferenceCode": ___, "friendlyUrlPath": ___, "headline": ___, "image": ___, "keywords": ___, "relatedContents": ___, "taxonomyCategoryIds": ___, "viewableBy": ___}' --header 'Content-Type: application/json' -u 'test@liferay.com:test'
+	 * curl -X 'PUT' 'http://localhost:8080/o/headless-delivery/v1.0/blog-postings/{blogPostingId}' -d $'{"alternativeHeadline": ___, "articleBody": ___, "customFields": ___, "datePublished": ___, "description": ___, "externalReferenceCode": ___, "friendlyUrlPath": ___, "headline": ___, "image": ___, "keywords": ___, "relatedContents": ___, "taxonomyCategoryIds": ___, "viewableBy": ___}' --header 'Content-Type: application/json' -u 'test@liferay.com:test'
 	 */
 	@io.swagger.v3.oas.annotations.Operation(
 		description = "Replaces the blog post with the information sent in the request body. Any missing fields are deleted, unless they are required."
@@ -1037,7 +1037,7 @@ public abstract class BaseBlogPostingResourceImpl
 	/**
 	 * Invoke this method with the command line:
 	 *
-	 * curl -X 'PUT' 'http://localhost:8080/o/x-headless-delivery/v1.0/blog-postings/batch'  -u 'test@liferay.com:test'
+	 * curl -X 'PUT' 'http://localhost:8080/o/headless-delivery/v1.0/blog-postings/batch'  -u 'test@liferay.com:test'
 	 */
 	@io.swagger.v3.oas.annotations.Parameters(
 		value = {
@@ -1081,7 +1081,7 @@ public abstract class BaseBlogPostingResourceImpl
 	/**
 	 * Invoke this method with the command line:
 	 *
-	 * curl -X 'PUT' 'http://localhost:8080/o/x-headless-delivery/v1.0/blog-postings/{blogPostingId}/my-rating' -d $'{"ratingValue": ___}' --header 'Content-Type: application/json' -u 'test@liferay.com:test'
+	 * curl -X 'PUT' 'http://localhost:8080/o/headless-delivery/v1.0/blog-postings/{blogPostingId}/my-rating' -d $'{"ratingValue": ___}' --header 'Content-Type: application/json' -u 'test@liferay.com:test'
 	 */
 	@io.swagger.v3.oas.annotations.Operation(
 		description = "Replaces an existing blog post rating by the user who authenticated the request."
@@ -1116,7 +1116,7 @@ public abstract class BaseBlogPostingResourceImpl
 	/**
 	 * Invoke this method with the command line:
 	 *
-	 * curl -X 'PUT' 'http://localhost:8080/o/x-headless-delivery/v1.0/blog-postings/{blogPostingId}/permissions'  -u 'test@liferay.com:test'
+	 * curl -X 'PUT' 'http://localhost:8080/o/headless-delivery/v1.0/blog-postings/{blogPostingId}/permissions'  -u 'test@liferay.com:test'
 	 */
 	@io.swagger.v3.oas.annotations.Parameters(
 		value = {
@@ -1206,7 +1206,7 @@ public abstract class BaseBlogPostingResourceImpl
 	/**
 	 * Invoke this method with the command line:
 	 *
-	 * curl -X 'PUT' 'http://localhost:8080/o/x-headless-delivery/v1.0/sites/{siteId}/blog-postings/by-external-reference-code/{externalReferenceCode}' -d $'{"alternativeHeadline": ___, "articleBody": ___, "customFields": ___, "datePublished": ___, "description": ___, "externalReferenceCode": ___, "friendlyUrlPath": ___, "headline": ___, "image": ___, "keywords": ___, "relatedContents": ___, "taxonomyCategoryIds": ___, "viewableBy": ___}' --header 'Content-Type: application/json' -u 'test@liferay.com:test'
+	 * curl -X 'PUT' 'http://localhost:8080/o/headless-delivery/v1.0/sites/{siteId}/blog-postings/by-external-reference-code/{externalReferenceCode}' -d $'{"alternativeHeadline": ___, "articleBody": ___, "customFields": ___, "datePublished": ___, "description": ___, "externalReferenceCode": ___, "friendlyUrlPath": ___, "headline": ___, "image": ___, "keywords": ___, "relatedContents": ___, "taxonomyCategoryIds": ___, "viewableBy": ___}' --header 'Content-Type: application/json' -u 'test@liferay.com:test'
 	 */
 	@io.swagger.v3.oas.annotations.Operation(
 		description = "Updates the site's blog post with the given external reference code, or creates it if it not exists."
@@ -1251,7 +1251,7 @@ public abstract class BaseBlogPostingResourceImpl
 	/**
 	 * Invoke this method with the command line:
 	 *
-	 * curl -X 'PUT' 'http://localhost:8080/o/x-headless-delivery/v1.0/sites/{siteId}/blog-postings/permissions'  -u 'test@liferay.com:test'
+	 * curl -X 'PUT' 'http://localhost:8080/o/headless-delivery/v1.0/sites/{siteId}/blog-postings/permissions'  -u 'test@liferay.com:test'
 	 */
 	@io.swagger.v3.oas.annotations.Parameters(
 		value = {
@@ -1337,7 +1337,7 @@ public abstract class BaseBlogPostingResourceImpl
 	/**
 	 * Invoke this method with the command line:
 	 *
-	 * curl -X 'PUT' 'http://localhost:8080/o/x-headless-delivery/v1.0/sites/{siteId}/blog-postings/subscribe'  -u 'test@liferay.com:test'
+	 * curl -X 'PUT' 'http://localhost:8080/o/headless-delivery/v1.0/sites/{siteId}/blog-postings/subscribe'  -u 'test@liferay.com:test'
 	 */
 	@io.swagger.v3.oas.annotations.Parameters(
 		value = {
@@ -1365,7 +1365,7 @@ public abstract class BaseBlogPostingResourceImpl
 	/**
 	 * Invoke this method with the command line:
 	 *
-	 * curl -X 'PUT' 'http://localhost:8080/o/x-headless-delivery/v1.0/sites/{siteId}/blog-postings/unsubscribe'  -u 'test@liferay.com:test'
+	 * curl -X 'PUT' 'http://localhost:8080/o/headless-delivery/v1.0/sites/{siteId}/blog-postings/unsubscribe'  -u 'test@liferay.com:test'
 	 */
 	@io.swagger.v3.oas.annotations.Parameters(
 		value = {
@@ -1934,7 +1934,7 @@ public abstract class BaseBlogPostingResourceImpl
 	}
 
 	protected String getApplicationPath() {
-		return "x-headless-delivery";
+		return "headless-delivery";
 	}
 
 	public void setVulcanBatchEngineExportTaskResource(
@@ -2404,4 +2404,4 @@ public abstract class BaseBlogPostingResourceImpl
 		LogFactoryUtil.getLog(BaseBlogPostingResourceImpl.class);
 
 }
-// LIFERAY-REST-BUILDER-HASH:1017479736
+// LIFERAY-REST-BUILDER-HASH:1230327989

@@ -196,7 +196,7 @@ public class ServletDataImpl implements ServletData {
 	}
 
 	public String getApplicationName() {
-		return "Dev.Liferay.Headless.Delivery";
+		return "Liferay.Headless.Delivery";
 	}
 
 	@Override
@@ -206,7 +206,7 @@ public class ServletDataImpl implements ServletData {
 
 	@Override
 	public String getPath() {
-		return "/x-headless-delivery-graphql/v1_0";
+		return "/headless-delivery-graphql/v1_0";
 	}
 
 	@Override
@@ -3093,4 +3093,4 @@ public class ServletDataImpl implements ServletData {
 		_contentSetElementResourceComponentServiceObjects;
 
 }
-// LIFERAY-REST-BUILDER-HASH:917288143
+// LIFERAY-REST-BUILDER-HASH:-1122700236

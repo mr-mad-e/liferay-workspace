@@ -210,7 +210,7 @@ public class SitePageResourceImpl
 				HashMapBuilder.put(
 					"href",
 					JaxRsLinkUtil.getJaxRsLink(
-						"x-headless-delivery", BaseSitePageResourceImpl.class,
+						"headless-delivery", BaseSitePageResourceImpl.class,
 						"getSiteSitePagesPage", contextUriInfo, siteId)
 				).put(
 					"method", "GET"

@@ -75,7 +75,7 @@ public abstract class BaseDocumentMetadataSetResourceImpl
 	/**
 	 * Invoke this method with the command line:
 	 *
-	 * curl -X 'DELETE' 'http://localhost:8080/o/x-headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-metadata-sets/by-external-reference-code/{externalReferenceCode}'  -u 'test@liferay.com:test'
+	 * curl -X 'DELETE' 'http://localhost:8080/o/headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-metadata-sets/by-external-reference-code/{externalReferenceCode}'  -u 'test@liferay.com:test'
 	 */
 	@io.swagger.v3.oas.annotations.Operation(
 		description = "Deletes the asset library's Document Metadata Set by external reference code."
@@ -120,7 +120,7 @@ public abstract class BaseDocumentMetadataSetResourceImpl
 	/**
 	 * Invoke this method with the command line:
 	 *
-	 * curl -X 'DELETE' 'http://localhost:8080/o/x-headless-delivery/v1.0/document-metadata-sets/{documentMetadataSetId}'  -u 'test@liferay.com:test'
+	 * curl -X 'DELETE' 'http://localhost:8080/o/headless-delivery/v1.0/document-metadata-sets/{documentMetadataSetId}'  -u 'test@liferay.com:test'
 	 */
 	@io.swagger.v3.oas.annotations.Operation(
 		description = "Deletes the document metadata set and returns a 204 if the operation succeeds."
@@ -155,7 +155,7 @@ public abstract class BaseDocumentMetadataSetResourceImpl
 	/**
 	 * Invoke this method with the command line:
 	 *
-	 * curl -X 'DELETE' 'http://localhost:8080/o/x-headless-delivery/v1.0/document-metadata-sets/batch'  -u 'test@liferay.com:test'
+	 * curl -X 'DELETE' 'http://localhost:8080/o/headless-delivery/v1.0/document-metadata-sets/batch'  -u 'test@liferay.com:test'
 	 */
 	@io.swagger.v3.oas.annotations.Parameters(
 		value = {
@@ -203,7 +203,7 @@ public abstract class BaseDocumentMetadataSetResourceImpl
 	/**
 	 * Invoke this method with the command line:
 	 *
-	 * curl -X 'DELETE' 'http://localhost:8080/o/x-headless-delivery/v1.0/sites/{siteId}/document-metadata-sets/by-external-reference-code/{externalReferenceCode}'  -u 'test@liferay.com:test'
+	 * curl -X 'DELETE' 'http://localhost:8080/o/headless-delivery/v1.0/sites/{siteId}/document-metadata-sets/by-external-reference-code/{externalReferenceCode}'  -u 'test@liferay.com:test'
 	 */
 	@io.swagger.v3.oas.annotations.Operation(
 		description = "Deletes the site's Document Metadata Set by external reference code."
@@ -248,7 +248,7 @@ public abstract class BaseDocumentMetadataSetResourceImpl
 	/**
 	 * Invoke this method with the command line:
 	 *
-	 * curl -X 'GET' 'http://localhost:8080/o/x-headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-metadata-sets/by-external-reference-code/{externalReferenceCode}'  -u 'test@liferay.com:test'
+	 * curl -X 'GET' 'http://localhost:8080/o/headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-metadata-sets/by-external-reference-code/{externalReferenceCode}'  -u 'test@liferay.com:test'
 	 */
 	@io.swagger.v3.oas.annotations.Operation(
 		description = "Retrieves the asset library's Document Metadata Set by external reference code."
@@ -308,7 +308,7 @@ public abstract class BaseDocumentMetadataSetResourceImpl
 	/**
 	 * Invoke this method with the command line:
 	 *
-	 * curl -X 'GET' 'http://localhost:8080/o/x-headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-metadata-sets'  -u 'test@liferay.com:test'
+	 * curl -X 'GET' 'http://localhost:8080/o/headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-metadata-sets'  -u 'test@liferay.com:test'
 	 */
 	@io.swagger.v3.oas.annotations.Parameters(
 		value = {
@@ -361,7 +361,7 @@ public abstract class BaseDocumentMetadataSetResourceImpl
 	/**
 	 * Invoke this method with the command line:
 	 *
-	 * curl -X 'GET' 'http://localhost:8080/o/x-headless-delivery/v1.0/document-metadata-sets/{documentMetadataSetId}'  -u 'test@liferay.com:test'
+	 * curl -X 'GET' 'http://localhost:8080/o/headless-delivery/v1.0/document-metadata-sets/{documentMetadataSetId}'  -u 'test@liferay.com:test'
 	 */
 	@io.swagger.v3.oas.annotations.Operation(
 		description = "Retrieves the document metadata set."
@@ -410,7 +410,7 @@ public abstract class BaseDocumentMetadataSetResourceImpl
 	/**
 	 * Invoke this method with the command line:
 	 *
-	 * curl -X 'GET' 'http://localhost:8080/o/x-headless-delivery/v1.0/sites/{siteId}/document-metadata-sets/by-external-reference-code/{externalReferenceCode}'  -u 'test@liferay.com:test'
+	 * curl -X 'GET' 'http://localhost:8080/o/headless-delivery/v1.0/sites/{siteId}/document-metadata-sets/by-external-reference-code/{externalReferenceCode}'  -u 'test@liferay.com:test'
 	 */
 	@io.swagger.v3.oas.annotations.Operation(
 		description = "Retrieves the site's Document Metadata Set by external reference code."
@@ -470,7 +470,7 @@ public abstract class BaseDocumentMetadataSetResourceImpl
 	/**
 	 * Invoke this method with the command line:
 	 *
-	 * curl -X 'GET' 'http://localhost:8080/o/x-headless-delivery/v1.0/sites/{siteId}/document-metadata-sets'  -u 'test@liferay.com:test'
+	 * curl -X 'GET' 'http://localhost:8080/o/headless-delivery/v1.0/sites/{siteId}/document-metadata-sets'  -u 'test@liferay.com:test'
 	 */
 	@io.swagger.v3.oas.annotations.Parameters(
 		value = {
@@ -521,7 +521,7 @@ public abstract class BaseDocumentMetadataSetResourceImpl
 	/**
 	 * Invoke this method with the command line:
 	 *
-	 * curl -X 'POST' 'http://localhost:8080/o/x-headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-metadata-sets' -d $'{"availableLanguages": ___, "dataDefinitionFields": ___, "dataLayout": ___, "description": ___, "description_i18n": ___, "externalReferenceCode": ___, "name": ___, "name_i18n": ___}' --header 'Content-Type: application/json' -u 'test@liferay.com:test'
+	 * curl -X 'POST' 'http://localhost:8080/o/headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-metadata-sets' -d $'{"availableLanguages": ___, "dataDefinitionFields": ___, "dataLayout": ___, "description": ___, "description_i18n": ___, "externalReferenceCode": ___, "name": ___, "name_i18n": ___}' --header 'Content-Type: application/json' -u 'test@liferay.com:test'
 	 */
 	@io.swagger.v3.oas.annotations.Parameters(
 		value = {
@@ -559,7 +559,7 @@ public abstract class BaseDocumentMetadataSetResourceImpl
 	/**
 	 * Invoke this method with the command line:
 	 *
-	 * curl -X 'POST' 'http://localhost:8080/o/x-headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-metadata-sets/batch'  -u 'test@liferay.com:test'
+	 * curl -X 'POST' 'http://localhost:8080/o/headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-metadata-sets/batch'  -u 'test@liferay.com:test'
 	 */
 	@io.swagger.v3.oas.annotations.Parameters(
 		value = {
@@ -617,7 +617,7 @@ public abstract class BaseDocumentMetadataSetResourceImpl
 	/**
 	 * Invoke this method with the command line:
 	 *
-	 * curl -X 'POST' 'http://localhost:8080/o/x-headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-metadata-sets/export-batch'  -u 'test@liferay.com:test'
+	 * curl -X 'POST' 'http://localhost:8080/o/headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-metadata-sets/export-batch'  -u 'test@liferay.com:test'
 	 */
 	@io.swagger.v3.oas.annotations.Parameters(
 		value = {
@@ -692,7 +692,7 @@ public abstract class BaseDocumentMetadataSetResourceImpl
 	/**
 	 * Invoke this method with the command line:
 	 *
-	 * curl -X 'POST' 'http://localhost:8080/o/x-headless-delivery/v1.0/sites/{siteId}/document-metadata-sets' -d $'{"availableLanguages": ___, "dataDefinitionFields": ___, "dataLayout": ___, "description": ___, "description_i18n": ___, "externalReferenceCode": ___, "name": ___, "name_i18n": ___}' --header 'Content-Type: application/json' -u 'test@liferay.com:test'
+	 * curl -X 'POST' 'http://localhost:8080/o/headless-delivery/v1.0/sites/{siteId}/document-metadata-sets' -d $'{"availableLanguages": ___, "dataDefinitionFields": ___, "dataLayout": ___, "description": ___, "description_i18n": ___, "externalReferenceCode": ___, "name": ___, "name_i18n": ___}' --header 'Content-Type: application/json' -u 'test@liferay.com:test'
 	 */
 	@io.swagger.v3.oas.annotations.Parameters(
 		value = {
@@ -728,7 +728,7 @@ public abstract class BaseDocumentMetadataSetResourceImpl
 	/**
 	 * Invoke this method with the command line:
 	 *
-	 * curl -X 'POST' 'http://localhost:8080/o/x-headless-delivery/v1.0/sites/{siteId}/document-metadata-sets/batch'  -u 'test@liferay.com:test'
+	 * curl -X 'POST' 'http://localhost:8080/o/headless-delivery/v1.0/sites/{siteId}/document-metadata-sets/batch'  -u 'test@liferay.com:test'
 	 */
 	@io.swagger.v3.oas.annotations.Parameters(
 		value = {
@@ -784,7 +784,7 @@ public abstract class BaseDocumentMetadataSetResourceImpl
 	/**
 	 * Invoke this method with the command line:
 	 *
-	 * curl -X 'POST' 'http://localhost:8080/o/x-headless-delivery/v1.0/sites/{siteId}/document-metadata-sets/export-batch'  -u 'test@liferay.com:test'
+	 * curl -X 'POST' 'http://localhost:8080/o/headless-delivery/v1.0/sites/{siteId}/document-metadata-sets/export-batch'  -u 'test@liferay.com:test'
 	 */
 	@io.swagger.v3.oas.annotations.Parameters(
 		value = {
@@ -857,7 +857,7 @@ public abstract class BaseDocumentMetadataSetResourceImpl
 	/**
 	 * Invoke this method with the command line:
 	 *
-	 * curl -X 'PUT' 'http://localhost:8080/o/x-headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-metadata-sets/by-external-reference-code/{externalReferenceCode}' -d $'{"availableLanguages": ___, "dataDefinitionFields": ___, "dataLayout": ___, "description": ___, "description_i18n": ___, "externalReferenceCode": ___, "name": ___, "name_i18n": ___}' --header 'Content-Type: application/json' -u 'test@liferay.com:test'
+	 * curl -X 'PUT' 'http://localhost:8080/o/headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-metadata-sets/by-external-reference-code/{externalReferenceCode}' -d $'{"availableLanguages": ___, "dataDefinitionFields": ___, "dataLayout": ___, "description": ___, "description_i18n": ___, "externalReferenceCode": ___, "name": ___, "name_i18n": ___}' --header 'Content-Type: application/json' -u 'test@liferay.com:test'
 	 */
 	@io.swagger.v3.oas.annotations.Operation(
 		description = "Updates the asset Library's Document Metadata Set with the given external reference code, or creates it if it does not exists."
@@ -907,7 +907,7 @@ public abstract class BaseDocumentMetadataSetResourceImpl
 	/**
 	 * Invoke this method with the command line:
 	 *
-	 * curl -X 'PUT' 'http://localhost:8080/o/x-headless-delivery/v1.0/sites/{siteId}/document-metadata-sets/by-external-reference-code/{externalReferenceCode}' -d $'{"availableLanguages": ___, "dataDefinitionFields": ___, "dataLayout": ___, "description": ___, "description_i18n": ___, "externalReferenceCode": ___, "name": ___, "name_i18n": ___}' --header 'Content-Type: application/json' -u 'test@liferay.com:test'
+	 * curl -X 'PUT' 'http://localhost:8080/o/headless-delivery/v1.0/sites/{siteId}/document-metadata-sets/by-external-reference-code/{externalReferenceCode}' -d $'{"availableLanguages": ___, "dataDefinitionFields": ___, "dataLayout": ___, "description": ___, "description_i18n": ___, "externalReferenceCode": ___, "name": ___, "name_i18n": ___}' --header 'Content-Type: application/json' -u 'test@liferay.com:test'
 	 */
 	@io.swagger.v3.oas.annotations.Operation(
 		description = "Updates the site's Document Metadata Set with the given external reference code, or creates it if it does not exist."
@@ -1303,7 +1303,7 @@ public abstract class BaseDocumentMetadataSetResourceImpl
 	}
 
 	protected String getApplicationPath() {
-		return "x-headless-delivery";
+		return "headless-delivery";
 	}
 
 	public void setVulcanBatchEngineExportTaskResource(
@@ -1770,4 +1770,4 @@ public abstract class BaseDocumentMetadataSetResourceImpl
 		LogFactoryUtil.getLog(BaseDocumentMetadataSetResourceImpl.class);
 
 }
-// LIFERAY-REST-BUILDER-HASH:-1420841731
+// LIFERAY-REST-BUILDER-HASH:-2011635696

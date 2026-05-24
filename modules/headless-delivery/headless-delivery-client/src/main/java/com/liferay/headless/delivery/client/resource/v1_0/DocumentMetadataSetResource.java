@@ -399,7 +399,7 @@ public interface DocumentMetadataSetResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-metadata-sets/by-external-reference-code/{externalReferenceCode}");
+						"/o/headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-metadata-sets/by-external-reference-code/{externalReferenceCode}");
 
 			httpInvoker.path("assetLibraryId", assetLibraryId);
 			httpInvoker.path("externalReferenceCode", externalReferenceCode);
@@ -505,7 +505,7 @@ public interface DocumentMetadataSetResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/document-metadata-sets/{documentMetadataSetId}");
+						"/o/headless-delivery/v1.0/document-metadata-sets/{documentMetadataSetId}");
 
 			httpInvoker.path("documentMetadataSetId", documentMetadataSetId);
 
@@ -608,7 +608,7 @@ public interface DocumentMetadataSetResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/document-metadata-sets/batch");
+						"/o/headless-delivery/v1.0/document-metadata-sets/batch");
 
 			if ((_builder._login != null) && (_builder._password != null)) {
 				httpInvoker.userNameAndPassword(
@@ -714,7 +714,7 @@ public interface DocumentMetadataSetResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/document-metadata-sets/by-external-reference-code/{externalReferenceCode}");
+						"/o/headless-delivery/v1.0/sites/{siteId}/document-metadata-sets/by-external-reference-code/{externalReferenceCode}");
 
 			httpInvoker.path("siteId", siteId);
 			httpInvoker.path("externalReferenceCode", externalReferenceCode);
@@ -824,7 +824,7 @@ public interface DocumentMetadataSetResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-metadata-sets/by-external-reference-code/{externalReferenceCode}");
+						"/o/headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-metadata-sets/by-external-reference-code/{externalReferenceCode}");
 
 			httpInvoker.path("assetLibraryId", assetLibraryId);
 			httpInvoker.path("externalReferenceCode", externalReferenceCode);
@@ -941,7 +941,7 @@ public interface DocumentMetadataSetResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-metadata-sets");
+						"/o/headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-metadata-sets");
 
 			httpInvoker.path("assetLibraryId", assetLibraryId);
 
@@ -1047,7 +1047,7 @@ public interface DocumentMetadataSetResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/document-metadata-sets/{documentMetadataSetId}");
+						"/o/headless-delivery/v1.0/document-metadata-sets/{documentMetadataSetId}");
 
 			httpInvoker.path("documentMetadataSetId", documentMetadataSetId);
 
@@ -1156,7 +1156,7 @@ public interface DocumentMetadataSetResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/document-metadata-sets/by-external-reference-code/{externalReferenceCode}");
+						"/o/headless-delivery/v1.0/sites/{siteId}/document-metadata-sets/by-external-reference-code/{externalReferenceCode}");
 
 			httpInvoker.path("siteId", siteId);
 			httpInvoker.path("externalReferenceCode", externalReferenceCode);
@@ -1271,7 +1271,7 @@ public interface DocumentMetadataSetResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/document-metadata-sets");
+						"/o/headless-delivery/v1.0/sites/{siteId}/document-metadata-sets");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -1383,7 +1383,7 @@ public interface DocumentMetadataSetResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-metadata-sets");
+						"/o/headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-metadata-sets");
 
 			httpInvoker.path("assetLibraryId", assetLibraryId);
 
@@ -1487,7 +1487,7 @@ public interface DocumentMetadataSetResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-metadata-sets/batch");
+						"/o/headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-metadata-sets/batch");
 
 			httpInvoker.path("assetLibraryId", assetLibraryId);
 
@@ -1602,7 +1602,7 @@ public interface DocumentMetadataSetResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-metadata-sets/export-batch");
+						"/o/headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-metadata-sets/export-batch");
 
 			httpInvoker.path("assetLibraryId", assetLibraryId);
 
@@ -1712,7 +1712,7 @@ public interface DocumentMetadataSetResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/document-metadata-sets");
+						"/o/headless-delivery/v1.0/sites/{siteId}/document-metadata-sets");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -1816,7 +1816,7 @@ public interface DocumentMetadataSetResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/document-metadata-sets/batch");
+						"/o/headless-delivery/v1.0/sites/{siteId}/document-metadata-sets/batch");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -1931,7 +1931,7 @@ public interface DocumentMetadataSetResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/document-metadata-sets/export-batch");
+						"/o/headless-delivery/v1.0/sites/{siteId}/document-metadata-sets/export-batch");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -2045,7 +2045,7 @@ public interface DocumentMetadataSetResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-metadata-sets/by-external-reference-code/{externalReferenceCode}");
+						"/o/headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-metadata-sets/by-external-reference-code/{externalReferenceCode}");
 
 			httpInvoker.path("assetLibraryId", assetLibraryId);
 			httpInvoker.path("externalReferenceCode", externalReferenceCode);
@@ -2160,7 +2160,7 @@ public interface DocumentMetadataSetResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/document-metadata-sets/by-external-reference-code/{externalReferenceCode}");
+						"/o/headless-delivery/v1.0/sites/{siteId}/document-metadata-sets/by-external-reference-code/{externalReferenceCode}");
 
 			httpInvoker.path("siteId", siteId);
 			httpInvoker.path("externalReferenceCode", externalReferenceCode);
@@ -2185,4 +2185,4 @@ public interface DocumentMetadataSetResource {
 	}
 
 }
-// LIFERAY-REST-BUILDER-HASH:-1104520218
+// LIFERAY-REST-BUILDER-HASH:-240260629

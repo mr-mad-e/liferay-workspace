@@ -67,7 +67,7 @@ public class BlogPostingDTOConverter
 	@Override
 	public String getJaxRsLink(long classPK, UriInfo uriInfo) {
 		return JaxRsLinkUtil.getJaxRsLink(
-			"x-headless-delivery", BaseBlogPostingResourceImpl.class,
+			"headless-delivery", BaseBlogPostingResourceImpl.class,
 			"getBlogPosting", uriInfo, classPK);
 	}
 

@@ -305,7 +305,7 @@ public interface ContentSetElementResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/asset-libraries/{assetLibraryId}/content-sets/by-key/{key}/content-set-elements");
+						"/o/headless-delivery/v1.0/asset-libraries/{assetLibraryId}/content-sets/by-key/{key}/content-set-elements");
 
 			httpInvoker.path("assetLibraryId", assetLibraryId);
 			httpInvoker.path("key", key);
@@ -422,7 +422,7 @@ public interface ContentSetElementResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/asset-libraries/{assetLibraryId}/content-sets/by-uuid/{uuid}/content-set-elements");
+						"/o/headless-delivery/v1.0/asset-libraries/{assetLibraryId}/content-sets/by-uuid/{uuid}/content-set-elements");
 
 			httpInvoker.path("assetLibraryId", assetLibraryId);
 			httpInvoker.path("uuid", uuid);
@@ -538,7 +538,7 @@ public interface ContentSetElementResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/content-sets/{contentSetId}/content-set-elements");
+						"/o/headless-delivery/v1.0/content-sets/{contentSetId}/content-set-elements");
 
 			httpInvoker.path("contentSetId", contentSetId);
 
@@ -654,7 +654,7 @@ public interface ContentSetElementResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/content-sets/by-key/{key}/content-set-elements");
+						"/o/headless-delivery/v1.0/sites/{siteId}/content-sets/by-key/{key}/content-set-elements");
 
 			httpInvoker.path("siteId", siteId);
 			httpInvoker.path("key", key);
@@ -771,7 +771,7 @@ public interface ContentSetElementResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/content-sets/by-uuid/{uuid}/content-set-elements");
+						"/o/headless-delivery/v1.0/sites/{siteId}/content-sets/by-uuid/{uuid}/content-set-elements");
 
 			httpInvoker.path("siteId", siteId);
 			httpInvoker.path("uuid", uuid);
@@ -888,7 +888,7 @@ public interface ContentSetElementResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/content-set-providers/by-key/{key}/content-set-elements");
+						"/o/headless-delivery/v1.0/sites/{siteId}/content-set-providers/by-key/{key}/content-set-elements");
 
 			httpInvoker.path("siteId", siteId);
 			httpInvoker.path("key", key);
@@ -913,4 +913,4 @@ public interface ContentSetElementResource {
 	}
 
 }
-// LIFERAY-REST-BUILDER-HASH:-727490825
+// LIFERAY-REST-BUILDER-HASH:-1418935268

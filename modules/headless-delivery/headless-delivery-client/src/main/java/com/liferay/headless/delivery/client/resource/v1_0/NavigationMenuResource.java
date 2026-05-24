@@ -377,7 +377,7 @@ public interface NavigationMenuResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/navigation-menus/{navigationMenuId}");
+						"/o/headless-delivery/v1.0/navigation-menus/{navigationMenuId}");
 
 			httpInvoker.path("navigationMenuId", navigationMenuId);
 
@@ -478,7 +478,7 @@ public interface NavigationMenuResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/navigation-menus/batch");
+						"/o/headless-delivery/v1.0/navigation-menus/batch");
 
 			if ((_builder._login != null) && (_builder._password != null)) {
 				httpInvoker.userNameAndPassword(
@@ -584,7 +584,7 @@ public interface NavigationMenuResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/navigation-menus/by-external-reference-code/{externalReferenceCode}");
+						"/o/headless-delivery/v1.0/sites/{siteId}/navigation-menus/by-external-reference-code/{externalReferenceCode}");
 
 			httpInvoker.path("siteId", siteId);
 			httpInvoker.path("externalReferenceCode", externalReferenceCode);
@@ -690,7 +690,7 @@ public interface NavigationMenuResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/navigation-menus/{navigationMenuId}");
+						"/o/headless-delivery/v1.0/navigation-menus/{navigationMenuId}");
 
 			httpInvoker.path("navigationMenuId", navigationMenuId);
 
@@ -802,7 +802,7 @@ public interface NavigationMenuResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/navigation-menus/{navigationMenuId}/permissions");
+						"/o/headless-delivery/v1.0/navigation-menus/{navigationMenuId}/permissions");
 
 			httpInvoker.path("navigationMenuId", navigationMenuId);
 
@@ -910,7 +910,7 @@ public interface NavigationMenuResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/navigation-menus/by-external-reference-code/{externalReferenceCode}");
+						"/o/headless-delivery/v1.0/sites/{siteId}/navigation-menus/by-external-reference-code/{externalReferenceCode}");
 
 			httpInvoker.path("siteId", siteId);
 			httpInvoker.path("externalReferenceCode", externalReferenceCode);
@@ -1023,7 +1023,7 @@ public interface NavigationMenuResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/navigation-menus/permissions");
+						"/o/headless-delivery/v1.0/sites/{siteId}/navigation-menus/permissions");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -1151,7 +1151,7 @@ public interface NavigationMenuResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/navigation-menus");
+						"/o/headless-delivery/v1.0/sites/{siteId}/navigation-menus");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -1259,7 +1259,7 @@ public interface NavigationMenuResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/navigation-menus");
+						"/o/headless-delivery/v1.0/sites/{siteId}/navigation-menus");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -1362,7 +1362,7 @@ public interface NavigationMenuResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/navigation-menus/batch");
+						"/o/headless-delivery/v1.0/sites/{siteId}/navigation-menus/batch");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -1492,7 +1492,7 @@ public interface NavigationMenuResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/navigation-menus/export-batch");
+						"/o/headless-delivery/v1.0/sites/{siteId}/navigation-menus/export-batch");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -1600,7 +1600,7 @@ public interface NavigationMenuResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/navigation-menus/{navigationMenuId}");
+						"/o/headless-delivery/v1.0/navigation-menus/{navigationMenuId}");
 
 			httpInvoker.path("navigationMenuId", navigationMenuId);
 
@@ -1701,7 +1701,7 @@ public interface NavigationMenuResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/navigation-menus/batch");
+						"/o/headless-delivery/v1.0/navigation-menus/batch");
 
 			if ((_builder._login != null) && (_builder._password != null)) {
 				httpInvoker.userNameAndPassword(
@@ -1815,7 +1815,7 @@ public interface NavigationMenuResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/navigation-menus/{navigationMenuId}/permissions");
+						"/o/headless-delivery/v1.0/navigation-menus/{navigationMenuId}/permissions");
 
 			httpInvoker.path("navigationMenuId", navigationMenuId);
 
@@ -1927,7 +1927,7 @@ public interface NavigationMenuResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/navigation-menus/by-external-reference-code/{externalReferenceCode}");
+						"/o/headless-delivery/v1.0/sites/{siteId}/navigation-menus/by-external-reference-code/{externalReferenceCode}");
 
 			httpInvoker.path("siteId", siteId);
 			httpInvoker.path("externalReferenceCode", externalReferenceCode);
@@ -2044,7 +2044,7 @@ public interface NavigationMenuResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/navigation-menus/permissions");
+						"/o/headless-delivery/v1.0/sites/{siteId}/navigation-menus/permissions");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -2068,4 +2068,4 @@ public interface NavigationMenuResource {
 	}
 
 }
-// LIFERAY-REST-BUILDER-HASH:-1042843993
+// LIFERAY-REST-BUILDER-HASH:-1687188452

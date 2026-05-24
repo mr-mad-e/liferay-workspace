@@ -534,7 +534,7 @@ public interface DocumentFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/document-folders/{documentFolderId}");
+						"/o/headless-delivery/v1.0/document-folders/{documentFolderId}");
 
 			httpInvoker.path("documentFolderId", documentFolderId);
 
@@ -635,7 +635,7 @@ public interface DocumentFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/document-folders/batch");
+						"/o/headless-delivery/v1.0/document-folders/batch");
 
 			if ((_builder._login != null) && (_builder._password != null)) {
 				httpInvoker.userNameAndPassword(
@@ -738,7 +738,7 @@ public interface DocumentFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/document-folders/{documentFolderId}/my-rating");
+						"/o/headless-delivery/v1.0/document-folders/{documentFolderId}/my-rating");
 
 			httpInvoker.path("documentFolderId", documentFolderId);
 
@@ -846,7 +846,7 @@ public interface DocumentFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/documents-folder/by-external-reference-code/{externalReferenceCode}");
+						"/o/headless-delivery/v1.0/sites/{siteId}/documents-folder/by-external-reference-code/{externalReferenceCode}");
 
 			httpInvoker.path("siteId", siteId);
 			httpInvoker.path("externalReferenceCode", externalReferenceCode);
@@ -959,7 +959,7 @@ public interface DocumentFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-folders/permissions");
+						"/o/headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-folders/permissions");
 
 			httpInvoker.path("assetLibraryId", assetLibraryId);
 
@@ -1095,7 +1095,7 @@ public interface DocumentFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-folders");
+						"/o/headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-folders");
 
 			httpInvoker.path("assetLibraryId", assetLibraryId);
 
@@ -1210,7 +1210,7 @@ public interface DocumentFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-folders/rated-by-me");
+						"/o/headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-folders/rated-by-me");
 
 			httpInvoker.path("assetLibraryId", assetLibraryId);
 
@@ -1315,7 +1315,7 @@ public interface DocumentFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/document-folders/{documentFolderId}");
+						"/o/headless-delivery/v1.0/document-folders/{documentFolderId}");
 
 			httpInvoker.path("documentFolderId", documentFolderId);
 
@@ -1451,7 +1451,7 @@ public interface DocumentFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/document-folders/{parentDocumentFolderId}/document-folders");
+						"/o/headless-delivery/v1.0/document-folders/{parentDocumentFolderId}/document-folders");
 
 			httpInvoker.path("parentDocumentFolderId", parentDocumentFolderId);
 
@@ -1556,7 +1556,7 @@ public interface DocumentFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/document-folders/{documentFolderId}/my-rating");
+						"/o/headless-delivery/v1.0/document-folders/{documentFolderId}/my-rating");
 
 			httpInvoker.path("documentFolderId", documentFolderId);
 
@@ -1668,7 +1668,7 @@ public interface DocumentFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/document-folders/{documentFolderId}/permissions");
+						"/o/headless-delivery/v1.0/document-folders/{documentFolderId}/permissions");
 
 			httpInvoker.path("documentFolderId", documentFolderId);
 
@@ -1780,7 +1780,7 @@ public interface DocumentFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/document-folders/permissions");
+						"/o/headless-delivery/v1.0/sites/{siteId}/document-folders/permissions");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -1915,7 +1915,7 @@ public interface DocumentFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/document-folders");
+						"/o/headless-delivery/v1.0/sites/{siteId}/document-folders");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -2030,7 +2030,7 @@ public interface DocumentFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/document-folders/rated-by-me");
+						"/o/headless-delivery/v1.0/sites/{siteId}/document-folders/rated-by-me");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -2138,7 +2138,7 @@ public interface DocumentFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/documents-folder/by-external-reference-code/{externalReferenceCode}");
+						"/o/headless-delivery/v1.0/sites/{siteId}/documents-folder/by-external-reference-code/{externalReferenceCode}");
 
 			httpInvoker.path("siteId", siteId);
 			httpInvoker.path("externalReferenceCode", externalReferenceCode);
@@ -2248,7 +2248,7 @@ public interface DocumentFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/document-folders/{documentFolderId}");
+						"/o/headless-delivery/v1.0/document-folders/{documentFolderId}");
 
 			httpInvoker.path("documentFolderId", documentFolderId);
 
@@ -2358,7 +2358,7 @@ public interface DocumentFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-folders");
+						"/o/headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-folders");
 
 			httpInvoker.path("assetLibraryId", assetLibraryId);
 
@@ -2462,7 +2462,7 @@ public interface DocumentFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-folders/batch");
+						"/o/headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-folders/batch");
 
 			httpInvoker.path("assetLibraryId", assetLibraryId);
 
@@ -2592,7 +2592,7 @@ public interface DocumentFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-folders/export-batch");
+						"/o/headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-folders/export-batch");
 
 			httpInvoker.path("assetLibraryId", assetLibraryId);
 
@@ -2702,7 +2702,7 @@ public interface DocumentFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/document-folders/{parentDocumentFolderId}/document-folders");
+						"/o/headless-delivery/v1.0/document-folders/{parentDocumentFolderId}/document-folders");
 
 			httpInvoker.path("parentDocumentFolderId", parentDocumentFolderId);
 
@@ -2811,7 +2811,7 @@ public interface DocumentFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/document-folders/{documentFolderId}/my-rating");
+						"/o/headless-delivery/v1.0/document-folders/{documentFolderId}/my-rating");
 
 			httpInvoker.path("documentFolderId", documentFolderId);
 
@@ -2919,7 +2919,7 @@ public interface DocumentFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/document-folders");
+						"/o/headless-delivery/v1.0/sites/{siteId}/document-folders");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -3022,7 +3022,7 @@ public interface DocumentFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/document-folders/batch");
+						"/o/headless-delivery/v1.0/sites/{siteId}/document-folders/batch");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -3152,7 +3152,7 @@ public interface DocumentFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/document-folders/export-batch");
+						"/o/headless-delivery/v1.0/sites/{siteId}/document-folders/export-batch");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -3268,7 +3268,7 @@ public interface DocumentFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-folders/permissions");
+						"/o/headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-folders/permissions");
 
 			httpInvoker.path("assetLibraryId", assetLibraryId);
 
@@ -3376,7 +3376,7 @@ public interface DocumentFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/document-folders/{documentFolderId}");
+						"/o/headless-delivery/v1.0/document-folders/{documentFolderId}");
 
 			httpInvoker.path("documentFolderId", documentFolderId);
 
@@ -3477,7 +3477,7 @@ public interface DocumentFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/document-folders/batch");
+						"/o/headless-delivery/v1.0/document-folders/batch");
 
 			if ((_builder._login != null) && (_builder._password != null)) {
 				httpInvoker.userNameAndPassword(
@@ -3583,7 +3583,7 @@ public interface DocumentFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/document-folders/{documentFolderId}/my-rating");
+						"/o/headless-delivery/v1.0/document-folders/{documentFolderId}/my-rating");
 
 			httpInvoker.path("documentFolderId", documentFolderId);
 
@@ -3699,7 +3699,7 @@ public interface DocumentFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/document-folders/{documentFolderId}/permissions");
+						"/o/headless-delivery/v1.0/document-folders/{documentFolderId}/permissions");
 
 			httpInvoker.path("documentFolderId", documentFolderId);
 
@@ -3806,7 +3806,7 @@ public interface DocumentFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/document-folders/{documentFolderId}/subscribe");
+						"/o/headless-delivery/v1.0/document-folders/{documentFolderId}/subscribe");
 
 			httpInvoker.path("documentFolderId", documentFolderId);
 
@@ -3913,7 +3913,7 @@ public interface DocumentFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/document-folders/{documentFolderId}/unsubscribe");
+						"/o/headless-delivery/v1.0/document-folders/{documentFolderId}/unsubscribe");
 
 			httpInvoker.path("documentFolderId", documentFolderId);
 
@@ -4029,7 +4029,7 @@ public interface DocumentFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/document-folders/permissions");
+						"/o/headless-delivery/v1.0/sites/{siteId}/document-folders/permissions");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -4141,7 +4141,7 @@ public interface DocumentFolderResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/documents-folder/by-external-reference-code/{externalReferenceCode}");
+						"/o/headless-delivery/v1.0/sites/{siteId}/documents-folder/by-external-reference-code/{externalReferenceCode}");
 
 			httpInvoker.path("siteId", siteId);
 			httpInvoker.path("externalReferenceCode", externalReferenceCode);
@@ -4166,4 +4166,4 @@ public interface DocumentFolderResource {
 	}
 
 }
-// LIFERAY-REST-BUILDER-HASH:392381031
+// LIFERAY-REST-BUILDER-HASH:-287907247

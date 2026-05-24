@@ -36,8 +36,8 @@ definition {
 
 		task ("When I use graphql with access token to create a blog") {
 			var accessToken = OAuth2ForObject.createTokenWithOAuth2Scopes(
-				resourceCheckList = "Dev.Liferay.Headless.Delivery.everything",
-				resourcePanels = "Dev.Liferay.Headless.Delivery");
+				resourceCheckList = "Liferay.Headless.Delivery.everything",
+				resourcePanels = "Liferay.Headless.Delivery");
 			var siteId = JSONGroupAPI._getGroupIdByNameNoSelenium(
 				groupName = "Guest",
 				site = "true");
@@ -62,8 +62,8 @@ definition {
 
 		task ("When with curl and acess token I request getSiteBlogPostingsPage with siteId") {
 			var accessToken = OAuth2ForObject.createTokenWithOAuth2Scopes(
-				resourceCheckList = "Dev.Liferay.Headless.Delivery.everything",
-				resourcePanels = "Dev.Liferay.Headless.Delivery");
+				resourceCheckList = "Liferay.Headless.Delivery.everything",
+				resourcePanels = "Liferay.Headless.Delivery");
 
 			var response = BlogPostingAPI.getBlogPostings(token = ${accessToken});
 		}

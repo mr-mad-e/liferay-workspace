@@ -382,7 +382,7 @@ public interface DocumentShortcutResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/document-shortcuts/{documentShortcutId}");
+						"/o/headless-delivery/v1.0/document-shortcuts/{documentShortcutId}");
 
 			httpInvoker.path("documentShortcutId", documentShortcutId);
 
@@ -484,7 +484,7 @@ public interface DocumentShortcutResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/document-shortcuts/batch");
+						"/o/headless-delivery/v1.0/document-shortcuts/batch");
 
 			if ((_builder._login != null) && (_builder._password != null)) {
 				httpInvoker.userNameAndPassword(
@@ -590,7 +590,7 @@ public interface DocumentShortcutResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/document-shortcuts/by-external-reference-code/{externalReferenceCode}");
+						"/o/headless-delivery/v1.0/sites/{siteId}/document-shortcuts/by-external-reference-code/{externalReferenceCode}");
 
 			httpInvoker.path("siteId", siteId);
 			httpInvoker.path("externalReferenceCode", externalReferenceCode);
@@ -706,7 +706,7 @@ public interface DocumentShortcutResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-shortcuts");
+						"/o/headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-shortcuts");
 
 			httpInvoker.path("assetLibraryId", assetLibraryId);
 
@@ -811,7 +811,7 @@ public interface DocumentShortcutResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/document-shortcuts/{documentShortcutId}");
+						"/o/headless-delivery/v1.0/document-shortcuts/{documentShortcutId}");
 
 			httpInvoker.path("documentShortcutId", documentShortcutId);
 
@@ -919,7 +919,7 @@ public interface DocumentShortcutResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/document-shortcuts/by-external-reference-code/{externalReferenceCode}");
+						"/o/headless-delivery/v1.0/sites/{siteId}/document-shortcuts/by-external-reference-code/{externalReferenceCode}");
 
 			httpInvoker.path("siteId", siteId);
 			httpInvoker.path("externalReferenceCode", externalReferenceCode);
@@ -1034,7 +1034,7 @@ public interface DocumentShortcutResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/document-shortcuts");
+						"/o/headless-delivery/v1.0/sites/{siteId}/document-shortcuts");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -1143,7 +1143,7 @@ public interface DocumentShortcutResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/document-shortcuts/{documentShortcutId}");
+						"/o/headless-delivery/v1.0/document-shortcuts/{documentShortcutId}");
 
 			httpInvoker.path("documentShortcutId", documentShortcutId);
 
@@ -1253,7 +1253,7 @@ public interface DocumentShortcutResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-shortcuts");
+						"/o/headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-shortcuts");
 
 			httpInvoker.path("assetLibraryId", assetLibraryId);
 
@@ -1357,7 +1357,7 @@ public interface DocumentShortcutResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-shortcuts/batch");
+						"/o/headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-shortcuts/batch");
 
 			httpInvoker.path("assetLibraryId", assetLibraryId);
 
@@ -1472,7 +1472,7 @@ public interface DocumentShortcutResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-shortcuts/export-batch");
+						"/o/headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-shortcuts/export-batch");
 
 			httpInvoker.path("assetLibraryId", assetLibraryId);
 
@@ -1580,7 +1580,7 @@ public interface DocumentShortcutResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/document-shortcuts");
+						"/o/headless-delivery/v1.0/sites/{siteId}/document-shortcuts");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -1684,7 +1684,7 @@ public interface DocumentShortcutResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/document-shortcuts/batch");
+						"/o/headless-delivery/v1.0/sites/{siteId}/document-shortcuts/batch");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -1799,7 +1799,7 @@ public interface DocumentShortcutResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/document-shortcuts/export-batch");
+						"/o/headless-delivery/v1.0/sites/{siteId}/document-shortcuts/export-batch");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -1908,7 +1908,7 @@ public interface DocumentShortcutResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/document-shortcuts/{documentShortcutId}");
+						"/o/headless-delivery/v1.0/document-shortcuts/{documentShortcutId}");
 
 			httpInvoker.path("documentShortcutId", documentShortcutId);
 
@@ -2009,7 +2009,7 @@ public interface DocumentShortcutResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/document-shortcuts/batch");
+						"/o/headless-delivery/v1.0/document-shortcuts/batch");
 
 			if ((_builder._login != null) && (_builder._password != null)) {
 				httpInvoker.userNameAndPassword(
@@ -2119,7 +2119,7 @@ public interface DocumentShortcutResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/document-shortcuts/by-external-reference-code/{externalReferenceCode}");
+						"/o/headless-delivery/v1.0/sites/{siteId}/document-shortcuts/by-external-reference-code/{externalReferenceCode}");
 
 			httpInvoker.path("siteId", siteId);
 			httpInvoker.path("externalReferenceCode", externalReferenceCode);
@@ -2144,4 +2144,4 @@ public interface DocumentShortcutResource {
 	}
 
 }
-// LIFERAY-REST-BUILDER-HASH:1959821711
+// LIFERAY-REST-BUILDER-HASH:2055743710

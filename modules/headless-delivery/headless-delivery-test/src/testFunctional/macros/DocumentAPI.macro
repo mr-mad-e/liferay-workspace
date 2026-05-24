@@ -29,7 +29,7 @@ definition {
 
 		if (!(isSet(fileName))) {
 			var curl = '''
-				${portalURL}/o/x-headless-delivery/v1.0/${api} \
+				${portalURL}/o/headless-delivery/v1.0/${api} \
 					-u test@liferay.com:${userPassword} \
 					-H Content-Type: multipart/form-data \
 					-F document={"externalReferenceCode": "${externalReferenceCode}", "taxonomyCategoryIds": [${assetCategoryIds}]} \
@@ -42,7 +42,7 @@ definition {
 			}
 
 			var curl = '''
-				${portalURL}/o/x-headless-delivery/v1.0/${api} \
+				${portalURL}/o/headless-delivery/v1.0/${api} \
 					-u test@liferay.com:${userPassword} \
 					-H Content-Type: multipart/form-data \
 					-F document={"title": "${title}", "fileName": "${fileName}", "externalReferenceCode": "${externalReferenceCode}", "taxonomyCategoryIds": [${assetCategoryIds}]} \
@@ -72,7 +72,7 @@ definition {
 		}
 
 		var curl = '''
-			${portalURL}/o/x-headless-delivery/v1.0/${api} \
+			${portalURL}/o/headless-delivery/v1.0/${api} \
 				-u test@liferay.com:${userPassword} \
 				-H accept: application/json
 		''';
@@ -99,7 +99,7 @@ definition {
 		}
 
 		var curl = '''
-			${portalURL}/o/x-headless-delivery/v1.0/${api} \
+			${portalURL}/o/headless-delivery/v1.0/${api} \
 				-u test@liferay.com:${userPassword} \
 				-H accept: application/json
 		''';
@@ -124,7 +124,7 @@ definition {
 		}
 
 		var curl = '''
-			${portalURL}/o/x-headless-delivery/v1.0/${api} \
+			${portalURL}/o/headless-delivery/v1.0/${api} \
 				-u test@liferay.com:${userPassword} \
 				-H Content-Type: application/json
 		''';
@@ -146,7 +146,7 @@ definition {
 		}
 
 		var curl = '''
-			${portalURL}/o/x-headless-delivery/v1.0/asset-libraries/${assetLibraryId}/documents/by-external-reference-code/${externalReferenceCode} \
+			${portalURL}/o/headless-delivery/v1.0/asset-libraries/${assetLibraryId}/documents/by-external-reference-code/${externalReferenceCode} \
 				-u test@liferay.com:${userPassword} \
 				-H Content-Type: application/json
 		''';
@@ -177,7 +177,7 @@ definition {
 		var userPassword = PropsUtil.get("default.admin.password");
 
 		var curl = '''
-			${portalURL}/o/x-headless-delivery/v1.0/${api} \
+			${portalURL}/o/headless-delivery/v1.0/${api} \
 				-u test@liferay.com:${userPassword} \
 		''';
 		var delimiter = " ";
@@ -335,7 +335,7 @@ definition {
 		}
 
 		var curl = '''
-			${portalURL}/o/x-headless-delivery/v1.0/documents/${documentId}/permissions \
+			${portalURL}/o/headless-delivery/v1.0/documents/${documentId}/permissions \
 				-H 'Content-Type: application/json' \
 				-u '${userEmailAddress}:${userPassword}'
 		''';
@@ -403,7 +403,7 @@ definition {
 		}
 
 		var curl = '''
-			${portalURL}/o/x-headless-delivery/v1.0/asset-libraries/${depotId}/documents/rated-by-me \
+			${portalURL}/o/headless-delivery/v1.0/asset-libraries/${depotId}/documents/rated-by-me \
 				-H 'Content-Type: application/json' \
 				-u '${userEmailAddress}:${userPassword}'
 		''';
@@ -430,7 +430,7 @@ definition {
 		}
 
 		var curl = '''
-			${portalURL}/o/x-headless-delivery/v1.0/sites/${siteId}/documents/rated-by-me \
+			${portalURL}/o/headless-delivery/v1.0/sites/${siteId}/documents/rated-by-me \
 				-H 'Content-Type: application/json' \
 				-u '${userEmailAddress}:${userPassword}'
 		''';
@@ -477,7 +477,7 @@ definition {
 		}
 
 		var curl = '''
-			${portalURL}/o/x-headless-delivery/v1.0/documents/${documentId}/my-rating \
+			${portalURL}/o/headless-delivery/v1.0/documents/${documentId}/my-rating \
 				-H 'Content-Type: application/json' \
 				-u '${userEmailAddress}:${userPassword}' \
 				-d '{
@@ -507,7 +507,7 @@ definition {
 					''';
 
 		var curl = '''
-			${portalURL}/o/x-headless-delivery/v1.0/documents/${documentId}/permissions \
+			${portalURL}/o/headless-delivery/v1.0/documents/${documentId}/permissions \
 				-u test@liferay.com:${userPassword} \
 				-H Content-Type: application/json \
 				-d ${body}
@@ -526,7 +526,7 @@ definition {
 		var userPassword = PropsUtil.get("default.admin.password");
 
 		var curl = '''
-			${portalURL}/o/x-headless-delivery/v1.0/documents/${documentId} \
+			${portalURL}/o/headless-delivery/v1.0/documents/${documentId} \
 				-u test@liferay.com:${userPassword} \
 				-F document={"title": "${title}", "fileName": "${fileName}"}
 		''';

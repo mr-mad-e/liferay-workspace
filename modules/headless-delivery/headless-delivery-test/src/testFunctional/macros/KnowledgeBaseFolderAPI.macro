@@ -24,7 +24,7 @@ definition {
 		}
 
 		var curl = '''
-			${portalURL}/o/x-headless-delivery/v1.0/${api} \
+			${portalURL}/o/headless-delivery/v1.0/${api} \
 				-u test@liferay.com:${userPassword} \
 				-H Content-Type: application/json \
 		''';

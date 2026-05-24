@@ -38,7 +38,7 @@ import org.osgi.annotation.versioning.ProviderType;
 /**
  * To access this resource, run:
  *
- *     curl -u your@email.com:yourpassword -D - http://localhost:8080/o/x-headless-delivery/v1.0
+ *     curl -u your@email.com:yourpassword -D - http://localhost:8080/o/headless-delivery/v1.0
  *
  * @author Javier Gamarra
  * @generated
@@ -306,4 +306,4 @@ public interface CommentResource {
 	}
 
 }
-// LIFERAY-REST-BUILDER-HASH:-736381510
+// LIFERAY-REST-BUILDER-HASH:-1240691735

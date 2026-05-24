@@ -309,7 +309,7 @@ public interface ContentElementResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/asset-libraries/{assetLibraryId}/content-elements");
+						"/o/headless-delivery/v1.0/asset-libraries/{assetLibraryId}/content-elements");
 
 			httpInvoker.path("assetLibraryId", assetLibraryId);
 
@@ -438,7 +438,7 @@ public interface ContentElementResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/content-elements");
+						"/o/headless-delivery/v1.0/sites/{siteId}/content-elements");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -568,7 +568,7 @@ public interface ContentElementResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/asset-libraries/{assetLibraryId}/content-elements/export-batch");
+						"/o/headless-delivery/v1.0/asset-libraries/{assetLibraryId}/content-elements/export-batch");
 
 			httpInvoker.path("assetLibraryId", assetLibraryId);
 
@@ -698,7 +698,7 @@ public interface ContentElementResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/content-elements/export-batch");
+						"/o/headless-delivery/v1.0/sites/{siteId}/content-elements/export-batch");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -722,4 +722,4 @@ public interface ContentElementResource {
 	}
 
 }
-// LIFERAY-REST-BUILDER-HASH:-514319193
+// LIFERAY-REST-BUILDER-HASH:-310294542

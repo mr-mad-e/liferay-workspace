@@ -102,7 +102,7 @@ public class DocumentDTOConverter
 	@Override
 	public String getJaxRsLink(long classPK, UriInfo uriInfo) {
 		return JaxRsLinkUtil.getJaxRsLink(
-			"x-headless-delivery", BaseDocumentResourceImpl.class, "getDocument",
+			"headless-delivery", BaseDocumentResourceImpl.class, "getDocument",
 			uriInfo, classPK);
 	}
 

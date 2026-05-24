@@ -435,7 +435,7 @@ public interface BlogPostingResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/blog-postings/{blogPostingId}");
+						"/o/headless-delivery/v1.0/blog-postings/{blogPostingId}");
 
 			httpInvoker.path("blogPostingId", blogPostingId);
 
@@ -536,7 +536,7 @@ public interface BlogPostingResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/blog-postings/batch");
+						"/o/headless-delivery/v1.0/blog-postings/batch");
 
 			if ((_builder._login != null) && (_builder._password != null)) {
 				httpInvoker.userNameAndPassword(
@@ -639,7 +639,7 @@ public interface BlogPostingResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/blog-postings/{blogPostingId}/my-rating");
+						"/o/headless-delivery/v1.0/blog-postings/{blogPostingId}/my-rating");
 
 			httpInvoker.path("blogPostingId", blogPostingId);
 
@@ -747,7 +747,7 @@ public interface BlogPostingResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/blog-postings/by-external-reference-code/{externalReferenceCode}");
+						"/o/headless-delivery/v1.0/sites/{siteId}/blog-postings/by-external-reference-code/{externalReferenceCode}");
 
 			httpInvoker.path("siteId", siteId);
 			httpInvoker.path("externalReferenceCode", externalReferenceCode);
@@ -851,7 +851,7 @@ public interface BlogPostingResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/blog-postings/{blogPostingId}");
+						"/o/headless-delivery/v1.0/blog-postings/{blogPostingId}");
 
 			httpInvoker.path("blogPostingId", blogPostingId);
 
@@ -956,7 +956,7 @@ public interface BlogPostingResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/blog-postings/{blogPostingId}/my-rating");
+						"/o/headless-delivery/v1.0/blog-postings/{blogPostingId}/my-rating");
 
 			httpInvoker.path("blogPostingId", blogPostingId);
 
@@ -1068,7 +1068,7 @@ public interface BlogPostingResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/blog-postings/{blogPostingId}/permissions");
+						"/o/headless-delivery/v1.0/blog-postings/{blogPostingId}/permissions");
 
 			httpInvoker.path("blogPostingId", blogPostingId);
 
@@ -1176,7 +1176,7 @@ public interface BlogPostingResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/blog-postings/{blogPostingId}/rendered-content-by-display-page/{displayPageKey}");
+						"/o/headless-delivery/v1.0/blog-postings/{blogPostingId}/rendered-content-by-display-page/{displayPageKey}");
 
 			httpInvoker.path("blogPostingId", blogPostingId);
 			httpInvoker.path("displayPageKey", displayPageKey);
@@ -1285,7 +1285,7 @@ public interface BlogPostingResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/blog-postings/by-external-reference-code/{externalReferenceCode}");
+						"/o/headless-delivery/v1.0/sites/{siteId}/blog-postings/by-external-reference-code/{externalReferenceCode}");
 
 			httpInvoker.path("siteId", siteId);
 			httpInvoker.path("externalReferenceCode", externalReferenceCode);
@@ -1394,7 +1394,7 @@ public interface BlogPostingResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/blog-postings/by-friendly-url-path/{friendlyUrlPath}");
+						"/o/headless-delivery/v1.0/sites/{siteId}/blog-postings/by-friendly-url-path/{friendlyUrlPath}");
 
 			httpInvoker.path("siteId", siteId);
 			httpInvoker.path("friendlyUrlPath", friendlyUrlPath);
@@ -1507,7 +1507,7 @@ public interface BlogPostingResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/blog-postings/permissions");
+						"/o/headless-delivery/v1.0/sites/{siteId}/blog-postings/permissions");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -1636,7 +1636,7 @@ public interface BlogPostingResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/blog-postings");
+						"/o/headless-delivery/v1.0/sites/{siteId}/blog-postings");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -1744,7 +1744,7 @@ public interface BlogPostingResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/blog-postings/{blogPostingId}");
+						"/o/headless-delivery/v1.0/blog-postings/{blogPostingId}");
 
 			httpInvoker.path("blogPostingId", blogPostingId);
 
@@ -1851,7 +1851,7 @@ public interface BlogPostingResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/blog-postings/{blogPostingId}/my-rating");
+						"/o/headless-delivery/v1.0/blog-postings/{blogPostingId}/my-rating");
 
 			httpInvoker.path("blogPostingId", blogPostingId);
 
@@ -1959,7 +1959,7 @@ public interface BlogPostingResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/blog-postings");
+						"/o/headless-delivery/v1.0/sites/{siteId}/blog-postings");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -2062,7 +2062,7 @@ public interface BlogPostingResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/blog-postings/batch");
+						"/o/headless-delivery/v1.0/sites/{siteId}/blog-postings/batch");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -2192,7 +2192,7 @@ public interface BlogPostingResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/blog-postings/export-batch");
+						"/o/headless-delivery/v1.0/sites/{siteId}/blog-postings/export-batch");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -2300,7 +2300,7 @@ public interface BlogPostingResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/blog-postings/{blogPostingId}");
+						"/o/headless-delivery/v1.0/blog-postings/{blogPostingId}");
 
 			httpInvoker.path("blogPostingId", blogPostingId);
 
@@ -2401,7 +2401,7 @@ public interface BlogPostingResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/blog-postings/batch");
+						"/o/headless-delivery/v1.0/blog-postings/batch");
 
 			if ((_builder._login != null) && (_builder._password != null)) {
 				httpInvoker.userNameAndPassword(
@@ -2506,7 +2506,7 @@ public interface BlogPostingResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/blog-postings/{blogPostingId}/my-rating");
+						"/o/headless-delivery/v1.0/blog-postings/{blogPostingId}/my-rating");
 
 			httpInvoker.path("blogPostingId", blogPostingId);
 
@@ -2622,7 +2622,7 @@ public interface BlogPostingResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/blog-postings/{blogPostingId}/permissions");
+						"/o/headless-delivery/v1.0/blog-postings/{blogPostingId}/permissions");
 
 			httpInvoker.path("blogPostingId", blogPostingId);
 
@@ -2734,7 +2734,7 @@ public interface BlogPostingResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/blog-postings/by-external-reference-code/{externalReferenceCode}");
+						"/o/headless-delivery/v1.0/sites/{siteId}/blog-postings/by-external-reference-code/{externalReferenceCode}");
 
 			httpInvoker.path("siteId", siteId);
 			httpInvoker.path("externalReferenceCode", externalReferenceCode);
@@ -2851,7 +2851,7 @@ public interface BlogPostingResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/blog-postings/permissions");
+						"/o/headless-delivery/v1.0/sites/{siteId}/blog-postings/permissions");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -2956,7 +2956,7 @@ public interface BlogPostingResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/blog-postings/subscribe");
+						"/o/headless-delivery/v1.0/sites/{siteId}/blog-postings/subscribe");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -3063,7 +3063,7 @@ public interface BlogPostingResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/x-headless-delivery/v1.0/sites/{siteId}/blog-postings/unsubscribe");
+						"/o/headless-delivery/v1.0/sites/{siteId}/blog-postings/unsubscribe");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -3087,4 +3087,4 @@ public interface BlogPostingResource {
 	}
 
 }
-// LIFERAY-REST-BUILDER-HASH:580996527
+// LIFERAY-REST-BUILDER-HASH:-1375512765
