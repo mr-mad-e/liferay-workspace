@@ -1,6 +1,7 @@
 import fs from 'fs/promises';
 import path from 'path';
 import slugify from 'slugify';
+import cliProgress from 'cli-progress';
 import { client } from './client.js';
 
 slugify.extend({ '&': '-', '/': '-' });
@@ -106,6 +107,36 @@ const readHtmlFile = async (filePath) => {
 };
 
 /**
+ * Count total pages
+ */
+const countPages = (node) => {
+  let count = 0;
+
+  for (const value of Object.values(node)) {
+    count++;
+
+    if (value && typeof value === 'object') {
+      count += countPages(value);
+    }
+  }
+
+  return count;
+};
+
+const totalPages = countPages(pages);
+
+/**
+ * Progress bar
+ */
+const progressBar = new cliProgress.SingleBar(
+  {
+    format: 'Importing Pages |{bar}| {percentage}% || {value}/{total} Pages || {title}',
+    hideCursor: true,
+  },
+  cliProgress.Presets.shades_classic,
+);
+
+/**
  * Build request payload
  */
 const buildPagePayload = ({ title, slug, value, htmlContent, parent }) => {
@@ -159,20 +190,20 @@ const buildPagePayload = ({ title, slug, value, htmlContent, parent }) => {
 };
 
 /**
- * API call (stubbed for now)
+ * API call
  */
 const createPageRequest = async (body) => {
-  // if (body.pageType == 'node') {
-  // console.log('📄 Creating page:', body);
-
   try {
-    await client.xHeadlessDelivery.sitePage.postSiteSitePage({ siteId, body });
+    await client.xHeadlessDelivery.sitePage.postSiteSitePage({
+      siteId,
+      body,
+    });
   } catch (error) {
-    console.log('error', body.title, error);
+    console.log('❌ Error creating:', body.title);
+    console.log(error);
   }
-  // }
 
-  return body; // mock response for now
+  return body;
 };
 
 /**
@@ -191,7 +222,13 @@ const createPage = async (title, value, parent) => {
     parent,
   });
 
-  return createPageRequest(payload);
+  const result = await createPageRequest(payload);
+
+  progressBar.increment({
+    title,
+  });
+
+  return result;
 };
 
 /**
@@ -200,7 +237,6 @@ const createPage = async (title, value, parent) => {
 const createPagesRecursively = async (node, parent = null) => {
   for (const [title, value] of Object.entries(node)) {
     const currentPage = await createPage(title, value, parent);
-    // return
     if (value && typeof value === 'object') {
       await createPagesRecursively(value, currentPage);
     }
@@ -213,12 +249,23 @@ const createPagesRecursively = async (node, parent = null) => {
 export const importPages = async (pages) => {
   try {
     await client.init();
-    if(!client.xHeadlessDelivery?.sitePage?.postSiteSitePage) {
-      throw new Error("API is not ready")
-    } // TODO: throw error from proxy object
+
+    if (!client.xHeadlessDelivery?.sitePage?.postSiteSitePage) {
+      throw new Error('API is not ready');
+    }
+
+    progressBar.start(totalPages, 0, {
+      title: 'Starting...',
+    });
+
     await createPagesRecursively(pages);
+
+    progressBar.stop();
+
     console.log('✅ Page import completed');
   } catch (error) {
+    progressBar.stop();
+
     console.error('❌ Page import failed:', error);
   }
 };

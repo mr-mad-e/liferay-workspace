@@ -2,6 +2,9 @@ import _ from 'lodash';
 import path from 'path';
 import fs from 'fs/promises';
 
+import cliProgress from 'cli-progress';
+import chalk from 'chalk';
+
 import blogs from '../blogs.json' with { type: 'json' };
 import { client } from './client.js';
 
@@ -36,14 +39,57 @@ const fetchFileFromUrl = async (url) => {
   });
 };
 
-const processItems = async (handler) => {
-  for (const item of _.sampleSize(blogs, SAMPLE_SIZE)) {
+const processItems = async (handler, label = 'Processing') => {
+  const items = _.sampleSize(blogs, SAMPLE_SIZE);
+
+  let success = 0;
+  let failed = 0;
+
+  const progressBar = new cliProgress.SingleBar(
+    {
+      format:
+        `${label} |{bar}| {percentage}% || {value}/{total} || ` +
+        `${chalk.green('✔')} {success} ` +
+        `${chalk.red('✖')} {failed} || {title}`,
+
+      hideCursor: true,
+    },
+    cliProgress.Presets.shades_classic,
+  );
+
+  progressBar.start(items.length, 0, {
+    success,
+    failed,
+    title: 'Starting...',
+  });
+
+  for (const item of items) {
     try {
       await handler(item);
+
+      success++;
+
+      progressBar.increment({
+        success,
+        failed,
+        title: item.title.slice(0, 40),
+      });
     } catch (error) {
-      console.error(`❌ ${item.title}`, error);
+      failed++;
+
+      progressBar.increment({
+        success,
+        failed,
+        title: item.title.slice(0, 40),
+      });
+
+      console.error(chalk.red(`\n❌ ${item.title}`), error?.message || error);
     }
   }
+
+  progressBar.stop();
+
+  console.log(chalk.green(`\n✅ ${label} completed (${success} success, ${failed} failed)\n`));
 };
 
 const buildContentField = (data) => ({
@@ -94,6 +140,7 @@ export const importSiteContents = async () =>
 export const importBlogs = async () =>
   processItems(async (item) => {
     const articleBody = await readHtmlFile(getFilePath(item.slug));
+
     const image = await importBlogImage(item);
 
     await client.headlessDelivery.blogPosting.postSiteBlogPosting({
@@ -110,7 +157,7 @@ export const importBlogs = async () =>
         },
       },
     });
-  });
+  }, 'Importing Blogs');
 
 export const importArticles = async () =>
   processItems(async (item) => {
@@ -129,7 +176,7 @@ export const importArticles = async () =>
     if (res?.data) {
       await importArticleAttachment(item, res.data);
     }
-  });
+  }, 'Importing Articles');
 
 export const importCMSBlogs = async () =>
   processItems(async (item) => {
@@ -149,7 +196,7 @@ export const importCMSBlogs = async () =>
         },
       },
     });
-  });
+  }, 'Importing CMS Blogs');
 
 export const importCMSContents = async () =>
   processItems(async (item) => {
@@ -164,7 +211,7 @@ export const importCMSContents = async () =>
         objectEntryFolderExternalReferenceCode: 'L_CONTENTS',
       },
     });
-  });
+  }, 'Importing CMS Contents');
 
 /* ---------------------------------- */
 /* Image Upload Logic */
