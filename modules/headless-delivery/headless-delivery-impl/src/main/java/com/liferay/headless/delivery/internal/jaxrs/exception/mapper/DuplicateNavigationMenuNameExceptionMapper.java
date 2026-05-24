@@ -21,9 +21,9 @@ import org.osgi.service.component.annotations.Component;
  */
 @Component(
 	property = {
-		"osgi.jaxrs.application.select=(osgi.jaxrs.name=Liferay.Headless.Delivery)",
+		"osgi.jaxrs.application.select=(osgi.jaxrs.name=Headless.Delivery)",
 		"osgi.jaxrs.extension=true",
-		"osgi.jaxrs.name=Liferay.Headless.Delivery.DuplicateNavigationMenuNameExceptionMapper"
+		"osgi.jaxrs.name=Headless.Delivery.DuplicateNavigationMenuNameExceptionMapper"
 	},
 	service = ExceptionMapper.class
 )

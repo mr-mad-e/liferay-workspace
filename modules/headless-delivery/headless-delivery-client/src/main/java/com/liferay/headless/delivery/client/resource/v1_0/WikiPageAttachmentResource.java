@@ -330,7 +330,7 @@ public interface WikiPageAttachmentResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/sites/{siteId}/wiki-pages/by-external-reference-code/{wikiPageExternalReferenceCode}/wiki-page-attachments/by-external-reference-code/{externalReferenceCode}");
+						"/o/x-headless-delivery/v1.0/sites/{siteId}/wiki-pages/by-external-reference-code/{wikiPageExternalReferenceCode}/wiki-page-attachments/by-external-reference-code/{externalReferenceCode}");
 
 			httpInvoker.path("siteId", siteId);
 			httpInvoker.path(
@@ -438,7 +438,7 @@ public interface WikiPageAttachmentResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/wiki-page-attachments/{wikiPageAttachmentId}");
+						"/o/x-headless-delivery/v1.0/wiki-page-attachments/{wikiPageAttachmentId}");
 
 			httpInvoker.path("wikiPageAttachmentId", wikiPageAttachmentId);
 
@@ -541,7 +541,7 @@ public interface WikiPageAttachmentResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/wiki-page-attachments/batch");
+						"/o/x-headless-delivery/v1.0/wiki-page-attachments/batch");
 
 			if ((_builder._login != null) && (_builder._password != null)) {
 				httpInvoker.userNameAndPassword(
@@ -651,7 +651,7 @@ public interface WikiPageAttachmentResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/sites/{siteId}/wiki-pages/by-external-reference-code/{wikiPageExternalReferenceCode}/wiki-page-attachments/by-external-reference-code/{externalReferenceCode}");
+						"/o/x-headless-delivery/v1.0/sites/{siteId}/wiki-pages/by-external-reference-code/{wikiPageExternalReferenceCode}/wiki-page-attachments/by-external-reference-code/{externalReferenceCode}");
 
 			httpInvoker.path("siteId", siteId);
 			httpInvoker.path(
@@ -760,7 +760,7 @@ public interface WikiPageAttachmentResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/wiki-page-attachments/{wikiPageAttachmentId}");
+						"/o/x-headless-delivery/v1.0/wiki-page-attachments/{wikiPageAttachmentId}");
 
 			httpInvoker.path("wikiPageAttachmentId", wikiPageAttachmentId);
 
@@ -866,7 +866,7 @@ public interface WikiPageAttachmentResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/wiki-pages/{wikiPageId}/wiki-page-attachments");
+						"/o/x-headless-delivery/v1.0/wiki-pages/{wikiPageId}/wiki-page-attachments");
 
 			httpInvoker.path("wikiPageId", wikiPageId);
 
@@ -986,7 +986,7 @@ public interface WikiPageAttachmentResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/wiki-pages/{wikiPageId}/wiki-page-attachments");
+						"/o/x-headless-delivery/v1.0/wiki-pages/{wikiPageId}/wiki-page-attachments");
 
 			httpInvoker.path("wikiPageId", wikiPageId);
 
@@ -1095,7 +1095,7 @@ public interface WikiPageAttachmentResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/wiki-pages/{wikiPageId}/wiki-page-attachments/batch");
+						"/o/x-headless-delivery/v1.0/wiki-pages/{wikiPageId}/wiki-page-attachments/batch");
 
 			httpInvoker.path("wikiPageId", wikiPageId);
 
@@ -1210,7 +1210,7 @@ public interface WikiPageAttachmentResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/wiki-pages/{wikiPageId}/wiki-page-attachments/export-batch");
+						"/o/x-headless-delivery/v1.0/wiki-pages/{wikiPageId}/wiki-page-attachments/export-batch");
 
 			httpInvoker.path("wikiPageId", wikiPageId);
 

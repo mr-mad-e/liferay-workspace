@@ -1528,7 +1528,7 @@ public abstract class BaseKnowledgeBaseFolderResourceTestCase {
 		createBatchAction.put(
 			"href",
 			("http://localhost:" + PortalUtil.getPortalServerPort(false) +
-				"/o/headless-delivery/v1.0/sites/{siteId}/knowledge-base-folders/batch").
+				"/o/x-headless-delivery/v1.0/sites/{siteId}/knowledge-base-folders/batch").
 					replace("{siteId}", String.valueOf(siteId)));
 
 		expectedActions.put("createBatch", createBatchAction);

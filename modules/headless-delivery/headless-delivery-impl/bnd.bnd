@@ -1,5 +1,5 @@
 Bundle-Name: Liferay Headless Delivery Implementation
-Bundle-SymbolicName: com.liferay.headless.delivery.impl
+Bundle-SymbolicName: dev.liferay.headless.delivery.impl
 Bundle-Version: 5.0.189
 -dsannotations-options: inherit
 Import-Package: \

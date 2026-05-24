@@ -1596,7 +1596,7 @@ public abstract class BaseMessageBoardMessageResourceTestCase {
 		createBatchAction.put(
 			"href",
 			("http://localhost:" + PortalUtil.getPortalServerPort(false) +
-				"/o/headless-delivery/v1.0/message-board-threads/{messageBoardThreadId}/message-board-messages/batch").
+				"/o/x-headless-delivery/v1.0/message-board-threads/{messageBoardThreadId}/message-board-messages/batch").
 					replace(
 						"{messageBoardThreadId}",
 						String.valueOf(messageBoardThreadId)));

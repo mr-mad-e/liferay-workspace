@@ -1097,7 +1097,7 @@ public abstract class BaseStructuredContentFolderResourceTestCase {
 		createBatchAction.put(
 			"href",
 			("http://localhost:" + PortalUtil.getPortalServerPort(false) +
-				"/o/headless-delivery/v1.0/asset-libraries/{assetLibraryId}/structured-content-folders/batch").
+				"/o/x-headless-delivery/v1.0/asset-libraries/{assetLibraryId}/structured-content-folders/batch").
 					replace(
 						"{assetLibraryId}", String.valueOf(assetLibraryId)));
 
@@ -1902,7 +1902,7 @@ public abstract class BaseStructuredContentFolderResourceTestCase {
 		createBatchAction.put(
 			"href",
 			("http://localhost:" + PortalUtil.getPortalServerPort(false) +
-				"/o/headless-delivery/v1.0/sites/{siteId}/structured-content-folders/batch").
+				"/o/x-headless-delivery/v1.0/sites/{siteId}/structured-content-folders/batch").
 					replace("{siteId}", String.valueOf(siteId)));
 
 		expectedActions.put("createBatch", createBatchAction);

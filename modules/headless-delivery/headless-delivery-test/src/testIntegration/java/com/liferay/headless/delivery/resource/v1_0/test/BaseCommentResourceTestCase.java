@@ -1246,7 +1246,7 @@ public abstract class BaseCommentResourceTestCase {
 		createBatchAction.put(
 			"href",
 			("http://localhost:" + PortalUtil.getPortalServerPort(false) +
-				"/o/headless-delivery/v1.0/blog-postings/{blogPostingId}/comments/batch").
+				"/o/x-headless-delivery/v1.0/blog-postings/{blogPostingId}/comments/batch").
 					replace("{blogPostingId}", String.valueOf(blogPostingId)));
 
 		expectedActions.put("createBatch", createBatchAction);
@@ -2402,7 +2402,7 @@ public abstract class BaseCommentResourceTestCase {
 		createBatchAction.put(
 			"href",
 			("http://localhost:" + PortalUtil.getPortalServerPort(false) +
-				"/o/headless-delivery/v1.0/documents/{documentId}/comments/batch").
+				"/o/x-headless-delivery/v1.0/documents/{documentId}/comments/batch").
 					replace("{documentId}", String.valueOf(documentId)));
 
 		expectedActions.put("createBatch", createBatchAction);
@@ -3676,7 +3676,7 @@ public abstract class BaseCommentResourceTestCase {
 		createBatchAction.put(
 			"href",
 			("http://localhost:" + PortalUtil.getPortalServerPort(false) +
-				"/o/headless-delivery/v1.0/structured-contents/{structuredContentId}/comments/batch").
+				"/o/x-headless-delivery/v1.0/structured-contents/{structuredContentId}/comments/batch").
 					replace(
 						"{structuredContentId}",
 						String.valueOf(structuredContentId)));

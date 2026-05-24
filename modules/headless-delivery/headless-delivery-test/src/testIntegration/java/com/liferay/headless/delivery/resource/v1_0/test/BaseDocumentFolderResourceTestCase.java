@@ -819,7 +819,7 @@ public abstract class BaseDocumentFolderResourceTestCase {
 		createBatchAction.put(
 			"href",
 			("http://localhost:" + PortalUtil.getPortalServerPort(false) +
-				"/o/headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-folders/batch").
+				"/o/x-headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-folders/batch").
 					replace(
 						"{assetLibraryId}", String.valueOf(assetLibraryId)));
 
@@ -2624,7 +2624,7 @@ public abstract class BaseDocumentFolderResourceTestCase {
 		createBatchAction.put(
 			"href",
 			("http://localhost:" + PortalUtil.getPortalServerPort(false) +
-				"/o/headless-delivery/v1.0/sites/{siteId}/document-folders/batch").
+				"/o/x-headless-delivery/v1.0/sites/{siteId}/document-folders/batch").
 					replace("{siteId}", String.valueOf(siteId)));
 
 		expectedActions.put("createBatch", createBatchAction);

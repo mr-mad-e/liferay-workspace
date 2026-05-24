@@ -717,7 +717,7 @@ public abstract class BaseWikiPageResourceTestCase {
 		createBatchAction.put(
 			"href",
 			("http://localhost:" + PortalUtil.getPortalServerPort(false) +
-				"/o/headless-delivery/v1.0/wiki-nodes/{wikiNodeId}/wiki-pages/batch").
+				"/o/x-headless-delivery/v1.0/wiki-nodes/{wikiNodeId}/wiki-pages/batch").
 					replace("{wikiNodeId}", String.valueOf(wikiNodeId)));
 
 		expectedActions.put("createBatch", createBatchAction);

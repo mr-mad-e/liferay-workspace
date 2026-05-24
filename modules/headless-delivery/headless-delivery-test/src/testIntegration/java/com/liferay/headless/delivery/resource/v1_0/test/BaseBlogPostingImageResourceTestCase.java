@@ -1128,7 +1128,7 @@ public abstract class BaseBlogPostingImageResourceTestCase {
 		createBatchAction.put(
 			"href",
 			("http://localhost:" + PortalUtil.getPortalServerPort(false) +
-				"/o/headless-delivery/v1.0/sites/{siteId}/blog-posting-images/batch").
+				"/o/x-headless-delivery/v1.0/sites/{siteId}/blog-posting-images/batch").
 					replace("{siteId}", String.valueOf(siteId)));
 
 		expectedActions.put("createBatch", createBatchAction);

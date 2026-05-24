@@ -15,7 +15,7 @@ definition {
 		}
 
 		var curl = '''
-			${portalURL}/o/headless-delivery/v1.0/${api}/languages \
+			${portalURL}/o/x-headless-delivery/v1.0/${api}/languages \
 				-u test@liferay.com:${userPassword} \
 				-H accept: application/json \
 		''';

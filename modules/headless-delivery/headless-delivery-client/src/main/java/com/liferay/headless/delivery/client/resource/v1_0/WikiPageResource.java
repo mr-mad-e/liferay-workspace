@@ -380,7 +380,7 @@ public interface WikiPageResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/sites/{siteId}/wiki-pages/by-external-reference-code/{externalReferenceCode}");
+						"/o/x-headless-delivery/v1.0/sites/{siteId}/wiki-pages/by-external-reference-code/{externalReferenceCode}");
 
 			httpInvoker.path("siteId", siteId);
 			httpInvoker.path("externalReferenceCode", externalReferenceCode);
@@ -484,7 +484,7 @@ public interface WikiPageResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/wiki-pages/{wikiPageId}");
+						"/o/x-headless-delivery/v1.0/wiki-pages/{wikiPageId}");
 
 			httpInvoker.path("wikiPageId", wikiPageId);
 
@@ -585,7 +585,7 @@ public interface WikiPageResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/wiki-pages/batch");
+						"/o/x-headless-delivery/v1.0/wiki-pages/batch");
 
 			if ((_builder._login != null) && (_builder._password != null)) {
 				httpInvoker.userNameAndPassword(
@@ -691,7 +691,7 @@ public interface WikiPageResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/sites/{siteId}/wiki-pages/by-external-reference-code/{externalReferenceCode}");
+						"/o/x-headless-delivery/v1.0/sites/{siteId}/wiki-pages/by-external-reference-code/{externalReferenceCode}");
 
 			httpInvoker.path("siteId", siteId);
 			httpInvoker.path("externalReferenceCode", externalReferenceCode);
@@ -821,7 +821,7 @@ public interface WikiPageResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/wiki-nodes/{wikiNodeId}/wiki-pages");
+						"/o/x-headless-delivery/v1.0/wiki-nodes/{wikiNodeId}/wiki-pages");
 
 			httpInvoker.path("wikiNodeId", wikiNodeId);
 
@@ -923,7 +923,7 @@ public interface WikiPageResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/wiki-pages/{wikiPageId}");
+						"/o/x-headless-delivery/v1.0/wiki-pages/{wikiPageId}");
 
 			httpInvoker.path("wikiPageId", wikiPageId);
 
@@ -1033,7 +1033,7 @@ public interface WikiPageResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/wiki-pages/{wikiPageId}/permissions");
+						"/o/x-headless-delivery/v1.0/wiki-pages/{wikiPageId}/permissions");
 
 			httpInvoker.path("wikiPageId", wikiPageId);
 
@@ -1138,7 +1138,7 @@ public interface WikiPageResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/wiki-pages/{parentWikiPageId}/wiki-pages");
+						"/o/x-headless-delivery/v1.0/wiki-pages/{parentWikiPageId}/wiki-pages");
 
 			httpInvoker.path("parentWikiPageId", parentWikiPageId);
 
@@ -1245,7 +1245,7 @@ public interface WikiPageResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/wiki-nodes/{wikiNodeId}/wiki-pages");
+						"/o/x-headless-delivery/v1.0/wiki-nodes/{wikiNodeId}/wiki-pages");
 
 			httpInvoker.path("wikiNodeId", wikiNodeId);
 
@@ -1348,7 +1348,7 @@ public interface WikiPageResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/wiki-nodes/{wikiNodeId}/wiki-pages/batch");
+						"/o/x-headless-delivery/v1.0/wiki-nodes/{wikiNodeId}/wiki-pages/batch");
 
 			httpInvoker.path("wikiNodeId", wikiNodeId);
 
@@ -1478,7 +1478,7 @@ public interface WikiPageResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/wiki-nodes/{wikiNodeId}/wiki-pages/export-batch");
+						"/o/x-headless-delivery/v1.0/wiki-nodes/{wikiNodeId}/wiki-pages/export-batch");
 
 			httpInvoker.path("wikiNodeId", wikiNodeId);
 
@@ -1586,7 +1586,7 @@ public interface WikiPageResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/wiki-pages/{parentWikiPageId}/wiki-pages");
+						"/o/x-headless-delivery/v1.0/wiki-pages/{parentWikiPageId}/wiki-pages");
 
 			httpInvoker.path("parentWikiPageId", parentWikiPageId);
 
@@ -1697,7 +1697,7 @@ public interface WikiPageResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/sites/{siteId}/wiki-pages/by-external-reference-code/{externalReferenceCode}");
+						"/o/x-headless-delivery/v1.0/sites/{siteId}/wiki-pages/by-external-reference-code/{externalReferenceCode}");
 
 			httpInvoker.path("siteId", siteId);
 			httpInvoker.path("externalReferenceCode", externalReferenceCode);
@@ -1805,7 +1805,7 @@ public interface WikiPageResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/wiki-pages/{wikiPageId}");
+						"/o/x-headless-delivery/v1.0/wiki-pages/{wikiPageId}");
 
 			httpInvoker.path("wikiPageId", wikiPageId);
 
@@ -1906,7 +1906,7 @@ public interface WikiPageResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/wiki-pages/batch");
+						"/o/x-headless-delivery/v1.0/wiki-pages/batch");
 
 			if ((_builder._login != null) && (_builder._password != null)) {
 				httpInvoker.userNameAndPassword(
@@ -2018,7 +2018,7 @@ public interface WikiPageResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/wiki-pages/{wikiPageId}/permissions");
+						"/o/x-headless-delivery/v1.0/wiki-pages/{wikiPageId}/permissions");
 
 			httpInvoker.path("wikiPageId", wikiPageId);
 
@@ -2123,7 +2123,7 @@ public interface WikiPageResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/wiki-pages/{wikiPageId}/subscribe");
+						"/o/x-headless-delivery/v1.0/wiki-pages/{wikiPageId}/subscribe");
 
 			httpInvoker.path("wikiPageId", wikiPageId);
 
@@ -2228,7 +2228,7 @@ public interface WikiPageResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/wiki-pages/{wikiPageId}/unsubscribe");
+						"/o/x-headless-delivery/v1.0/wiki-pages/{wikiPageId}/unsubscribe");
 
 			httpInvoker.path("wikiPageId", wikiPageId);
 

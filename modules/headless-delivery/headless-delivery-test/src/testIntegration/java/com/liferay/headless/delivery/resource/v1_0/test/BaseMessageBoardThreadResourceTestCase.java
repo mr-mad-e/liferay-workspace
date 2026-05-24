@@ -604,7 +604,7 @@ public abstract class BaseMessageBoardThreadResourceTestCase {
 		createBatchAction.put(
 			"href",
 			("http://localhost:" + PortalUtil.getPortalServerPort(false) +
-				"/o/headless-delivery/v1.0/message-board-sections/{messageBoardSectionId}/message-board-threads/batch").
+				"/o/x-headless-delivery/v1.0/message-board-sections/{messageBoardSectionId}/message-board-threads/batch").
 					replace(
 						"{messageBoardSectionId}",
 						String.valueOf(messageBoardSectionId)));
@@ -2181,7 +2181,7 @@ public abstract class BaseMessageBoardThreadResourceTestCase {
 		createBatchAction.put(
 			"href",
 			("http://localhost:" + PortalUtil.getPortalServerPort(false) +
-				"/o/headless-delivery/v1.0/sites/{siteId}/message-board-threads/batch").
+				"/o/x-headless-delivery/v1.0/sites/{siteId}/message-board-threads/batch").
 					replace("{siteId}", String.valueOf(siteId)));
 
 		expectedActions.put("createBatch", createBatchAction);

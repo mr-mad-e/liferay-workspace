@@ -18,9 +18,9 @@ import org.osgi.service.component.annotations.Component;
 @Component(
 	property = {
 		"liferay.jackson=false",
-		"osgi.jaxrs.application.base=/headless-delivery",
+		"osgi.jaxrs.application.base=/x-headless-delivery",
 		"osgi.jaxrs.extension.select=(osgi.jaxrs.name=Liferay.Vulcan)",
-		"osgi.jaxrs.name=Liferay.Headless.Delivery"
+		"osgi.jaxrs.name=Headless.Delivery"
 	},
 	service = Application.class
 )

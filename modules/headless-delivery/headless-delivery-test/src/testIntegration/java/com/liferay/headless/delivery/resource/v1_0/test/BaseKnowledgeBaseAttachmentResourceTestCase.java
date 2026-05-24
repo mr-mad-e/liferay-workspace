@@ -703,7 +703,7 @@ public abstract class BaseKnowledgeBaseAttachmentResourceTestCase {
 		createBatchAction.put(
 			"href",
 			("http://localhost:" + PortalUtil.getPortalServerPort(false) +
-				"/o/headless-delivery/v1.0/knowledge-base-articles/{knowledgeBaseArticleId}/knowledge-base-attachments/batch").
+				"/o/x-headless-delivery/v1.0/knowledge-base-articles/{knowledgeBaseArticleId}/knowledge-base-attachments/batch").
 					replace(
 						"{knowledgeBaseArticleId}",
 						String.valueOf(knowledgeBaseArticleId)));

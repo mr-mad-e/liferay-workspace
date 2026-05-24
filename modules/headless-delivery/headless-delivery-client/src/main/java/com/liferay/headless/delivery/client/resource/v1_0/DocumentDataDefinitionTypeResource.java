@@ -355,7 +355,7 @@ public interface DocumentDataDefinitionTypeResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/document-data-definition-types/{documentDataDefinitionTypeId}");
+						"/o/x-headless-delivery/v1.0/document-data-definition-types/{documentDataDefinitionTypeId}");
 
 			httpInvoker.path(
 				"documentDataDefinitionTypeId", documentDataDefinitionTypeId);
@@ -460,7 +460,7 @@ public interface DocumentDataDefinitionTypeResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/document-data-definition-types/batch");
+						"/o/x-headless-delivery/v1.0/document-data-definition-types/batch");
 
 			if ((_builder._login != null) && (_builder._password != null)) {
 				httpInvoker.userNameAndPassword(
@@ -592,7 +592,7 @@ public interface DocumentDataDefinitionTypeResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-data-definition-types");
+						"/o/x-headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-data-definition-types");
 
 			httpInvoker.path("assetLibraryId", assetLibraryId);
 
@@ -700,7 +700,7 @@ public interface DocumentDataDefinitionTypeResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/document-data-definition-types/{documentDataDefinitionTypeId}");
+						"/o/x-headless-delivery/v1.0/document-data-definition-types/{documentDataDefinitionTypeId}");
 
 			httpInvoker.path(
 				"documentDataDefinitionTypeId", documentDataDefinitionTypeId);
@@ -835,7 +835,7 @@ public interface DocumentDataDefinitionTypeResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/sites/{siteId}/document-data-definition-types");
+						"/o/x-headless-delivery/v1.0/sites/{siteId}/document-data-definition-types");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -949,7 +949,7 @@ public interface DocumentDataDefinitionTypeResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-data-definition-types");
+						"/o/x-headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-data-definition-types");
 
 			httpInvoker.path("assetLibraryId", assetLibraryId);
 
@@ -1053,7 +1053,7 @@ public interface DocumentDataDefinitionTypeResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-data-definition-types/batch");
+						"/o/x-headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-data-definition-types/batch");
 
 			httpInvoker.path("assetLibraryId", assetLibraryId);
 
@@ -1183,7 +1183,7 @@ public interface DocumentDataDefinitionTypeResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-data-definition-types/export-batch");
+						"/o/x-headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-data-definition-types/export-batch");
 
 			httpInvoker.path("assetLibraryId", assetLibraryId);
 
@@ -1296,7 +1296,7 @@ public interface DocumentDataDefinitionTypeResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/sites/{siteId}/document-data-definition-types");
+						"/o/x-headless-delivery/v1.0/sites/{siteId}/document-data-definition-types");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -1400,7 +1400,7 @@ public interface DocumentDataDefinitionTypeResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/sites/{siteId}/document-data-definition-types/batch");
+						"/o/x-headless-delivery/v1.0/sites/{siteId}/document-data-definition-types/batch");
 
 			httpInvoker.path("siteId", siteId);
 
@@ -1530,7 +1530,7 @@ public interface DocumentDataDefinitionTypeResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/sites/{siteId}/document-data-definition-types/export-batch");
+						"/o/x-headless-delivery/v1.0/sites/{siteId}/document-data-definition-types/export-batch");
 
 			httpInvoker.path("siteId", siteId);
 

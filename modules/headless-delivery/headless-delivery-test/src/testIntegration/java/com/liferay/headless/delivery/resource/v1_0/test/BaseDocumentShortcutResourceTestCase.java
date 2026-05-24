@@ -642,7 +642,7 @@ public abstract class BaseDocumentShortcutResourceTestCase {
 		createBatchAction.put(
 			"href",
 			("http://localhost:" + PortalUtil.getPortalServerPort(false) +
-				"/o/headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-shortcuts/batch").
+				"/o/x-headless-delivery/v1.0/asset-libraries/{assetLibraryId}/document-shortcuts/batch").
 					replace(
 						"{assetLibraryId}", String.valueOf(assetLibraryId)));
 
@@ -1401,7 +1401,7 @@ public abstract class BaseDocumentShortcutResourceTestCase {
 		createBatchAction.put(
 			"href",
 			("http://localhost:" + PortalUtil.getPortalServerPort(false) +
-				"/o/headless-delivery/v1.0/sites/{siteId}/document-shortcuts/batch").
+				"/o/x-headless-delivery/v1.0/sites/{siteId}/document-shortcuts/batch").
 					replace("{siteId}", String.valueOf(siteId)));
 
 		expectedActions.put("createBatch", createBatchAction);

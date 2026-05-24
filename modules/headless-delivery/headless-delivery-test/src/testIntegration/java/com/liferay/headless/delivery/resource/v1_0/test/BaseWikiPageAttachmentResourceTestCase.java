@@ -1210,7 +1210,7 @@ public abstract class BaseWikiPageAttachmentResourceTestCase {
 		createBatchAction.put(
 			"href",
 			("http://localhost:" + PortalUtil.getPortalServerPort(false) +
-				"/o/headless-delivery/v1.0/wiki-pages/{wikiPageId}/wiki-page-attachments/batch").
+				"/o/x-headless-delivery/v1.0/wiki-pages/{wikiPageId}/wiki-page-attachments/batch").
 					replace("{wikiPageId}", String.valueOf(wikiPageId)));
 
 		expectedActions.put("createBatch", createBatchAction);

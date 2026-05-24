@@ -756,7 +756,7 @@ public abstract class BaseSitePageResourceTestCase {
 		createBatchAction.put(
 			"href",
 			("http://localhost:" + PortalUtil.getPortalServerPort(false) +
-				"/o/headless-delivery/v1.0/sites/{siteId}/site-pages/batch").
+				"/o/x-headless-delivery/v1.0/sites/{siteId}/site-pages/batch").
 					replace("{siteId}", String.valueOf(siteId)));
 
 		expectedActions.put("createBatch", createBatchAction);

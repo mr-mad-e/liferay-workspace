@@ -383,7 +383,7 @@ public interface MessageBoardAttachmentResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/message-board-attachments/{messageBoardAttachmentId}");
+						"/o/x-headless-delivery/v1.0/message-board-attachments/{messageBoardAttachmentId}");
 
 			httpInvoker.path(
 				"messageBoardAttachmentId", messageBoardAttachmentId);
@@ -488,7 +488,7 @@ public interface MessageBoardAttachmentResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/message-board-attachments/batch");
+						"/o/x-headless-delivery/v1.0/message-board-attachments/batch");
 
 			if ((_builder._login != null) && (_builder._password != null)) {
 				httpInvoker.userNameAndPassword(
@@ -600,7 +600,7 @@ public interface MessageBoardAttachmentResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/sites/{siteId}/message-board-messages/by-external-reference-code/{messageBoardMessageExternalReferenceCode}/message-board-attachments/by-external-reference-code/{externalReferenceCode}");
+						"/o/x-headless-delivery/v1.0/sites/{siteId}/message-board-messages/by-external-reference-code/{messageBoardMessageExternalReferenceCode}/message-board-attachments/by-external-reference-code/{externalReferenceCode}");
 
 			httpInvoker.path("siteId", siteId);
 			httpInvoker.path(
@@ -710,7 +710,7 @@ public interface MessageBoardAttachmentResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/message-board-attachments/{messageBoardAttachmentId}");
+						"/o/x-headless-delivery/v1.0/message-board-attachments/{messageBoardAttachmentId}");
 
 			httpInvoker.path(
 				"messageBoardAttachmentId", messageBoardAttachmentId);
@@ -820,7 +820,7 @@ public interface MessageBoardAttachmentResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/message-board-messages/{messageBoardMessageId}/message-board-attachments");
+						"/o/x-headless-delivery/v1.0/message-board-messages/{messageBoardMessageId}/message-board-attachments");
 
 			httpInvoker.path("messageBoardMessageId", messageBoardMessageId);
 
@@ -929,7 +929,7 @@ public interface MessageBoardAttachmentResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/message-board-threads/{messageBoardThreadId}/message-board-attachments");
+						"/o/x-headless-delivery/v1.0/message-board-threads/{messageBoardThreadId}/message-board-attachments");
 
 			httpInvoker.path("messageBoardThreadId", messageBoardThreadId);
 
@@ -1043,7 +1043,7 @@ public interface MessageBoardAttachmentResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/sites/{siteId}/message-board-messages/by-external-reference-code/{messageBoardMessageExternalReferenceCode}/message-board-attachments/by-external-reference-code/{externalReferenceCode}");
+						"/o/x-headless-delivery/v1.0/sites/{siteId}/message-board-messages/by-external-reference-code/{messageBoardMessageExternalReferenceCode}/message-board-attachments/by-external-reference-code/{externalReferenceCode}");
 
 			httpInvoker.path("siteId", siteId);
 			httpInvoker.path(
@@ -1171,7 +1171,7 @@ public interface MessageBoardAttachmentResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/message-board-messages/{messageBoardMessageId}/message-board-attachments");
+						"/o/x-headless-delivery/v1.0/message-board-messages/{messageBoardMessageId}/message-board-attachments");
 
 			httpInvoker.path("messageBoardMessageId", messageBoardMessageId);
 
@@ -1282,7 +1282,7 @@ public interface MessageBoardAttachmentResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/message-board-messages/{messageBoardMessageId}/message-board-attachments/batch");
+						"/o/x-headless-delivery/v1.0/message-board-messages/{messageBoardMessageId}/message-board-attachments/batch");
 
 			httpInvoker.path("messageBoardMessageId", messageBoardMessageId);
 
@@ -1399,7 +1399,7 @@ public interface MessageBoardAttachmentResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/message-board-messages/{messageBoardMessageId}/message-board-attachments/export-batch");
+						"/o/x-headless-delivery/v1.0/message-board-messages/{messageBoardMessageId}/message-board-attachments/export-batch");
 
 			httpInvoker.path("messageBoardMessageId", messageBoardMessageId);
 
@@ -1523,7 +1523,7 @@ public interface MessageBoardAttachmentResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/message-board-threads/{messageBoardThreadId}/message-board-attachments");
+						"/o/x-headless-delivery/v1.0/message-board-threads/{messageBoardThreadId}/message-board-attachments");
 
 			httpInvoker.path("messageBoardThreadId", messageBoardThreadId);
 
@@ -1634,7 +1634,7 @@ public interface MessageBoardAttachmentResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/message-board-threads/{messageBoardThreadId}/message-board-attachments/batch");
+						"/o/x-headless-delivery/v1.0/message-board-threads/{messageBoardThreadId}/message-board-attachments/batch");
 
 			httpInvoker.path("messageBoardThreadId", messageBoardThreadId);
 
@@ -1750,7 +1750,7 @@ public interface MessageBoardAttachmentResource {
 			httpInvoker.path(
 				_builder._scheme + "://" + _builder._host + ":" +
 					_builder._port + _builder._contextPath +
-						"/o/headless-delivery/v1.0/message-board-threads/{messageBoardThreadId}/message-board-attachments/export-batch");
+						"/o/x-headless-delivery/v1.0/message-board-threads/{messageBoardThreadId}/message-board-attachments/export-batch");
 
 			httpInvoker.path("messageBoardThreadId", messageBoardThreadId);
 

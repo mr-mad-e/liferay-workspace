@@ -55,7 +55,7 @@ import org.osgi.service.component.annotations.ReferenceScope;
  * @generated
  */
 @Component(
-	property = "resource.locator.key=/headless-delivery/v1.0/ContentStructure",
+	property = "resource.locator.key=/x-headless-delivery/v1.0/ContentStructure",
 	service = ContentStructureResource.Factory.class
 )
 @Generated("")
